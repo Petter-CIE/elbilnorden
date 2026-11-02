@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /no.html
+Disallow: /no-camper.html
+Disallow: /eBold%20web.dc.html
+
+Sitemap: https://elbilnorden.no/sitemap.xml
