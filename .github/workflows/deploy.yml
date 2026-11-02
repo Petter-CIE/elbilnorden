@@ -1,0 +1,106 @@
+# Automatické nasazení na one.com přes SFTP.
+# Spouští se po každém merge/pushi do main a nahraje jen změněné soubory.
+# Ručně (Actions → "Nasazení na one.com" → Run workflow) lze nahrát celý web.
+# Na serveru se NIC nemaže – smazání souboru z repozitáře se na one.com neprojeví.
+#
+# Potřebné údaje (Settings → Secrets and variables → Actions):
+#   Secrets:   ONECOM_SFTP_HOST, ONECOM_SFTP_USER, ONECOM_SFTP_PASSWORD
+#   Variables: ONECOM_SFTP_PORT (výchozí 22), ONECOM_WEBROOT (nepovinné – složka s index.html)
+
+name: Nasazení na one.com
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Nahrát celý web (nejen změněné soubory)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: deploy-onecom
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HOST: ${{ secrets.ONECOM_SFTP_HOST }}
+      SFTP_USER: ${{ secrets.ONECOM_SFTP_USER }}
+      LFTP_PASSWORD: ${{ secrets.ONECOM_SFTP_PASSWORD }}
+      PORT: ${{ vars.ONECOM_SFTP_PORT || '22' }}
+      WEBROOT: ${{ vars.ONECOM_WEBROOT }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Kontrola nastavení
+        run: |
+          for v in HOST SFTP_USER LFTP_PASSWORD; do
+            if [ -z "${!v}" ]; then echo "::error::Chybí secret pro $v – viz komentář v deploy.yml"; exit 1; fi
+          done
+
+      - name: Seznam souborů k nahrání
+        id: files
+        env:
+          BEFORE: ${{ github.event.before }}
+          FULL: ${{ inputs.full }}
+        run: |
+          set -euo pipefail
+          if [ "${FULL:-false}" = "true" ] || [ -z "${BEFORE:-}" ] \
+             || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
+             || ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            git ls-files > all.txt
+          else
+            git diff --name-only --diff-filter=ACMRT "$BEFORE" "$GITHUB_SHA" > all.txt
+          fi
+          # Soubory repozitáře, které na web nepatří
+          grep -vE '^(\.github/|README\.md$|\.gitignore$)' all.txt > upload.txt || true
+          echo "count=$(wc -l < upload.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          echo "Soubory k nahrání:"; cat upload.txt
+
+      - name: Instalace lftp a ověření klíče serveru
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "$PORT" "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          test -s ~/.ssh/known_hosts || { echo "::error::Server $HOST:$PORT neodpovídá"; exit 1; }
+
+      - name: Nalezení kořene webu (musí obsahovat index.html a send.php)
+        id: root
+        run: |
+          set -u
+          for d in ${WEBROOT:+"$WEBROOT"} . httpd.www www; do
+            if lftp -c "set sftp:auto-confirm no; set net:max-retries 2; open -u \"$SFTP_USER\" --env-password -p $PORT sftp://$HOST; cd \"$d\" && cls -1 index.html send.php" >/dev/null 2>&1; then
+              echo "dir=$d" >> "$GITHUB_OUTPUT"; echo "Kořen webu: $d"; exit 0
+            fi
+          done
+          echo "::error::Nenašel jsem složku s index.html a send.php – nastavte proměnnou ONECOM_WEBROOT"; exit 1
+
+      - name: Nahrání na one.com
+        if: steps.files.outputs.count != '0'
+        env:
+          ROOT: ${{ steps.root.outputs.dir }}
+        run: |
+          set -euo pipefail
+          {
+            echo "set sftp:auto-confirm no"
+            echo "set net:max-retries 3"
+            echo "set cmd:fail-exit yes"
+            echo "open -u \"$SFTP_USER\" --env-password -p $PORT sftp://$HOST"
+            echo "cd \"$ROOT\""
+            while IFS= read -r f; do
+              d=$(dirname "$f")
+              [ "$d" != "." ] && echo "mkdir -p -f \"$d\""
+              echo "put \"$f\" -o \"$f\""
+            done < upload.txt
+          } > deploy.lftp
+          lftp -f deploy.lftp
+          echo "Nahráno souborů: ${{ steps.files.outputs.count }}" >> "$GITHUB_STEP_SUMMARY"
+          sed 's/^/- /' upload.txt >> "$GITHUB_STEP_SUMMARY"
