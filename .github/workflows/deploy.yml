@@ -36,7 +36,7 @@ jobs:
       PORT: ${{ vars.ONECOM_SFTP_PORT || '22' }}
       WEBROOT: ${{ vars.ONECOM_WEBROOT }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -72,16 +72,38 @@ jobs:
           ssh-keyscan -p "$PORT" "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
           test -s ~/.ssh/known_hosts || { echo "::error::Server $HOST:$PORT neodpovídá"; exit 1; }
 
-      - name: Nalezení kořene webu (musí obsahovat index.html a send.php)
+      - name: Přihlášení a nalezení kořene webu (musí obsahovat index.html a send.php)
         id: root
         run: |
           set -u
-          for d in ${WEBROOT:+"$WEBROOT"} . httpd.www www; do
-            if lftp -c "set sftp:auto-confirm no; set net:max-retries 2; open -u \"$SFTP_USER\" --env-password -p $PORT sftp://$HOST; cd \"$d\" && cls -1 index.html send.php" >/dev/null 2>&1; then
+          LOGIN="set sftp:auto-confirm no; set net:max-retries 2; set net:timeout 20; open -u \"$SFTP_USER\" --env-password -p $PORT sftp://$HOST"
+
+          echo "== Přihlášení a obsah výchozí složky =="
+          if ! lftp -c "$LOGIN; pwd; cls -1 --sort=name" > top.txt 2> err.txt; then
+            cat top.txt err.txt
+            echo "::error::Přihlášení přes SFTP selhalo – zkontrolujte ONECOM_SFTP_HOST, ONECOM_SFTP_USER a heslo (stejné na one.com i v GitHubu). Chyba: $(head -c 300 err.txt | tr '\n' ' ')"
+            exit 1
+          fi
+          cat top.txt
+
+          # Kandidáti: nastavená proměnná, výchozí složka, běžné názvy na one.com
+          # a podsložky výchozí složky (i o úroveň níž: <složka>/httpd.www, <složka>/www).
+          cands=()
+          [ -n "$WEBROOT" ] && cands+=("$WEBROOT")
+          cands+=("." "httpd.www" "www" "public_html")
+          while IFS= read -r e; do
+            e="${e%/}"
+            case "$e" in ''|.|..|/*) continue ;; esac
+            cands+=("$e" "$e/httpd.www" "$e/www")
+          done < <(tail -n +2 top.txt)
+
+          for d in "${cands[@]}"; do
+            if lftp -c "$LOGIN; cd \"$d\" && cls -1 index.html send.php" >/dev/null 2>&1; then
               echo "dir=$d" >> "$GITHUB_OUTPUT"; echo "Kořen webu: $d"; exit 0
             fi
           done
-          echo "::error::Nenašel jsem složku s index.html a send.php – nastavte proměnnou ONECOM_WEBROOT"; exit 1
+          echo "::error::Přihlášení OK, ale nenašel jsem složku s index.html a send.php. Obsah serveru je vypsaný v logu tohoto kroku – nastavte proměnnou ONECOM_WEBROOT."
+          exit 1
 
       - name: Nahrání na one.com
         if: steps.files.outputs.count != '0'
