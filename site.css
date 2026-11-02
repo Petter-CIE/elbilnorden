@@ -113,3 +113,14 @@ footer .bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wra
 .lb img{max-width:min(92vw,1400px);max-height:88vh;object-fit:contain;border-radius:4px}
 .lb button{position:absolute;background:transparent;border:0;color:#F2F0EB;font:300 44px/1 var(--font);cursor:pointer;padding:16px;opacity:.8}.lb button:hover{opacity:1}
 .lb-x{top:8px;right:14px}.lb-p{left:8px;top:50%;transform:translateY(-50%)}.lb-n{right:8px;top:50%;transform:translateY(-50%)}
+
+/* SEO additions 2026-11 */
+.h1-sub{display:block;font-size:clamp(18px,1.8vw,24px);font-weight:500;letter-spacing:-.01em;margin-top:10px;color:var(--ink2,#4a4d55)}
+.seo-copy p{max-width:62ch;margin:14px 0 0;line-height:1.6}
+.seo-copy .faq{margin-top:18px;border-top:1px solid var(--line,#ddd)}
+.seo-copy details{border-bottom:1px solid var(--line,#ddd);padding:14px 0}
+.seo-copy summary{cursor:pointer;font-weight:600;list-style:none}
+.seo-copy summary::-webkit-details-marker{display:none}
+.seo-copy summary::after{content:"+";float:right;font-weight:400}
+.seo-copy details[open] summary::after{content:"–"}
+.seo-copy details p{margin:10px 0 0}
