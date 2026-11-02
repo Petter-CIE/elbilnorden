@@ -87,30 +87,31 @@ jobs:
             echo "::error::Složka z ONECOM_WEBROOT ($WEBROOT) neobsahuje index.html elbilnorden.no"; exit 1
           fi
 
-          if ! lftp -c "$LOGIN; find --maxdepth=4 ." > tree.txt 2> err.txt; then
+          # Projít strom do hloubky 3. Na one.com jsou "webroots" a "/www" symbolické
+          # odkazy, proto se prochází přes cls (find do odkazů nevstupuje).
+          if ! lftp -c "$LOGIN; cls -1 ." > /dev/null 2> err.txt; then
             echo "::error::Přihlášení přes SFTP selhalo: $(head -c 300 err.txt | tr '\n' ' ')"; exit 1
           fi
-          echo "== Složky na serveru (do hloubky 2) =="
-          grep -E '^\./[^/]+/([^/]+/)?$' tree.txt | head -50 || true
-
-          echo "== Diagnostika: výpis find ($(wc -l < tree.txt) řádků) =="
-          head -40 tree.txt
-          echo "== Diagnostika: chybový výstup find =="
-          head -c 1000 err.txt; echo
-          echo "== Diagnostika: aktuální složka, obsah . a / =="
-          lftp -c "$LOGIN; pwd; echo '--- cls .'; cls -1aF; echo '--- cls /'; cls -1aF /" 2>&1 | head -80 || true
-
-          found=""
-          while IFS= read -r p; do
-            d="${p%/send.php}"
-            if is_site "$d"; then
-              if [ -n "$found" ]; then echo "::error::Více kandidátů ($found, $d) – nastavte ONECOM_WEBROOT"; exit 1; fi
-              found="$d"
+          echo "== Hledání složky webu =="
+          queue=("." "webroots" "/www" "/webroots"); depth=(0 0 0 0); visited=0; found=""
+          while [ ${#queue[@]} -gt 0 ] && [ $visited -lt 60 ]; do
+            d="${queue[0]}"; l="${depth[0]}"; queue=("${queue[@]:1}"); depth=("${depth[@]:1}")
+            visited=$((visited+1))
+            list=$(lftp -c "$LOGIN; cls -1F \"$d/\"" 2>/dev/null) || continue
+            echo "  $d: $(echo "$list" | sed -E 's#^.*/([^/]+/?@?)$#\1#' | grep -vE '^\.\.?/$' | head -15 | tr '\n' ' ')"
+            if echo "$list" | grep -qE '(^|/)send\.php$' && echo "$list" | grep -qE '(^|/)index\.html$' && is_site "$d"; then
+              found="$d"; break
             fi
-          done < <(grep -E '(^|/)send\.php$' tree.txt)
+            [ "$l" -ge 3 ] && continue
+            while IFS= read -r e; do
+              n="${e%@}"; n="${n%/}"; n="${n##*/}"
+              case "$n" in ''|.|..|.*) continue ;; esac
+              case "$e" in */|*@) queue+=("$d/$n"); depth+=($((l+1))) ;; esac
+            done <<< "$list"
+          done
 
           if [ -z "$found" ]; then
-            echo "::error::Nenašel jsem send.php s index.html elbilnorden.no (hledáno do hloubky 4) – nastavte ONECOM_WEBROOT podle výpisu výše."; exit 1
+            echo "::error::Nenašel jsem složku se send.php a index.html elbilnorden.no – nastavte ONECOM_WEBROOT podle výpisu výše."; exit 1
           fi
           echo "dir=$found" >> "$GITHUB_OUTPUT"; echo "Kořen webu: $found"
 
