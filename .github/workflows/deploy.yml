@@ -93,6 +93,13 @@ jobs:
           echo "== Složky na serveru (do hloubky 2) =="
           grep -E '^\./[^/]+/([^/]+/)?$' tree.txt | head -50 || true
 
+          echo "== Diagnostika: výpis find ($(wc -l < tree.txt) řádků) =="
+          head -40 tree.txt
+          echo "== Diagnostika: chybový výstup find =="
+          head -c 1000 err.txt; echo
+          echo "== Diagnostika: aktuální složka, obsah . a / =="
+          lftp -c "$LOGIN; pwd; echo '--- cls .'; cls -1aF; echo '--- cls /'; cls -1aF /" 2>&1 | head -80 || true
+
           found=""
           while IFS= read -r p; do
             d="${p%/send.php}"
