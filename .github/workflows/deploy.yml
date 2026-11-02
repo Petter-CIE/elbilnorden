@@ -5,7 +5,7 @@
 #
 # Potřebné údaje (Settings → Secrets and variables → Actions):
 #   Secrets:   ONECOM_SFTP_HOST, ONECOM_SFTP_USER, ONECOM_SFTP_PASSWORD
-#   Variables: ONECOM_SFTP_PORT (výchozí 22), ONECOM_WEBROOT (nepovinné – složka s index.html)
+#   Variables: ONECOM_SFTP_PORT (výchozí 22), ONECOM_WEBROOT (nepovinné – jinak se složka webu najde sama)
 
 name: Nasazení na one.com
 
@@ -72,38 +72,40 @@ jobs:
           ssh-keyscan -p "$PORT" "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
           test -s ~/.ssh/known_hosts || { echo "::error::Server $HOST:$PORT neodpovídá"; exit 1; }
 
-      - name: Přihlášení a nalezení kořene webu (musí obsahovat index.html a send.php)
+      - name: Přihlášení a nalezení kořene webu
         id: root
         run: |
           set -u
           LOGIN="set sftp:auto-confirm no; set net:max-retries 2; set net:timeout 20; open -u \"$SFTP_USER\" --env-password -p $PORT sftp://$HOST"
 
-          echo "== Přihlášení a obsah výchozí složky =="
-          if ! lftp -c "$LOGIN; pwd; cls -1 --sort=name" > top.txt 2> err.txt; then
-            cat top.txt err.txt
-            echo "::error::Přihlášení přes SFTP selhalo – zkontrolujte ONECOM_SFTP_HOST, ONECOM_SFTP_USER a heslo (stejné na one.com i v GitHubu). Chyba: $(head -c 300 err.txt | tr '\n' ' ')"
-            exit 1
+          # Kořen webu = složka se send.php, jejíž index.html patří k elbilnorden.no
+          # (na stejném účtu mohou být i jiné weby).
+          is_site() { lftp -c "$LOGIN; cat \"$1/index.html\"" 2>/dev/null | grep -q 'https://elbilnorden.no/'; }
+
+          if [ -n "$WEBROOT" ]; then
+            if is_site "$WEBROOT"; then echo "dir=$WEBROOT" >> "$GITHUB_OUTPUT"; echo "Kořen webu: $WEBROOT"; exit 0; fi
+            echo "::error::Složka z ONECOM_WEBROOT ($WEBROOT) neobsahuje index.html elbilnorden.no"; exit 1
           fi
-          cat top.txt
 
-          # Kandidáti: nastavená proměnná, výchozí složka, běžné názvy na one.com
-          # a podsložky výchozí složky (i o úroveň níž: <složka>/httpd.www, <složka>/www).
-          cands=()
-          [ -n "$WEBROOT" ] && cands+=("$WEBROOT")
-          cands+=("." "httpd.www" "www" "public_html")
-          while IFS= read -r e; do
-            e="${e%/}"
-            case "$e" in ''|.|..|/*) continue ;; esac
-            cands+=("$e" "$e/httpd.www" "$e/www")
-          done < <(tail -n +2 top.txt)
+          if ! lftp -c "$LOGIN; find --maxdepth=4 ." > tree.txt 2> err.txt; then
+            echo "::error::Přihlášení přes SFTP selhalo: $(head -c 300 err.txt | tr '\n' ' ')"; exit 1
+          fi
+          echo "== Složky na serveru (do hloubky 2) =="
+          grep -E '^\./[^/]+/([^/]+/)?$' tree.txt | head -50 || true
 
-          for d in "${cands[@]}"; do
-            if lftp -c "$LOGIN; cd \"$d\" && cls -1 index.html send.php" >/dev/null 2>&1; then
-              echo "dir=$d" >> "$GITHUB_OUTPUT"; echo "Kořen webu: $d"; exit 0
+          found=""
+          while IFS= read -r p; do
+            d="${p%/send.php}"
+            if is_site "$d"; then
+              if [ -n "$found" ]; then echo "::error::Více kandidátů ($found, $d) – nastavte ONECOM_WEBROOT"; exit 1; fi
+              found="$d"
             fi
-          done
-          echo "::error::Přihlášení OK, ale nenašel jsem složku s index.html a send.php. Obsah serveru je vypsaný v logu tohoto kroku – nastavte proměnnou ONECOM_WEBROOT."
-          exit 1
+          done < <(grep -E '(^|/)send\.php$' tree.txt)
+
+          if [ -z "$found" ]; then
+            echo "::error::Nenašel jsem send.php s index.html elbilnorden.no (hledáno do hloubky 4) – nastavte ONECOM_WEBROOT podle výpisu výše."; exit 1
+          fi
+          echo "dir=$found" >> "$GITHUB_OUTPUT"; echo "Kořen webu: $found"
 
       - name: Nahrání na one.com
         if: steps.files.outputs.count != '0'
