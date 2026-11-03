@@ -41,7 +41,7 @@
 
   <header><a class="logo" href="cs.html"><img src="images/logo.svg" alt="Elbilnorden"></a>
 <nav><div class="dd"><a href="cs.html#models">Modely <span class="caret">▾</span></a><div class="menu"><a href="cs-evoxx.html"><b>eVOXX</b><span>L7e · 150–220 km · 750 kg</span></a><a href="cs-ebear.html"><b>eBEAR</b><span>N1 · 228 km · 1 375 kg</span></a><a href="cs-ebold.html"><b>eBOLD</b><span>N1 · 309–415 km · 895 kg</span></a><a href="cs-ehaustus.html"><b>eHAUSTUS</b><span>N2 · 320 km · 7 800 kg</span></a><a href="cs.html#models" class="all">Modely →</a></div></div><a href="cs-camper.html">Nordic Camper</a><a href="cs.html#costs">Provozní náklady</a><a href="cs.html#service">Servis</a><a href="cs.html#about">O nás</a><a class="btn btn-soft" href="cs-dealer.html">Staňte se dealerem</a><a class="btn btn-primary" href="cs.html#contact">Testovací jízda</a></nav>
-<select aria-label="Language" onchange="try{localStorage.setItem('ebold-lang',this.options[this.selectedIndex].text.toLowerCase())}catch(e){};location.href=this.value"><option value="/">NO</option><option value="en.html">EN</option><option value="sv.html">SV</option><option value="da.html">DA</option><option value="fi.html">FI</option><option value="cs.html" selected>CS</option></select></header>
+<select aria-label="Language" onchange="try{localStorage.setItem('ebold-lang',this.options[this.selectedIndex].text.toLowerCase())}catch(e){};location.href=this.value"><option value="forhandler.html">NO</option><option value="en-dealer.html">EN</option><option value="sv-dealer.html">SV</option><option value="da-dealer.html">DA</option><option value="fi-dealer.html">FI</option><option value="cs-dealer.html" selected>CS</option></select></header>
 
   
 
@@ -161,7 +161,7 @@
 
   <header><a class="logo" href="cs.html"><img src="images/logo.svg" alt="Elbilnorden"></a>
 <nav><div class="dd"><a href="cs.html#models">Modely <span class="caret">▾</span></a><div class="menu"><a href="cs-evoxx.html"><b>eVOXX</b><span>L7e · 150–220 km · 750 kg</span></a><a href="cs-ebear.html"><b>eBEAR</b><span>N1 · 228 km · 1 375 kg</span></a><a href="cs-ebold.html"><b>eBOLD</b><span>N1 · 309–415 km · 895 kg</span></a><a href="cs-ehaustus.html"><b>eHAUSTUS</b><span>N2 · 320 km · 7 800 kg</span></a><a href="cs.html#models" class="all">Modely →</a></div></div><a href="cs-camper.html">Nordic Camper</a><a href="cs.html#costs">Provozní náklady</a><a href="cs.html#service">Servis</a><a href="cs.html#about">O nás</a><a class="btn btn-soft" href="cs-dealer.html">Staňte se dealerem</a><a class="btn btn-primary" href="cs.html#contact">Testovací jízda</a></nav>
-<select aria-label="Language" onchange="try{localStorage.setItem('ebold-lang',this.options[this.selectedIndex].text.toLowerCase())}catch(e){};location.href=this.value"><option value="/">NO</option><option value="en.html">EN</option><option value="sv.html">SV</option><option value="da.html">DA</option><option value="fi.html">FI</option><option value="cs.html" selected>CS</option></select></header>
+<select aria-label="Language" value="{{ lang }}" onChange="{{ onLang }}"><option value="no">NO</option><option value="en">EN</option><option value="sv">SV</option><option value="da">DA</option><option value="fi">FI</option><option value="cs">CS</option></select></header>
 
   <sc-if value="{{ isHeroA }}" hint-placeholder-val="{{ true }}">
     <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:0;border-bottom:1px solid rgba(20,22,26,0.14)">
