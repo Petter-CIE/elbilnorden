@@ -5,7 +5,7 @@ import site from "./src/_data/site.js";
 export default function (eleventyConfig) {
   // Soubory, které se kopírují na web beze změny
   for (const p of [
-    "images", "site.css", "v3.css", "analytics.js", "send.php", ".htaccess", "robots.txt", "sitemap.xml",
+    "images", "site.css", "v3.css", "analytics.js", "motion.js", "send.php", ".htaccess", "robots.txt", "sitemap.xml",
     "favicon.ico", "favicon.svg", "favicon-192.png", "favicon-512.png", "apple-touch-icon.png", "site.webmanifest",
   ]) eleventyConfig.addPassthroughCopy(p);
 

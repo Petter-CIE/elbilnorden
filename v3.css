@@ -266,3 +266,28 @@ footer .bottom{border-top-color:var(--line)}
 }
 @media(min-width:2300px){:root{--maxw:1760px}}
 @media(min-width:1600px){.hero h1{max-width:20ch}.hero>div:first-child{max-width:1200px}.c3-hero h1{max-width:18ch}}
+
+/* ---------- motion (motion.js přidá třídu .motion; při „omezit pohyb“ se nic neanimuje) ---------- */
+header{transition:box-shadow .3s,background-color .3s}
+header.scrolled{box-shadow:0 1px 0 var(--line),0 10px 30px rgba(20,22,26,.05)}
+.motion .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms);will-change:opacity,transform}
+.motion .rv.in{opacity:1;transform:none}
+.motion .hero>div:first-child>*,.motion .c3-hero>*:not(.c3-heroimg){animation:mv-up .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*90ms + 80ms)}
+.motion .hero .media,.motion .c3-heroimg{animation:mv-fade 1s ease both .35s}
+.motion .hero .media>img,.motion .c3-heroimg img{animation:mv-zoom 1.8s cubic-bezier(.2,.7,.2,1) both .35s}
+.motion .hero-badge,.motion .play{animation:mv-up .8s cubic-bezier(.2,.7,.2,1) both .9s}
+@keyframes mv-up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes mv-fade{from{opacity:0}to{opacity:1}}
+@keyframes mv-zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+.card .img img,.c3-zone .ph img,.gallery img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.card:hover .img img,.c3-zone .ph:hover img{transform:scale(1.05)}
+.gallery a{display:block;overflow:hidden;border-radius:20px}.gallery a:hover img{transform:scale(1.04)}
+.c3-btn,.btn{transition:background-color .2s,color .2s,transform .2s}
+.c3-btn:hover,.btn:hover{transform:translateY(-1px)}
+.c3-price{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.c3-price:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(20,22,26,.1)}
+#service .grid3>div{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+#service .grid3>div:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(20,22,26,.07)}
+.c3-video button,.play i{transition:transform .3s cubic-bezier(.2,.7,.2,1),background-color .2s}
+.c3-video:hover button{transform:translate(-50%,-50%) scale(1.08)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
