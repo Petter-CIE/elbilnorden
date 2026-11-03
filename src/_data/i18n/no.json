@@ -1,0 +1,1875 @@
+{
+ "lang": "no",
+ "htmlLang": "nb",
+ "nav": {
+  "models": "Modeller",
+  "menu": [
+   {
+    "slug": "evoxx",
+    "sub": "L7e · 150–220 km · 750 kg"
+   },
+   {
+    "slug": "ebear",
+    "sub": "N1 · 228 km · 1 375 kg"
+   },
+   {
+    "slug": "ebold",
+    "sub": "N1 · 309–415 km · 895 kg"
+   },
+   {
+    "slug": "ehaustus",
+    "sub": "N2 · 320 km · 7 800 kg"
+   }
+  ],
+  "all": "Modeller →",
+  "camper": "Nordic Camper",
+  "costs": "Driftskostnader",
+  "service": "Service",
+  "about": "Om oss",
+  "dealer": "Bli forhandler",
+  "cta": "Bestill prøvekjøring"
+ },
+ "footer": {
+  "contact": "Kontakt",
+  "company": "Selskap",
+  "address": "Bjorøyvegen 332, 5177 Bjorøyhamn, Norge",
+  "models": "Modeller",
+  "more": "Mer",
+  "camper": "Nordic Camper",
+  "dealer": "Bli forhandler",
+  "privacy": "Personvernerklæring",
+  "left": "Elektriske nyttekjøretøy fra Hudson · Nordic Camper-innredninger",
+  "right": "© 2026 EV Pickup AS · Spesifikasjoner kan endres uten varsel. · Nettside: CIE AS"
+ },
+ "contact": {
+  "eyebrow": "Kontakt",
+  "title": "Bestill prøvekjøring",
+  "lead": "Fortell oss om ruten og lasten, så kommer vi med riktig modell og konfigurasjon.",
+  "phoneLabel": "Telefon:",
+  "mailLabel": "E-post:",
+  "name": "Navn",
+  "company": "Firma (valgfritt)",
+  "email": "E-post",
+  "phone": "Telefon",
+  "model": "Modell",
+  "notDecided": "Ikke bestemt ennå",
+  "message": "Melding",
+  "submit": "Send forespørselen",
+  "privacy": "Vi bruker opplysningene bare til å svare på denne henvendelsen.",
+  "privacyLink": "Personvern",
+  "sending": "Sender…",
+  "sent": "Takk! Vi svarer innen én arbeidsdag.",
+  "error": "Noe gikk galt. Ring oss på +47 456 11 610 eller send e-post til post@elbilnorden.no."
+ },
+ "home": {
+  "head": {
+   "title": "Elektriske varebiler og lastebiler fra Hudson | Elbilnorden",
+   "description": "Elektrisk varebil eller lastebil? Hudson eVOXX, eBEAR (6 m³), eBOLD (12 m³) og eHAUSTUS (7,8 t) i Norge. Faste priser eks. mva og prøvekjøring i Bergen.",
+   "ogImage": "https://elbilnorden.no/images/og-home.jpg",
+   "ogLocale": "nb_NO",
+   "ogImageW": null,
+   "ogImageH": null,
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "url": "https://elbilnorden.no/",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI",
+       "CZ"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eVOXX",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Kompakt elektrisk arbeidsbil for by, kommune og bedriftsområder. Smaleste i klassen, under 2 m høy.",
+      "image": "https://elbilnorden.no/images/evoxx-side.webp",
+      "url": "https://elbilnorden.no/evoxx.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "NOK",
+       "lowPrice": 199990,
+       "highPrice": 239000,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eBEAR",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Kompakt elvarebil på 6 m³ for trange bygater og korte ruter. Opptil 1 375 kg nyttelast.",
+      "image": "https://elbilnorden.no/images/ebear-side.webp",
+      "url": "https://elbilnorden.no/ebear.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "NOK",
+       "lowPrice": 329900,
+       "highPrice": 329900,
+       "offerCount": 1,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eBOLD",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Stor elvarebil på 12 m³ med CATL LFP-batteri. Direkte alternativ til E-Transit og eSprinter.",
+      "image": "https://elbilnorden.no/images/ebold-side.webp",
+      "url": "https://elbilnorden.no/ebold.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "NOK",
+       "lowPrice": 460000,
+       "highPrice": 520000,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eHAUSTUS",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Elektrisk lastebil på 7,8 tonn med 141 kWh CATL. Leveres som plan eller kasse, to akselavstander.",
+      "image": "https://elbilnorden.no/images/ehaustus-side.webp",
+      "url": "https://elbilnorden.no/ehaustus.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "NOK",
+       "lowPrice": 849000,
+       "highPrice": 899000,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/",
+      "url": "https://elbilnorden.no/",
+      "name": "Elektriske varebiler og lastebiler fra Hudson | Elbilnorden",
+      "description": "Elektrisk varebil eller lastebil? Hudson eVOXX, eBEAR (6 m³), eBOLD (12 m³) og eHAUSTUS (7,8 t) i Norge. Faste priser eks. mva og prøvekjøring i Bergen.",
+      "inLanguage": "nb",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "hero": {
+   "eyebrow": "Hudson · importør for Norden",
+   "title": "Elektriske varebiler og lastebiler fra 750 kg til 7,8 tonn",
+   "lead": "Fire modeller, én elektrisk plattform: fra kompakt arbeidsbil for sentrum til lastebil på 7,8 tonn. CATL-batterier, faste priser eks. mva og prøvekjøring i Bergen.",
+   "btns": [
+    "Se modellene",
+    "Bestill prøvekjøring"
+   ],
+   "kpis": [
+    [
+     "4",
+     "modeller"
+    ],
+    [
+     "L7e–N2",
+     "hele spekteret"
+    ],
+    [
+     "CATL",
+     "8 år / 400 000 km"
+    ],
+    [
+     "fra 199 990",
+     "kr eks. mva"
+    ]
+   ],
+   "video": "Se video"
+  },
+  "models": {
+   "eyebrow": "Modeller",
+   "title": "Én modell for hver jobb",
+   "lead": "Sortert etter størrelse. Alle priser er veiledende og eks. mva."
+  },
+  "cards": {
+   "evoxx": {
+    "img": "images/evoxx-side.webp",
+    "alt": "Hudson eVOXX – kompakt elektrisk arbeidsbil",
+    "tag": "L7e",
+    "tagN2": false,
+    "sub": "Kompakt elektrisk arbeidsbil for by, kommune og bedriftsområder. Smaleste i klassen, under 2 m høy.",
+    "nums": [
+     [
+      "150–220 km",
+      "rekkevidde"
+     ],
+     [
+      "750 kg",
+      "nyttelast"
+     ],
+     [
+      "3,47 m³",
+      "lasterom (kasse)"
+     ]
+    ],
+    "lic": "Førerkort <strong>B</strong> · toppfart 71 km/h",
+    "price": "fra 199 990 kr",
+    "priceNote": "eks. mva",
+    "btn": "Se eVOXX →"
+   },
+   "ebear": {
+    "img": "images/ebear-side.webp",
+    "alt": "Hudson eBEAR – elektrisk varebil 6 m³",
+    "tag": "N1",
+    "tagN2": false,
+    "sub": "Kompakt elvarebil på 6 m³ for trange bygater og korte ruter. Opptil 1 375 kg nyttelast.",
+    "nums": [
+     [
+      "228 km",
+      "rekkevidde WLTP"
+     ],
+     [
+      "1 375 kg",
+      "nyttelast"
+     ],
+     [
+      "6 m³",
+      "lastevolum"
+     ]
+    ],
+    "lic": "Førerkort <strong>B</strong>",
+    "price": "fra 329 900 kr",
+    "priceNote": "eks. mva",
+    "btn": "Se eBEAR →"
+   },
+   "ebold": {
+    "img": "images/ebold-side.webp",
+    "alt": "Hudson eBOLD – stor elektrisk varebil 12 m³",
+    "tag": "N1",
+    "tagN2": false,
+    "sub": "Stor elvarebil på 12 m³ med CATL LFP-batteri. Direkte alternativ til E-Transit og eSprinter.",
+    "nums": [
+     [
+      "309–415 km",
+      "rekkevidde WLTP"
+     ],
+     [
+      "895 kg",
+      "nyttelast"
+     ],
+     [
+      "12 m³",
+      "lastevolum"
+     ]
+    ],
+    "lic": "Førerkort <strong>B</strong>",
+    "price": "fra 460 000 kr",
+    "priceNote": "eks. mva",
+    "btn": "Se eBOLD →"
+   },
+   "ehaustus": {
+    "img": "images/ehaustus-side.webp",
+    "alt": "Hudson eHAUSTUS – elektrisk lastebil 7,8 tonn",
+    "tag": "N2",
+    "tagN2": true,
+    "sub": "Elektrisk lastebil på 7,8 tonn med 141 kWh CATL. Leveres som plan eller kasse, to akselavstander.",
+    "nums": [
+     [
+      "320 km",
+      "rekkevidde WLTP"
+     ],
+     [
+      "7 800 kg",
+      "totalvekt"
+     ],
+     [
+      "141 kWh",
+      "batteri"
+     ]
+    ],
+    "lic": "Førerkort <strong>C1 eller C</strong>",
+    "price": "fra 849 000 kr",
+    "priceNote": "eks. mva",
+    "btn": "Se eHAUSTUS →"
+   }
+  },
+  "uses": {
+   "eyebrow": "Hvilken passer deg?",
+   "title": "Velg etter jobben, ikke etter kjøretøygruppen",
+   "items": [
+    {
+     "title": "Bud og last mile",
+     "text": "Smale gater, mange stopp, lite parkering.",
+     "links": [
+      [
+       "evoxx",
+       "eVOXX →"
+      ],
+      [
+       "ebear",
+       "eBEAR →"
+      ]
+     ]
+    },
+    {
+     "title": "Håndverker og service",
+     "text": "Verktøy, materialer og hyllesystem, hele dagen på veien.",
+     "links": [
+      [
+       "ebear",
+       "eBEAR →"
+      ],
+      [
+       "ebold",
+       "eBOLD →"
+      ]
+     ]
+    },
+    {
+     "title": "Distribusjon og flåte",
+     "text": "Lange ruter, paller, faste sjåfører og TCO-krav.",
+     "links": [
+      [
+       "ebold",
+       "eBOLD →"
+      ],
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Kommune og teknisk etat",
+     "text": "Park, gartneri, kirkegård, avfall — stille og utslippsfritt.",
+     "links": [
+      [
+       "evoxx",
+       "eVOXX →"
+      ],
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Påbygg og kjøl",
+     "text": "Plan, kasse, kjøl, tipp — to akselavstander for påbyggere.",
+     "links": [
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Camper i helgen",
+     "text": "Varebil på hverdager, Nordic Camper-modul på fredag.",
+     "links": [
+      [
+       "ebold",
+       "eBOLD →"
+      ],
+      [
+       "camper",
+       "Nordic Camper →"
+      ]
+     ]
+    }
+   ]
+  },
+  "camper": {
+   "eyebrow": "Nordic Camper",
+   "title": "Samme varebil, camper i helgen",
+   "lead": "Nordic Camper er et modulsett du skyver inn i lasterommet på minutter — og tar ut like raskt når bilen skal jobbe igjen. Ingen karosseriarbeid, ingen ny godkjenning.",
+   "alts": [
+    "Nordic Camper – Stue og soveplass",
+    "Nordic Camper – Kjøkken",
+    "Nordic Camper – Soveplass"
+   ],
+   "btn": "Se Nordic Camper"
+  },
+  "costs": {
+   "eyebrow": "Driftskostnader",
+   "title": "Hva det koster å kjøre",
+   "lead": "Velg modell, legg inn kjørelengde og energipris, og sammenlign med en dieselbil i samme klasse.",
+   "model": "Modell",
+   "options": {
+    "evoxx": "eVOXX (12 kWh/100 km · diesel 6 l/100 km)",
+    "ebear": "eBEAR (22 kWh/100 km · diesel 8 l/100 km)",
+    "ebold": "eBOLD (32 kWh/100 km · diesel 9,5 l/100 km)",
+    "ehaustus": "eHAUSTUS (55 kWh/100 km · diesel 18 l/100 km)"
+   },
+   "km": [
+    "Kilometer per dag: ",
+    " km"
+   ],
+   "days": [
+    "Arbeidsdager per år: ",
+    ""
+   ],
+   "el": "Strøm (per kWh)",
+   "fuel": "Diesel (per liter)",
+   "note": "Kun energi — uten service, bom og avgifter. Forbruk er veiledende og avhenger av last, temperatur og kjøremønster.",
+   "saving": "Beregnet besparelse",
+   "perYear": "per år, kun energi",
+   "rows": [
+    "Årlig kjørelengde",
+    "Energikostnad elbil",
+    "Drivstoffkostnad diesel",
+    "Kostnad per kilometer (elbil)"
+   ],
+   "loc": "nb-NO",
+   "cur": "kr",
+   "elPrice": "1.6",
+   "elStep": "0.1",
+   "fuelPrice": "21.5",
+   "fuelStep": "0.5"
+  },
+  "service": {
+   "eyebrow": "Service og garanti",
+   "title": "Støtte for biler som jobber hver dag",
+   "lead": "Stillstand koster mer enn reparasjonen. Deler, diagnose og garantivilkår avtales skriftlig før levering.",
+   "items": [
+    [
+     "Garanti",
+     "Garanti på bil og batteri følger av kjøpekontrakten. CATL-batteriene i eBOLD og eHAUSTUS har 8 år / 400 000 km."
+    ],
+    [
+     "Deler",
+     "Slitedeler på lager i Norden; øvrige deler bestilles med oppgitt leveringstid."
+    ],
+    [
+     "Oppetid",
+     "Diagnose gjennom verkstedsnettverket, med lånebil på flåteavtaler."
+    ]
+   ]
+  },
+  "about": {
+   "eyebrow": "Om oss",
+   "title": "Bil og innredning fra ett sted",
+   "lead": "Vi importerer Hudson elektriske nyttekjøretøy og Nordic Camper-modulene til det nordiske markedet. Ett kontaktpunkt for bilen, innredningen og papirene.",
+   "text": "Vi selger til distribusjons- og servicebedrifter, håndverkere, kommuner, flåter — og private som vil ha camper uten å gi opp en brukbar varebil. EV Pickup AS, Bjorøy utenfor Bergen.",
+   "alt": "Hudson elektriske varebiler og lastebil: eVOXX, eBEAR, eBOLD og eHAUSTUS"
+  }
+ },
+ "models": {
+  "evoxx": {
+   "head": {
+    "title": "eVOXX — Kompakt elektrisk arbeidsbil for by, kommune og bedriftsområder | Elbilnorden",
+    "description": "Kompakt elektrisk arbeidsbil for by, kommune og bedriftsområder. Smaleste i klassen, under 2 m høy. fra 199 990 kr eks. mva.",
+    "ogImage": "https://elbilnorden.no/images/evoxx-side.webp",
+    "ogLocale": "nb_NO",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eVOXX",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Kompakt elektrisk arbeidsbil for by, kommune og bedriftsområder. Smaleste i klassen, under 2 m høy.",
+       "image": "https://elbilnorden.no/images/evoxx-side.webp",
+       "url": "https://elbilnorden.no/evoxx.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "NOK",
+        "lowPrice": 199990,
+        "highPrice": 239000,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/evoxx.html",
+       "url": "https://elbilnorden.no/evoxx.html",
+       "name": "eVOXX — Kompakt elektrisk arbeidsbil for by, kommune og bedriftsområder | Elbilnorden",
+       "description": "Kompakt elektrisk arbeidsbil for by, kommune og bedriftsområder. Smaleste i klassen, under 2 m høy. fra 199 990 kr eks. mva.",
+       "inLanguage": "nb",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "FAQPage",
+       "@id": "https://elbilnorden.no/evoxx.html#faq",
+       "mainEntity": [
+        {
+         "@type": "Question",
+         "name": "Hvilket førerkort trenger jeg for Hudson eVOXX?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vanlig førerkort klasse B."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Kan eVOXX kjøres på motorvei?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nei. Toppfarten er 71 km/h, og bilen er beregnet for by, kommunale oppdrag og bedriftsområder."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvor langt går eVOXX på én lading?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rundt 150 km (WLTP) med 15,4 kWh-batteriet og ca. 220 km med 23,5 kWh-batteriet. Faktisk rekkevidde avhenger av last, temperatur og kjøremønster."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvordan lades eVOXX?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Med CCS2-hurtiglader eller fra et vanlig 230 V-uttak."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hva koster Hudson eVOXX?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fra 199 990 kr eks. mva med 15,4 kWh-batteri og 239 000 kr eks. mva med 23,5 kWh-batteri. Prisene er veiledende."
+         }
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · L7e",
+   "title": "eVOXX",
+   "sub": "Hudson · kompakt elektrisk arbeidsbil (L7e)",
+   "lead": "Kompakt elektrisk arbeidsbil for by, kommune og bedriftsområder. Smaleste i klassen, under 2 m høy.",
+   "btns": [
+    "Bestill prøvekjøring",
+    "Spesifikasjoner"
+   ],
+   "kpis": [
+    [
+     "150–220 km",
+     "rekkevidde"
+    ],
+    [
+     "750 kg",
+     "nyttelast"
+    ],
+    [
+     "3,47 m³",
+     "lasterom (kasse)"
+    ]
+   ],
+   "img": "images/evoxx-side.webp",
+   "alt": "Hudson eVOXX – kompakt elektrisk arbeidsbil (L7e)",
+   "variantsEyebrow": "Pris og varianter",
+   "variantsTitle": "Velg variant",
+   "priceLabel": "Veiledende pris, eks. mva",
+   "callout": "<strong>Førerkort:</strong> B. Kommuner, gartnerier, havner, campus- og industriområder, bud i sentrum. Ikke ment for motorvei — toppfarten er 71 km/h.",
+   "specEyebrow": "Tekniske data",
+   "specTitle": "eVOXX i tall",
+   "spec": [
+    [
+     "Kjøretøygruppe",
+     "L7e (tung firehjuls motorsykkel)"
+    ],
+    [
+     "Karosseri",
+     "Plan eller kasse"
+    ],
+    [
+     "Batteri",
+     "15,4 kWh LFP · 23,5 kWh (tilvalg)"
+    ],
+    [
+     "Nyttelast",
+     "750 kg"
+    ],
+    [
+     "Lasterom",
+     "3,47 m³"
+    ],
+    [
+     "Mål (L×B×H)",
+     "3 820 × 1 480 × 1 680 / 1 925 mm"
+    ],
+    [
+     "Toppfart",
+     "71 km/h"
+    ],
+    [
+     "Lading",
+     "CCS2 DC · 230 V"
+    ],
+    [
+     "Førerkort",
+     "B"
+    ]
+   ],
+   "specNote": "Rekkevidden avhenger av last, temperatur og kjøremønster. Spesifikasjoner kan endres uten varsel.",
+   "variants": {
+    "15,4 kWh": {
+     "price": "199 990 kr",
+     "range": "150 km (WLTP)",
+     "dc": "CCS2"
+    },
+    "23,5 kWh": {
+     "price": "239 000 kr",
+     "range": "ca. 220 km",
+     "dc": "CCS2"
+    }
+   },
+   "labels": {
+    "price": "Pris",
+    "range": "Rekkevidde",
+    "payload": "Nyttelast",
+    "curb": "Egenvekt",
+    "dc": "DC-lading"
+   },
+   "seo": {
+    "eyebrow": "Om eVOXX",
+    "title": "Hudson eVOXX – elektrisk arbeidsbil for by og kommune",
+    "paras": [
+     "Hudson eVOXX er en kompakt elektrisk arbeidsbil i klasse L7e, laget for jobber der en vanlig varebil blir for stor: parker, gartnerier, kirkegårder, havner, campus- og industriområder og varelevering i sentrum. Med en bredde på 1 480 mm og en høyde under to meter kommer den fram der andre biler må snu, og den kjøres på vanlig førerkort klasse B.",
+     "Du velger mellom plan og kasse, med 3,47 m³ lasterom og opptil 750 kg nyttelast. Standardbatteriet på 15,4 kWh LFP gir rundt 150 km rekkevidde (WLTP), og med tilvalgsbatteriet på 23,5 kWh kommer du opp mot 220 km. eVOXX lades med CCS2 eller fra et vanlig 230 V-uttak. Toppfarten er 71 km/h, så bilen er laget for bykjøring og lukkede områder – ikke motorvei.",
+     "Veiledende pris fra 199 990 kr eks. mva."
+    ],
+    "faqEyebrow": "Spørsmål og svar",
+    "faqTitle": "Ofte stilte spørsmål",
+    "faq": [
+     [
+      "Hvilket førerkort trenger jeg for Hudson eVOXX?",
+      "Vanlig førerkort klasse B."
+     ],
+     [
+      "Kan eVOXX kjøres på motorvei?",
+      "Nei. Toppfarten er 71 km/h, og bilen er beregnet for by, kommunale oppdrag og bedriftsområder."
+     ],
+     [
+      "Hvor langt går eVOXX på én lading?",
+      "Rundt 150 km (WLTP) med 15,4 kWh-batteriet og ca. 220 km med 23,5 kWh-batteriet. Faktisk rekkevidde avhenger av last, temperatur og kjøremønster."
+     ],
+     [
+      "Hvordan lades eVOXX?",
+      "Med CCS2-hurtiglader eller fra et vanlig 230 V-uttak."
+     ],
+     [
+      "Hva koster Hudson eVOXX?",
+      "Fra 199 990 kr eks. mva med 15,4 kWh-batteri og 239 000 kr eks. mva med 23,5 kWh-batteri. Prisene er veiledende."
+     ]
+    ]
+   },
+   "galleryEyebrow": "Bilder",
+   "galleryTitle": "eVOXX — Galleri",
+   "otherEyebrow": "Andre modeller",
+   "otherTitle": "Trenger du noe annet?"
+  },
+  "ebear": {
+   "head": {
+    "title": "eBEAR — Kompakt elvarebil på 6 m³ for trange bygater og korte ruter | Elbilnorden",
+    "description": "Kompakt elvarebil på 6 m³ for trange bygater og korte ruter. Opptil 1 375 kg nyttelast. fra 329 900 kr eks. mva.",
+    "ogImage": "https://elbilnorden.no/images/ebear-side.webp",
+    "ogLocale": "nb_NO",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eBEAR",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Kompakt elvarebil på 6 m³ for trange bygater og korte ruter. Opptil 1 375 kg nyttelast.",
+       "image": "https://elbilnorden.no/images/ebear-side.webp",
+       "url": "https://elbilnorden.no/ebear.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "NOK",
+        "lowPrice": 329900,
+        "highPrice": 329900,
+        "offerCount": 1,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/ebear.html",
+       "url": "https://elbilnorden.no/ebear.html",
+       "name": "eBEAR — Kompakt elvarebil på 6 m³ for trange bygater og korte ruter | Elbilnorden",
+       "description": "Kompakt elvarebil på 6 m³ for trange bygater og korte ruter. Opptil 1 375 kg nyttelast. fra 329 900 kr eks. mva.",
+       "inLanguage": "nb",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "FAQPage",
+       "@id": "https://elbilnorden.no/ebear.html#faq",
+       "mainEntity": [
+        {
+         "@type": "Question",
+         "name": "Hvilket førerkort trenger jeg for Hudson eBEAR?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vanlig førerkort klasse B – totalvekten er 3 000 kg."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvor langt går eBEAR på én lading?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "228 km etter WLTP med 41,86 kWh LFP-batteri. Faktisk rekkevidde avhenger av last, temperatur og kjøremønster."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvor mye kan eBEAR laste?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Opptil 1 375 kg nyttelast og 6 m³ lastevolum."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvor mange seter har eBEAR?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "eBEAR leveres med 2–5 seter."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hva koster Hudson eBEAR?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Veiledende pris er 329 900 kr eks. mva."
+         }
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N1",
+   "title": "eBEAR",
+   "sub": "Hudson · elektrisk varebil 6 m³",
+   "lead": "Kompakt elvarebil på 6 m³ for trange bygater og korte ruter. Opptil 1 375 kg nyttelast.",
+   "btns": [
+    "Bestill prøvekjøring",
+    "Spesifikasjoner"
+   ],
+   "kpis": [
+    [
+     "228 km",
+     "rekkevidde WLTP"
+    ],
+    [
+     "1 375 kg",
+     "nyttelast"
+    ],
+    [
+     "6 m³",
+     "lastevolum"
+    ]
+   ],
+   "img": "images/ebear-side.webp",
+   "alt": "Hudson eBEAR – elektrisk varebil 6 m³",
+   "variantsEyebrow": "Pris og varianter",
+   "variantsTitle": "Velg variant",
+   "priceLabel": "Veiledende pris, eks. mva",
+   "callout": "<strong>Førerkort:</strong> B. Håndverkere, servicebiler, hjemlevering, bedrifter med korte, faste ruter.",
+   "specEyebrow": "Tekniske data",
+   "specTitle": "eBEAR i tall",
+   "spec": [
+    [
+     "Kjøretøygruppe",
+     "N1"
+    ],
+    [
+     "Batteri",
+     "41,86 kWh LFP"
+    ],
+    [
+     "Rekkevidde",
+     "228 km (WLTP)"
+    ],
+    [
+     "Nyttelast",
+     "1 375 kg"
+    ],
+    [
+     "Totalvekt",
+     "3 000 kg"
+    ],
+    [
+     "Lasterom",
+     "6 m³"
+    ],
+    [
+     "Mål (L×B×H)",
+     "4 860 × 1 750 × 1 990 mm"
+    ],
+    [
+     "Akselavstand",
+     "3 160 mm"
+    ],
+    [
+     "Drivlinje",
+     "RWD"
+    ],
+    [
+     "Toppfart",
+     "100 km/h"
+    ],
+    [
+     "Seter",
+     "2–5"
+    ],
+    [
+     "Førerkort",
+     "B"
+    ]
+   ],
+   "specNote": "Rekkevidden avhenger av last, temperatur og kjøremønster. Spesifikasjoner kan endres uten varsel.",
+   "variants": {
+    "41,86 kWh": {
+     "price": "329 900 kr",
+     "range": "228 km (WLTP)",
+     "dc": "CCS2"
+    }
+   },
+   "labels": {
+    "price": "Pris",
+    "range": "Rekkevidde",
+    "payload": "Nyttelast",
+    "curb": "Egenvekt",
+    "dc": "DC-lading"
+   },
+   "seo": {
+    "eyebrow": "Om eBEAR",
+    "title": "Hudson eBEAR – kompakt elvarebil på 6 m³",
+    "paras": [
+     "Hudson eBEAR er en kompakt elektrisk varebil i klasse N1 for håndverkere, servicebiler og hjemlevering på korte, faste ruter. Med 6 m³ lasterom og opptil 1 375 kg nyttelast tar den mye last i forhold til størrelsen, og med en lengde på 4 860 mm er den enkel å parkere i trange bygater.",
+     "Batteriet er på 41,86 kWh LFP og gir 228 km rekkevidde etter WLTP. Bilen har bakhjulsdrift, toppfart på 100 km/h og 2–5 seter, og lades med CCS2. Totalvekten er 3 000 kg, så eBEAR kjøres på førerkort klasse B.",
+     "Veiledende pris 329 900 kr eks. mva."
+    ],
+    "faqEyebrow": "Spørsmål og svar",
+    "faqTitle": "Ofte stilte spørsmål",
+    "faq": [
+     [
+      "Hvilket førerkort trenger jeg for Hudson eBEAR?",
+      "Vanlig førerkort klasse B – totalvekten er 3 000 kg."
+     ],
+     [
+      "Hvor langt går eBEAR på én lading?",
+      "228 km etter WLTP med 41,86 kWh LFP-batteri. Faktisk rekkevidde avhenger av last, temperatur og kjøremønster."
+     ],
+     [
+      "Hvor mye kan eBEAR laste?",
+      "Opptil 1 375 kg nyttelast og 6 m³ lastevolum."
+     ],
+     [
+      "Hvor mange seter har eBEAR?",
+      "eBEAR leveres med 2–5 seter."
+     ],
+     [
+      "Hva koster Hudson eBEAR?",
+      "Veiledende pris er 329 900 kr eks. mva."
+     ]
+    ]
+   },
+   "galleryEyebrow": "Bilder",
+   "galleryTitle": "eBEAR — Galleri",
+   "otherEyebrow": "Andre modeller",
+   "otherTitle": "Trenger du noe annet?"
+  },
+  "ebold": {
+   "head": {
+    "title": "eBOLD — Stor elvarebil på 12 m³ med CATL LFP-batteri | Elbilnorden",
+    "description": "Stor elvarebil på 12 m³ med CATL LFP-batteri. Direkte alternativ til E-Transit og eSprinter. fra 460 000 kr eks. mva.",
+    "ogImage": "https://elbilnorden.no/images/ebold-side.webp",
+    "ogLocale": "nb_NO",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eBOLD",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Stor elvarebil på 12 m³ med CATL LFP-batteri. Direkte alternativ til E-Transit og eSprinter.",
+       "image": "https://elbilnorden.no/images/ebold-side.webp",
+       "url": "https://elbilnorden.no/ebold.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "NOK",
+        "lowPrice": 460000,
+        "highPrice": 520000,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/ebold.html",
+       "url": "https://elbilnorden.no/ebold.html",
+       "name": "eBOLD — Stor elvarebil på 12 m³ med CATL LFP-batteri | Elbilnorden",
+       "description": "Stor elvarebil på 12 m³ med CATL LFP-batteri. Direkte alternativ til E-Transit og eSprinter. fra 460 000 kr eks. mva.",
+       "inLanguage": "nb",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "FAQPage",
+       "@id": "https://elbilnorden.no/ebold.html#faq",
+       "mainEntity": [
+        {
+         "@type": "Question",
+         "name": "Hvilket førerkort trenger jeg for Hudson eBOLD?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vanlig førerkort klasse B – totalvekten er 3 500 kg."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvor langt går eBOLD på én lading?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "309 km (WLTP) med 77,28 kWh-batteriet og 415 km med 100,96 kWh-batteriet. Faktisk rekkevidde avhenger av last, temperatur og kjøremønster."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvor raskt lader eBOLD?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Med CCS2-hurtiglading fra 20 til 80 % på høyst 45 minutter (77,28 kWh) eller 65 minutter (100,96 kWh)."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvilken batterigaranti har eBOLD?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CATL-batteriet har 8 års / 400 000 km garanti."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hva koster Hudson eBOLD?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fra 460 000 kr eks. mva med 77,28 kWh-batteri og 520 000 kr eks. mva med 100,96 kWh-batteri. Prisene er veiledende."
+         }
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N1",
+   "title": "eBOLD",
+   "sub": "Hudson · stor elektrisk varebil 12 m³",
+   "lead": "Stor elvarebil på 12 m³ med CATL LFP-batteri. Direkte alternativ til E-Transit og eSprinter.",
+   "btns": [
+    "Bestill prøvekjøring",
+    "Spesifikasjoner"
+   ],
+   "kpis": [
+    [
+     "309–415 km",
+     "rekkevidde WLTP"
+    ],
+    [
+     "895 kg",
+     "nyttelast"
+    ],
+    [
+     "12 m³",
+     "lastevolum"
+    ]
+   ],
+   "img": "images/ebold-side.webp",
+   "alt": "Hudson eBOLD – stor elektrisk varebil 12 m³",
+   "variantsEyebrow": "Pris og varianter",
+   "variantsTitle": "Velg variant",
+   "priceLabel": "Veiledende pris, eks. mva",
+   "callout": "<strong>Førerkort:</strong> B. Distribusjon og servicebedrifter på lange ruter, flåter, håndverkere med mye utstyr — og alle som vil ha Nordic Camper i helgen.",
+   "specEyebrow": "Tekniske data",
+   "specTitle": "eBOLD i tall",
+   "spec": [
+    [
+     "Kjøretøygruppe",
+     "N1"
+    ],
+    [
+     "Batteri",
+     "77,28 / 100,96 kWh · CATL LFP"
+    ],
+    [
+     "Totalvekt",
+     "3 500 kg"
+    ],
+    [
+     "Lasterom",
+     "12 m³"
+    ],
+    [
+     "Lasterom (L×B×H)",
+     "3 560 × 1 815 × 1 860 mm"
+    ],
+    [
+     "Bakdører",
+     "270°"
+    ],
+    [
+     "Mål (L×B×H)",
+     "5 995 × 2 036 × 2 590 mm"
+    ],
+    [
+     "Akselavstand",
+     "3 610 mm"
+    ],
+    [
+     "Drivlinje",
+     "RWD"
+    ],
+    [
+     "Toppfart",
+     "> 100 km/h"
+    ],
+    [
+     "Seter",
+     "3"
+    ],
+    [
+     "DC-hurtiglading",
+     "CCS2 · 20→80 % ≤ 45 / 65 min"
+    ],
+    [
+     "Batterigaranti",
+     "8 år / 400 000 km (CATL)"
+    ],
+    [
+     "Sikkerhet",
+     "ESC · airbag · TPMS · camera + radar · cruise"
+    ],
+    [
+     "Infotainment",
+     "12,3\" + 10,3\" · Android Link"
+    ],
+    [
+     "Førerkort",
+     "B"
+    ]
+   ],
+   "specNote": "Rekkevidden avhenger av last, temperatur og kjøremønster. Spesifikasjoner kan endres uten varsel.",
+   "variants": {
+    "77,28 kWh": {
+     "price": "460 000 kr",
+     "range": "309 km (WLTP)",
+     "payload": "895 kg",
+     "curb": "2 605 kg",
+     "dc": "CCS2 · 20→80 % ≤ 45 min"
+    },
+    "100,96 kWh": {
+     "price": "520 000 kr",
+     "range": "415 km (WLTP)",
+     "payload": "800 kg",
+     "curb": "–",
+     "dc": "CCS2 · 20→80 % ≤ 65 min"
+    }
+   },
+   "labels": {
+    "price": "Pris",
+    "range": "Rekkevidde",
+    "payload": "Nyttelast",
+    "curb": "Egenvekt",
+    "dc": "DC-lading"
+   },
+   "seo": {
+    "eyebrow": "Om eBOLD",
+    "title": "Hudson eBOLD – stor elvarebil på 12 m³",
+    "paras": [
+     "Hudson eBOLD er en stor elektrisk varebil i klasse N1 med 12 m³ lasterom, og et direkte alternativ til Ford E-Transit og Mercedes eSprinter. Lasterommet måler 3 560 × 1 815 × 1 860 mm, og bakdørene åpner 270°. Bilen er laget for distribusjon og servicebedrifter på lange ruter, flåter og håndverkere med mye utstyr.",
+     "Du velger mellom to CATL LFP-batterier: 77,28 kWh med 309 km rekkevidde (WLTP) og 895 kg nyttelast, eller 100,96 kWh med 415 km rekkevidde og 800 kg nyttelast. Hurtiglading med CCS2 fra 20 til 80 % tar høyst 45 minutter med det minste batteriet og høyst 65 minutter med det største. CATL gir 8 års / 400 000 km batterigaranti.",
+     "Totalvekten er 3 500 kg, så eBOLD kjøres på førerkort klasse B. Med en Nordic Camper-modul blir arbeidsbilen camper i helgen. Veiledende pris fra 460 000 kr eks. mva."
+    ],
+    "faqEyebrow": "Spørsmål og svar",
+    "faqTitle": "Ofte stilte spørsmål",
+    "faq": [
+     [
+      "Hvilket førerkort trenger jeg for Hudson eBOLD?",
+      "Vanlig førerkort klasse B – totalvekten er 3 500 kg."
+     ],
+     [
+      "Hvor langt går eBOLD på én lading?",
+      "309 km (WLTP) med 77,28 kWh-batteriet og 415 km med 100,96 kWh-batteriet. Faktisk rekkevidde avhenger av last, temperatur og kjøremønster."
+     ],
+     [
+      "Hvor raskt lader eBOLD?",
+      "Med CCS2-hurtiglading fra 20 til 80 % på høyst 45 minutter (77,28 kWh) eller 65 minutter (100,96 kWh)."
+     ],
+     [
+      "Hvilken batterigaranti har eBOLD?",
+      "CATL-batteriet har 8 års / 400 000 km garanti."
+     ],
+     [
+      "Hva koster Hudson eBOLD?",
+      "Fra 460 000 kr eks. mva med 77,28 kWh-batteri og 520 000 kr eks. mva med 100,96 kWh-batteri. Prisene er veiledende."
+     ]
+    ]
+   },
+   "galleryEyebrow": "Bilder",
+   "galleryTitle": "eBOLD — Galleri",
+   "otherEyebrow": "Andre modeller",
+   "otherTitle": "Trenger du noe annet?"
+  },
+  "ehaustus": {
+   "head": {
+    "title": "eHAUSTUS — Elektrisk lastebil på 7,8 tonn med 141 kWh CATL | Elbilnorden",
+    "description": "Elektrisk lastebil på 7,8 tonn med 141 kWh CATL. Leveres som plan eller kasse, to akselavstander. fra 849 000 kr eks. mva.",
+    "ogImage": "https://elbilnorden.no/images/ehaustus-side.webp",
+    "ogLocale": "nb_NO",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eHAUSTUS",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Elektrisk lastebil på 7,8 tonn med 141 kWh CATL. Leveres som plan eller kasse, to akselavstander.",
+       "image": "https://elbilnorden.no/images/ehaustus-side.webp",
+       "url": "https://elbilnorden.no/ehaustus.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "NOK",
+        "lowPrice": 849000,
+        "highPrice": 899000,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/ehaustus.html",
+       "url": "https://elbilnorden.no/ehaustus.html",
+       "name": "eHAUSTUS — Elektrisk lastebil på 7,8 tonn med 141 kWh CATL | Elbilnorden",
+       "description": "Elektrisk lastebil på 7,8 tonn med 141 kWh CATL. Leveres som plan eller kasse, to akselavstander. fra 849 000 kr eks. mva.",
+       "inLanguage": "nb",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "FAQPage",
+       "@id": "https://elbilnorden.no/ehaustus.html#faq",
+       "mainEntity": [
+        {
+         "@type": "Question",
+         "name": "Hvilket førerkort trenger jeg for Hudson eHAUSTUS?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Førerkort C1 eller C, fordi totalvekten er 7 800 kg."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvor langt går eHAUSTUS på én lading?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "320 km etter WLTP med 141 kWh CATL LFP-batteri. Faktisk rekkevidde avhenger av last, temperatur og kjøremønster."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Kan eHAUSTUS leveres med påbygg?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Den leveres som plan eller kasse, og med akselavstand 4 350 mm eller 5 100 mm for påbyggere."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hvor lang tid tar hurtiglading?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rundt 60 minutter med CCS2-hurtiglading."
+         }
+        },
+        {
+         "@type": "Question",
+         "name": "Hva koster Hudson eHAUSTUS?",
+         "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fra 849 000 kr eks. mva med akselavstand 4 350 mm og 899 000 kr eks. mva med 5 100 mm. Prisene er veiledende."
+         }
+        }
+       ]
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N2",
+   "title": "eHAUSTUS",
+   "sub": "Hudson · elektrisk lastebil 7,8 tonn",
+   "lead": "Elektrisk lastebil på 7,8 tonn med 141 kWh CATL. Leveres som plan eller kasse, to akselavstander.",
+   "btns": [
+    "Bestill prøvekjøring",
+    "Spesifikasjoner"
+   ],
+   "kpis": [
+    [
+     "320 km",
+     "rekkevidde WLTP"
+    ],
+    [
+     "7 800 kg",
+     "totalvekt"
+    ],
+    [
+     "141 kWh",
+     "batteri"
+    ]
+   ],
+   "img": "images/ehaustus-side.webp",
+   "alt": "Hudson eHAUSTUS – elektrisk lastebil 7,8 tonn",
+   "variantsEyebrow": "Pris og varianter",
+   "variantsTitle": "Velg variant",
+   "priceLabel": "Veiledende pris, eks. mva",
+   "callout": "<strong>Førerkort:</strong> C1 eller C (totalvekt over 3 500 kg). Flåter, kommuner, entreprenører, kjølebiler og påbyggere. Krever førerkort C1 eller C — elbilunntaket til 4 250 kg gjelder ikke.",
+   "specEyebrow": "Tekniske data",
+   "specTitle": "eHAUSTUS i tall",
+   "spec": [
+    [
+     "Kjøretøygruppe",
+     "N2"
+    ],
+    [
+     "Karosseri",
+     "Plan eller kasse"
+    ],
+    [
+     "Batteri",
+     "141 kWh · CATL LFP"
+    ],
+    [
+     "Rekkevidde",
+     "320 km (WLTP)"
+    ],
+    [
+     "Totalvekt",
+     "7 800 kg"
+    ],
+    [
+     "Effekt / moment",
+     "150 kW / 1 700 Nm"
+    ],
+    [
+     "Mål (L×B×H)",
+     "7 340 × 2 154 × 2 330 mm"
+    ],
+    [
+     "Akselavstand",
+     "4 350 / 5 100 mm"
+    ],
+    [
+     "DC-hurtiglading",
+     "CCS2 · ~60 min"
+    ],
+    [
+     "Batterigaranti",
+     "8 år / 400 000 km (CATL)"
+    ],
+    [
+     "Førerkort",
+     "C1 eller C (totalvekt over 3 500 kg)"
+    ]
+   ],
+   "specNote": "Rekkevidden avhenger av last, temperatur og kjøremønster. Spesifikasjoner kan endres uten varsel.",
+   "variants": {
+    "Akselavstand 4 350 mm": {
+     "price": "849 000 kr",
+     "range": "320 km (WLTP)",
+     "dc": "CCS2 · ~60 min"
+    },
+    "Akselavstand 5 100 mm": {
+     "price": "899 000 kr",
+     "range": "320 km (WLTP)",
+     "dc": "CCS2 · ~60 min"
+    }
+   },
+   "labels": {
+    "price": "Pris",
+    "range": "Rekkevidde",
+    "payload": "Nyttelast",
+    "curb": "Egenvekt",
+    "dc": "DC-lading"
+   },
+   "seo": {
+    "eyebrow": "Om eHAUSTUS",
+    "title": "Hudson eHAUSTUS – elektrisk lastebil på 7,8 tonn",
+    "paras": [
+     "Hudson eHAUSTUS er en elektrisk lastebil i klasse N2 med 7 800 kg totalvekt, for flåter, kommuner, entreprenører, kjølebiler og påbyggere. Den leveres som plan eller kasse og med to akselavstander – 4 350 mm og 5 100 mm – slik at påbyggere har frihet til å bygge kjøl, tipp eller annet påbygg.",
+     "Batteriet er på 141 kWh CATL LFP og gir 320 km rekkevidde etter WLTP. Motoren yter 150 kW og 1 700 Nm, og hurtiglading med CCS2 tar rundt 60 minutter. CATL gir 8 års / 400 000 km batterigaranti.",
+     "Fordi totalvekten er over 3 500 kg, krever eHAUSTUS førerkort C1 eller C – unntaket for elektriske varebiler opp til 4 250 kg gjelder ikke. Veiledende pris fra 849 000 kr eks. mva."
+    ],
+    "faqEyebrow": "Spørsmål og svar",
+    "faqTitle": "Ofte stilte spørsmål",
+    "faq": [
+     [
+      "Hvilket førerkort trenger jeg for Hudson eHAUSTUS?",
+      "Førerkort C1 eller C, fordi totalvekten er 7 800 kg."
+     ],
+     [
+      "Hvor langt går eHAUSTUS på én lading?",
+      "320 km etter WLTP med 141 kWh CATL LFP-batteri. Faktisk rekkevidde avhenger av last, temperatur og kjøremønster."
+     ],
+     [
+      "Kan eHAUSTUS leveres med påbygg?",
+      "Den leveres som plan eller kasse, og med akselavstand 4 350 mm eller 5 100 mm for påbyggere."
+     ],
+     [
+      "Hvor lang tid tar hurtiglading?",
+      "Rundt 60 minutter med CCS2-hurtiglading."
+     ],
+     [
+      "Hva koster Hudson eHAUSTUS?",
+      "Fra 849 000 kr eks. mva med akselavstand 4 350 mm og 899 000 kr eks. mva med 5 100 mm. Prisene er veiledende."
+     ]
+    ]
+   },
+   "galleryEyebrow": "Bilder",
+   "galleryTitle": "eHAUSTUS — Galleri",
+   "otherEyebrow": "Andre modeller",
+   "otherTitle": "Trenger du noe annet?"
+  }
+ },
+ "head": {
+  "camper": {
+   "title": "Nordic Camper — innskyvbar camperinnredning for varebil",
+   "description": "Et modulsett som gjør varebilen til camper på minutter: kjøkken, seng, strøm og vann. Passer i de fleste varebiler i L2H2 eller større.",
+   "ogImage": "https://elbilnorden.no/images/og-camper.jpg",
+   "ogLocale": "nb_NO",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/camper.html",
+      "url": "https://elbilnorden.no/camper.html",
+      "name": "Nordic Camper — innskyvbar camperinnredning for varebil",
+      "description": "Et modulsett som gjør varebilen til camper på minutter: kjøkken, seng, strøm og vann. Passer i de fleste varebiler i L2H2 eller større.",
+      "inLanguage": "nb",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      },
+      "about": {
+       "@type": "Thing",
+       "name": "Nordic Camper",
+       "description": "Innskyvbar camperinnredning for varebil: kjøkken, seng, strøm og vann som modulsett. Passer de fleste varebiler i L2H2 eller større.",
+       "image": "https://elbilnorden.no/images/camper-teaser.webp"
+      }
+     }
+    ]
+   }
+  },
+  "dealer": {
+   "title": "Bli forhandler av Hudson elvarebiler og Nordic Camper",
+   "description": "Forhandlerpriser, vilkår på demobil, markedsmateriell og opplæring. Fortell oss området ditt, så får du vilkår og ledige distrikter i retur.",
+   "ogImage": "https://elbilnorden.no/images/og-forhandler.jpg",
+   "ogLocale": "nb_NO",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/forhandler.html",
+      "url": "https://elbilnorden.no/forhandler.html",
+      "name": "Bli forhandler av Hudson elvarebiler og Nordic Camper",
+      "description": "Forhandlerpriser, vilkår på demobil, markedsmateriell og opplæring. Fortell oss området ditt, så får du vilkår og ledige distrikter i retur.",
+      "inLanguage": "nb",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "privacy": {
+   "title": "Personvernerklæring",
+   "description": "Hvordan EV Pickup AS behandler opplysningene du sender gjennom skjemaene på nettsiden: hva vi samler inn, hvorfor, hvor lenge, og dine rettigheter.",
+   "ogImage": "https://elbilnorden.no/images/og-home.jpg",
+   "ogLocale": "nb_NO",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/personvern.html",
+      "url": "https://elbilnorden.no/personvern.html",
+      "name": "Personvernerklæring",
+      "description": "Hvordan EV Pickup AS behandler opplysningene du sender gjennom skjemaene på nettsiden: hva vi samler inn, hvorfor, hvor lenge, og dine rettigheter.",
+      "inLanguage": "nb",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "camper": {
+  "footerLegal": "Juridisk",
+  "privacyLink": "Personvernerklæring",
+  "privTitle": "Personvernerklæring",
+  "privIntro": "Her står det hva vi gjør med opplysningene du sender oss gjennom skjemaene på nettsiden.",
+  "p1t": "Behandlingsansvarlig",
+  "p1x": "EV Pickup AS, org.nr 936 223 478, Bjorøyvegen 332, 5177 Bjorøyhamn. E-post: post@elbilnorden.no.",
+  "p2t": "Hva vi samler inn",
+  "p2x": "Bare det du skriver i skjemaet: navn, firma, e-post, telefon, varebilmodell eller område du oppgir, meldingen din, og hvilken språkversjon du brukte.",
+  "p3t": "Hvorfor",
+  "p3x": "For å svare på henvendelsen, avtale prøvekjøring og sende tilbud eller forhandlervilkår. Vi bruker ikke opplysningene til noe annet, og vi selger dem ikke.",
+  "p4t": "Rettslig grunnlag",
+  "p4x": "Tiltak på din forespørsel før avtale (GDPR art. 6 nr. 1 b) og vår berettigede interesse i å svare på forretningshenvendelser (art. 6 nr. 1 f).",
+  "p5t": "Hvor lenge vi lagrer",
+  "p5x": "Henvendelser som ikke fører til avtale, slettes etter seks måneder. Blir det avtale, styrer regnskapsreglene lagringstiden.",
+  "p6t": "Hvem andre ser det",
+  "p6x": "Vår webvert behandler meldingen på våre vegne som databehandler. CIE AS lager og drifter nettsiden og er også databehandler for skjemadataene. Ingen andre får opplysningene.",
+  "p7t": "Informasjonskapsler",
+  "p7x": "Vi bruker Google Analytics til anonym besøksstatistikk, men bare hvis du godtar det i informasjonskapselbanneret. Du kan avslå, og du kan endre valget ditt ved å slette nettstedets data i nettleseren. Google Analytics leveres av Google Ireland Ltd; IP-adresser anonymiseres. Språkvalget ditt lagres lokalt i nettleseren og sendes aldri til oss.",
+  "p8t": "Dine rettigheter",
+  "p8x": "Du kan be om innsyn, retting eller sletting, og protestere mot behandlingen. Skriv til post@elbilnorden.no. Du kan også klage til Datatilsynet.",
+  "privUpdated": "Sist oppdatert: september 2026",
+  "dealerEyebrow": "Partnere",
+  "dealerTitle": "Selg Hudson elektriske varebiler og Nordic Camper i ditt område",
+  "dealerSub": "Vi bygger et forhandlernett i Norden og Sentral-Europa. Du står for salg og førstelinjeservice; vi står for import, godkjenning, deler og innredningene.",
+  "dl1t": "Dette får du",
+  "dl1x": "Forhandlerpriser, vilkår på demobil, markedsmateriell og opplæring for selgere og verksted.",
+  "dl2t": "Dette ber vi om",
+  "dl2x": "Eget verksted eller en servicepartner, en demobil, og henvendelser besvart innen en dag.",
+  "dl3t": "Slik starter det",
+  "dl3x": "Send skjemaet. Du får vilkår, marginer og ledige områder i retur, så avtaler vi en prøvekjøring.",
+  "dealerFormTitle": "Forhandlerhenvendelse",
+  "formRegion": "Område / marked",
+  "formCompanyReq": "Firma",
+  "dealerSubmit": "Send henvendelse",
+  "camperVideoTitle": "Se hvordan det virker",
+  "camperFitText": "Det passer i de fleste varebiler i størrelse L2H2 eller større. Send oss modellen din, så bekrefter vi at det passer før du bestiller.",
+  "contactCamperSub": "Fortell oss hvilken varebil du har og hvordan du reiser, så setter vi sammen et sett til deg.",
+  "eqBasicPrice": "189 000 kr inkl. mva",
+  "eqProPrice": "239 000 kr inkl. mva",
+  "eqProIntro": "Alt i Basic, pluss:",
+  "eqX1": "Stålramme (Q345B), skyvedører i glass bak og på siden med aluminiumsramme og myggnetting, vinylgulv og lette skap.",
+  "eqL2": "Stue og soveplass",
+  "eqX2": "Polstret sofa som kan gjøres om til seng (175/190 × 125 cm), 10 cm madrass, sammenleggbart bord og høyskap.",
+  "eqX3": "Vask i rustfritt stål med egen kran, 40 l bærbart kjøleskap, krydderskuff, høyskap og underskap. 48 l rentvanntank og 48 l gråvannstank.",
+  "eqX4": "Innvendig dusjmodul med passasje til førerhuset og to bærbare vanntanker på 18 l.",
+  "eqX5": "LED-stemningslys og klargjorte 12 V-uttak for bærbar strømstasjon (ikke inkludert).",
+  "eqX6": "Høydejusterbart understell med hjul, L-profiler og stropper.",
+  "eqP1": "Kjøleskap",
+  "eqPX1": "Stående 50 l kjøleskap på 12 V i stedet for det bærbare kjøleskapet.",
+  "eqP2": "Vask",
+  "eqPX2": "Vask med lokk, sammenleggbar kran og 12 V vannpumpe.",
+  "eqP3": "Barneseng",
+  "eqPX3": "Sammenleggbar køyeseng 120 × 80 cm.",
+  "eqP4": "Solcellepanel",
+  "eqPX4": "Bærbart solcellepanel på 400 W.",
+  "cf2t": "Kjøkken",
+  "cf3t": "Soveplass",
+  "cf5t": "Dusj",
+  "formName": "Navn",
+  "formCompany": "Firma (valgfritt)",
+  "formEmail": "E-post",
+  "formPhone": "Telefon",
+  "formVanLabel": "Hvilken varebil skal det inn i?",
+  "formVanOther": "En annen modell",
+  "formMessage": "Melding",
+  "formSubmit": "Send forespørselen",
+  "formSending": "Sender…",
+  "formSent": "Takk — vi tar kontakt.",
+  "formError": "Sendingen feilet. Send oss gjerne en e-post til post@elbilnorden.no.",
+  "formPrivacy": "Vi bruker opplysningene bare til å svare på denne henvendelsen.",
+  "k4": "egenvekt",
+  "proBadge": "Mest utstyr",
+  "g1": "Konstruksjon og stue",
+  "g2": "Kjøkken og bad",
+  "g3": "Strøm og montering",
+  "fridgeP": "50 l stående, 12 V",
+  "levelLegend": "Utstyrsnivå",
+  "levelUnsure": "Usikker",
+  "close": "Lukk",
+  "h1": "Varebil i uka. Camper i helgen.",
+  "sub": "En ferdig utstyrt modul du skyver inn på minutter – med seng, kjøkken og dusj. Ingen ombygging, ingen ny godkjenning.",
+  "ctaPrices": "Se priser",
+  "pr1t": "Inn på minutter",
+  "pr1x": "Modulen står på et høydejusterbart understell med hjul og festes med L-profiler og stropper.",
+  "pr2t": "Ingen ombygging",
+  "pr2x": "Ingen karosseriarbeid – varebilen beholder godkjenning, forsikring og EU-kontroll som før.",
+  "pr3t": "Ut igjen på mandag",
+  "pr3x": "Når helgen er over, ruller modulen ut og bilen er en arbeidsbil igjen.",
+  "kitchenH": "Lag middag der du parkerer",
+  "kitchenX": "Vask i rustfritt stål, kjøleskap, krydderskuff og god skapplass. Vanntankene rommer 48 liter rent og 48 liter gråvann.",
+  "chipFresh": "48 l rentvann",
+  "chipGrey": "48 l gråvann",
+  "chipFridge": "40–50 l kjøleskap",
+  "sleepH": "Sofa om kvelden, seng om natta",
+  "sleepX": "Den polstrede sofaen blir en seng på 175/190 × 125 cm med 10 cm madrass. Sammenleggbart bord og høyskap gir plass til både frokost og bagasje.",
+  "chipMattress": "10 cm madrass",
+  "chipBunk": "Barneseng i Pro",
+  "bathH": "Dusj innendørs – også i regnvær",
+  "bathX": "Innvendig dusjmodul med passasje til førerhuset, og to bærbare vanntanker på 18 liter.",
+  "chipShower": "Innvendig dusj",
+  "chipTanks": "2 × 18 l tanker",
+  "videoSub": "Fra arbeidsbil til camper på noen minutter.",
+  "priceH": "Velg ditt utstyrsnivå",
+  "priceSub": "Begge leveres ferdig utstyrt. Pro legger til det du trenger for lengre turer uten strøm fra land.",
+  "b1": "Sofa som blir seng, 10 cm madrass",
+  "b2": "Kjøkken med vask og 40 l bærbart kjøleskap",
+  "b3": "Innvendig dusj, 48 + 48 l vanntanker",
+  "b4": "LED-lys og 12 V-uttak for strømstasjon",
+  "b5": "Glasskyvedører med myggnetting",
+  "chooseBasic": "Velg Basic",
+  "choosePro": "Velg Pro",
+  "fullList": "Se full utstyrsliste",
+  "fitH": "Passer i de fleste varebiler fra L2H2",
+  "dL": "lengde",
+  "dW": "bredde",
+  "dH": "høyde",
+  "fullH": "Full utstyrsliste",
+  "quoteH": "Klar for helgen?",
+  "conj": "og",
+  "play": "Spill av video"
+ },
+ "otherAlts": {
+  "ebear": "Hudson eBEAR – elektrisk varebil 6 m³",
+  "ebold": "Hudson eBOLD – stor elektrisk varebil 12 m³",
+  "ehaustus": "Hudson eHAUSTUS – elektrisk lastebil 7,8 tonn",
+  "evoxx": "Hudson eVOXX – kompakt elektrisk arbeidsbil (L7e)"
+ }
+}

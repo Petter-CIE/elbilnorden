@@ -1,0 +1,1563 @@
+{
+ "lang": "fi",
+ "htmlLang": "fi",
+ "nav": {
+  "models": "Mallit",
+  "menu": [
+   {
+    "slug": "evoxx",
+    "sub": "L7e · 150–220 km · 750 kg"
+   },
+   {
+    "slug": "ebear",
+    "sub": "N1 · 228 km · 1 375 kg"
+   },
+   {
+    "slug": "ebold",
+    "sub": "N1 · 309–415 km · 895 kg"
+   },
+   {
+    "slug": "ehaustus",
+    "sub": "N2 · 320 km · 7 800 kg"
+   }
+  ],
+  "all": "Mallit →",
+  "camper": "Nordic Camper",
+  "costs": "Käyttökustannukset",
+  "service": "Huolto",
+  "about": "Meistä",
+  "dealer": "Jälleenmyyjäksi",
+  "cta": "Varaa koeajo"
+ },
+ "footer": {
+  "contact": "Yhteystiedot",
+  "company": "Yritys",
+  "address": "Bjorøyvegen 332, 5177 Bjorøyhamn, Norge",
+  "models": "Mallit",
+  "more": "Lisää",
+  "camper": "Nordic Camper",
+  "dealer": "Jälleenmyyjäksi",
+  "privacy": "Tietosuojakäytäntö",
+  "left": "Hudsonin sähköiset hyötyajoneuvot · Nordic Camper -sisustukset",
+  "right": "© 2026 EV Pickup AS · Tekniset tiedot voivat muuttua ilman ennakkoilmoitusta. · Verkkosivusto: CIE AS"
+ },
+ "contact": {
+  "eyebrow": "Yhteystiedot",
+  "title": "Varaa koeajo",
+  "lead": "Kerro reitistäsi ja kuormastasi, niin palaamme oikealla mallilla ja kokoonpanolla.",
+  "phoneLabel": "Puhelin:",
+  "mailLabel": "Sähköposti:",
+  "name": "Nimi",
+  "company": "Yritys (valinnainen)",
+  "email": "Sähköposti",
+  "phone": "Puhelin",
+  "model": "Malli",
+  "notDecided": "Ei vielä päätetty",
+  "message": "Viesti",
+  "submit": "Lähetä kysely",
+  "privacy": "Käytämme tietoja vain tähän kyselyyn vastaamiseen.",
+  "privacyLink": "Tietosuoja",
+  "sending": "Lähetetään…",
+  "sent": "Kiitos! Vastaamme yhden työpäivän kuluessa.",
+  "error": "Jokin meni pieleen. Soita +47 456 11 610 tai lähetä sähköpostia post@elbilnorden.no."
+ },
+ "home": {
+  "head": {
+   "title": "Sähköiset hyötyajoneuvot 750 kg:sta 7,8 tonniin — eVOXX, eBEAR, eBOLD, eHAUSTUS",
+   "description": "Hudsonin sähköpakettiautot ja -kuorma-autot Pohjoismaihin: eVOXX (L7e), eBEAR (6 m³), eBOLD (12 m³) ja eHAUSTUS (7,8 t). CATL-akut, hinnat alv 0 %.",
+   "ogImage": "https://elbilnorden.no/images/og-home.jpg",
+   "ogLocale": "fi_FI",
+   "ogImageW": null,
+   "ogImageH": null,
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "url": "https://elbilnorden.no/",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI",
+       "CZ"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eVOXX",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Kompakti sähköinen työajoneuvo kaupunkiin, kunnille ja yritysalueille. Luokkansa kapein, alle 2 m korkea.",
+      "image": "https://elbilnorden.no/images/evoxx-side.webp",
+      "url": "https://elbilnorden.no/fi-evoxx.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "EUR",
+       "lowPrice": 18600,
+       "highPrice": 22200,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eBEAR",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Kompakti 6 m³ sähköpakettiauto ahtaisiin kaupunkikatuihin ja lyhyisiin reitteihin. Kantavuus jopa 1 375 kg.",
+      "image": "https://elbilnorden.no/images/ebear-side.webp",
+      "url": "https://elbilnorden.no/fi-ebear.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "EUR",
+       "lowPrice": 30600,
+       "highPrice": 30600,
+       "offerCount": 1,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eBOLD",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Suuri 12 m³ sähköpakettiauto CATL LFP -akulla. Suora vaihtoehto E-Transitille ja eSprinterille.",
+      "image": "https://elbilnorden.no/images/ebold-side.webp",
+      "url": "https://elbilnorden.no/fi-ebold.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "EUR",
+       "lowPrice": 42700,
+       "highPrice": 48200,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eHAUSTUS",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "7,8 tonnin sähkökuorma-auto 141 kWh CATL-akulla. Toimitetaan lavalla tai umpikorilla, kaksi akseliväliä.",
+      "image": "https://elbilnorden.no/images/ehaustus-side.webp",
+      "url": "https://elbilnorden.no/fi-ehaustus.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "EUR",
+       "lowPrice": 78800,
+       "highPrice": 83400,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/fi.html",
+      "url": "https://elbilnorden.no/fi.html",
+      "name": "Sähköiset hyötyajoneuvot 750 kg:sta 7,8 tonniin — eVOXX, eBEAR, eBOLD, eHAUSTUS",
+      "description": "Hudsonin sähköpakettiautot ja -kuorma-autot Pohjoismaihin: eVOXX (L7e), eBEAR (6 m³), eBOLD (12 m³) ja eHAUSTUS (7,8 t). CATL-akut, hinnat alv 0 %.",
+      "inLanguage": "fi",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "hero": {
+   "eyebrow": "Hudson · maahantuoja Pohjoismaissa",
+   "title": "Sähköiset hyötyajoneuvot 750 kg:sta 7,8 tonniin",
+   "lead": "Neljä mallia, yksi sähköinen alusta: kompaktista kaupunkityöajoneuvosta 7,8 tonnin kuorma-autoon. CATL-akut ja kiinteät hinnat alv 0 %.",
+   "btns": [
+    "Katso mallit",
+    "Varaa koeajo"
+   ],
+   "kpis": [
+    [
+     "4",
+     "mallia"
+    ],
+    [
+     "L7e–N2",
+     "koko kirjo"
+    ],
+    [
+     "CATL",
+     "8 v / 400 000 km"
+    ],
+    [
+     "alk. 18 600 €",
+     "alv 0 %"
+    ]
+   ],
+   "video": "Katso video"
+  },
+  "models": {
+   "eyebrow": "Mallit",
+   "title": "Jokaiseen työhön oma malli",
+   "lead": "Kokojärjestyksessä. Hinnat ovat ohjeellisia, alv 0 % ja muunnettu Norjan kruunuista."
+  },
+  "cards": {
+   "evoxx": {
+    "img": "images/evoxx-side.webp",
+    "alt": "eVOXX",
+    "tag": "L7e",
+    "tagN2": false,
+    "sub": "Kompakti sähköinen työajoneuvo kaupunkiin, kunnille ja yritysalueille. Luokkansa kapein, alle 2 m korkea.",
+    "nums": [
+     [
+      "150–220 km",
+      "toimintamatka"
+     ],
+     [
+      "750 kg",
+      "kantavuus"
+     ],
+     [
+      "3,47 m³",
+      "tavaratila (kori)"
+     ]
+    ],
+    "lic": "Ajokortti <strong>B</strong> · huippunopeus 71 km/h",
+    "price": "alk. 18 600 €",
+    "priceNote": "alv 0 %",
+    "btn": "Katso eVOXX →"
+   },
+   "ebear": {
+    "img": "images/ebear-side.webp",
+    "alt": "eBEAR",
+    "tag": "N1",
+    "tagN2": false,
+    "sub": "Kompakti 6 m³ sähköpakettiauto ahtaisiin kaupunkikatuihin ja lyhyisiin reitteihin. Kantavuus jopa 1 375 kg.",
+    "nums": [
+     [
+      "228 km",
+      "toimintamatka WLTP"
+     ],
+     [
+      "1 375 kg",
+      "kantavuus"
+     ],
+     [
+      "6 m³",
+      "tavaratila"
+     ]
+    ],
+    "lic": "Ajokortti <strong>B</strong>",
+    "price": "alk. 30 600 €",
+    "priceNote": "alv 0 %",
+    "btn": "Katso eBEAR →"
+   },
+   "ebold": {
+    "img": "images/ebold-side.webp",
+    "alt": "eBOLD",
+    "tag": "N1",
+    "tagN2": false,
+    "sub": "Suuri 12 m³ sähköpakettiauto CATL LFP -akulla. Suora vaihtoehto E-Transitille ja eSprinterille.",
+    "nums": [
+     [
+      "309–415 km",
+      "toimintamatka WLTP"
+     ],
+     [
+      "895 kg",
+      "kantavuus"
+     ],
+     [
+      "12 m³",
+      "tavaratila"
+     ]
+    ],
+    "lic": "Ajokortti <strong>B</strong>",
+    "price": "alk. 42 700 €",
+    "priceNote": "alv 0 %",
+    "btn": "Katso eBOLD →"
+   },
+   "ehaustus": {
+    "img": "images/ehaustus-side.webp",
+    "alt": "eHAUSTUS",
+    "tag": "N2",
+    "tagN2": true,
+    "sub": "7,8 tonnin sähkökuorma-auto 141 kWh CATL-akulla. Toimitetaan lavalla tai umpikorilla, kaksi akseliväliä.",
+    "nums": [
+     [
+      "320 km",
+      "toimintamatka WLTP"
+     ],
+     [
+      "7 800 kg",
+      "kokonaismassa"
+     ],
+     [
+      "141 kWh",
+      "akku"
+     ]
+    ],
+    "lic": "Ajokortti <strong>C1 tai C</strong>",
+    "price": "alk. 78 800 €",
+    "priceNote": "alv 0 %",
+    "btn": "Katso eHAUSTUS →"
+   }
+  },
+  "uses": {
+   "eyebrow": "Mikä sopii sinulle?",
+   "title": "Valitse työn mukaan, älä ajoneuvoluokan",
+   "items": [
+    {
+     "title": "Lähetti ja last mile",
+     "text": "Kapeat kadut, paljon pysähdyksiä, vähän pysäköintitilaa.",
+     "links": [
+      [
+       "evoxx",
+       "eVOXX →"
+      ],
+      [
+       "ebear",
+       "eBEAR →"
+      ]
+     ]
+    },
+    {
+     "title": "Rakentaja ja huolto",
+     "text": "Työkalut, materiaalit ja hyllyt, koko päivä tien päällä.",
+     "links": [
+      [
+       "ebear",
+       "eBEAR →"
+      ],
+      [
+       "ebold",
+       "eBOLD →"
+      ]
+     ]
+    },
+    {
+     "title": "Jakelu ja kalusto",
+     "text": "Pitkät reitit, lavat, vakiokuljettajat ja TCO-vaatimukset.",
+     "links": [
+      [
+       "ebold",
+       "eBOLD →"
+      ],
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Kunta ja tekninen toimi",
+     "text": "Puistot, taimitarhat, hautausmaat, jätehuolto — hiljainen ja päästötön.",
+     "links": [
+      [
+       "evoxx",
+       "eVOXX →"
+      ],
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Päällirakenteet ja kylmäkuljetus",
+     "text": "Lava, umpikori, kylmä, kippi — kaksi akseliväliä päällirakentajille.",
+     "links": [
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Retkeilyauto viikonloppuna",
+     "text": "Pakettiauto arkena, Nordic Camper -moduuli perjantaina.",
+     "links": [
+      [
+       "ebold",
+       "eBOLD →"
+      ],
+      [
+       "camper",
+       "Nordic Camper →"
+      ]
+     ]
+    }
+   ]
+  },
+  "camper": {
+   "eyebrow": "Nordic Camper",
+   "title": "Sama pakettiauto, retkeilyauto viikonloppuna",
+   "lead": "Nordic Camper on moduulisarja, jonka työnnät tavaratilaan minuuteissa — ja otat pois yhtä nopeasti, kun auto palaa töihin. Ei korityötä, ei uutta katsastusta.",
+   "alts": [
+    "Nordic Camper – Oleskelu ja nukkuminen",
+    "Nordic Camper – Keittiö",
+    "Nordic Camper – Vuode"
+   ],
+   "btn": "Katso Nordic Camper"
+  },
+  "costs": {
+   "eyebrow": "Käyttökustannukset",
+   "title": "Mitä ajaminen maksaa",
+   "lead": "Valitse malli, syötä ajomäärä ja energian hinta ja vertaa saman luokan dieseliin.",
+   "model": "Malli",
+   "options": {
+    "evoxx": "eVOXX (12 kWh/100 km · diesel 6 l/100 km)",
+    "ebear": "eBEAR (22 kWh/100 km · diesel 8 l/100 km)",
+    "ebold": "eBOLD (32 kWh/100 km · diesel 9,5 l/100 km)",
+    "ehaustus": "eHAUSTUS (55 kWh/100 km · diesel 18 l/100 km)"
+   },
+   "km": [
+    "Kilometriä päivässä: ",
+    " km"
+   ],
+   "days": [
+    "Työpäiviä vuodessa: ",
+    ""
+   ],
+   "el": "Sähkö (per kWh)",
+   "fuel": "Diesel (per litra)",
+   "note": "Vain energia — ilman huoltoa, tietulleja ja veroja. Kulutus on ohjeellinen ja riippuu kuormasta, lämpötilasta ja ajotavasta.",
+   "saving": "Arvioitu säästö",
+   "perYear": "vuodessa, vain energia",
+   "rows": [
+    "Vuotuinen ajomäärä",
+    "Energiakustannus, sähkö",
+    "Polttoainekustannus, diesel",
+    "Kustannus per kilometri (sähkö)"
+   ],
+   "loc": "fi-FI",
+   "cur": "€",
+   "elPrice": "0.2",
+   "elStep": "0.01",
+   "fuelPrice": "1.75",
+   "fuelStep": "0.05"
+  },
+  "service": {
+   "eyebrow": "Huolto ja takuu",
+   "title": "Tukea autoille, jotka tekevät töitä joka päivä",
+   "lead": "Seisokki maksaa enemmän kuin korjaus. Varaosat, diagnostiikka ja takuuehdot sovitaan kirjallisesti ennen toimitusta.",
+   "items": [
+    [
+     "Takuu",
+     "Auton ja akun takuu määräytyy kauppasopimuksen mukaan. eBOLDin ja eHAUSTUSin CATL-akuilla 8 v / 400 000 km."
+    ],
+    [
+     "Varaosat",
+     "Kulutusosat varastossa Pohjoismaissa; muut osat tilataan ilmoitetulla toimitusajalla."
+    ],
+    [
+     "Käytettävyys",
+     "Diagnostiikka korjaamoverkoston kautta, sijaisauto kalustosopimuksiin."
+    ]
+   ]
+  },
+  "about": {
+   "eyebrow": "Meistä",
+   "title": "Auto ja sisustus samasta paikasta",
+   "lead": "Tuomme Hudsonin sähköiset hyötyajoneuvot ja Nordic Camper -moduulit Pohjoismaiden markkinoille. Yksi yhteyspiste autolle, sisustukselle ja papereille.",
+   "text": "Myymme jakelu- ja huoltoyrityksille, rakentajille, kunnille, kalustoille — ja yksityisille, jotka haluavat retkeilyauton luopumatta käyttökelpoisesta pakettiautosta. EV Pickup AS, Bjorøy Bergenin lähellä, Norja.",
+   "alt": "eVOXX, eBEAR, eBOLD, eHAUSTUS"
+  }
+ },
+ "models": {
+  "evoxx": {
+   "head": {
+    "title": "eVOXX — Kompakti sähköinen työajoneuvo kaupunkiin, kunnille ja yritysalueille | Elbilnorden",
+    "description": "Kompakti sähköinen työajoneuvo kaupunkiin, kunnille ja yritysalueille. Luokkansa kapein, alle 2 m korkea. alk. 18 600 € alv 0 %.",
+    "ogImage": "https://elbilnorden.no/images/evoxx-side.webp",
+    "ogLocale": "fi_FI",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eVOXX",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Kompakti sähköinen työajoneuvo kaupunkiin, kunnille ja yritysalueille. Luokkansa kapein, alle 2 m korkea.",
+       "image": "https://elbilnorden.no/images/evoxx-side.webp",
+       "url": "https://elbilnorden.no/fi-evoxx.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": 18600,
+        "highPrice": 22200,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/fi-evoxx.html",
+       "url": "https://elbilnorden.no/fi-evoxx.html",
+       "name": "eVOXX — Kompakti sähköinen työajoneuvo kaupunkiin, kunnille ja yritysalueille | Elbilnorden",
+       "description": "Kompakti sähköinen työajoneuvo kaupunkiin, kunnille ja yritysalueille. Luokkansa kapein, alle 2 m korkea. alk. 18 600 € alv 0 %.",
+       "inLanguage": "fi",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · L7e",
+   "title": "eVOXX",
+   "sub": "Hudson · kompakti sähkötyöajoneuvo (L7e)",
+   "lead": "Kompakti sähköinen työajoneuvo kaupunkiin, kunnille ja yritysalueille. Luokkansa kapein, alle 2 m korkea.",
+   "btns": [
+    "Varaa koeajo",
+    "Tekniset tiedot"
+   ],
+   "kpis": [
+    [
+     "150–220 km",
+     "toimintamatka"
+    ],
+    [
+     "750 kg",
+     "kantavuus"
+    ],
+    [
+     "3,47 m³",
+     "tavaratila (kori)"
+    ]
+   ],
+   "img": "images/evoxx-side.webp",
+   "alt": "Hudson eVOXX – kompakti sähkötyöajoneuvo (L7e)",
+   "variantsEyebrow": "Hinta ja versiot",
+   "variantsTitle": "Valitse versio",
+   "priceLabel": "Ohjehinta, alv 0 %",
+   "callout": "<strong>Ajokortti:</strong> B. Kunnat, taimitarhat, satamat, kampus- ja teollisuusalueet, kaupunkilähetit. Ei moottoritielle — huippunopeus on 71 km/h.",
+   "specEyebrow": "Tekniset tiedot",
+   "specTitle": "eVOXX numeroina",
+   "spec": [
+    [
+     "Ajoneuvoluokka",
+     "L7e (raskas nelipyörä)"
+    ],
+    [
+     "Kori",
+     "Lava tai umpikori"
+    ],
+    [
+     "Akku",
+     "15,4 kWh LFP · 23,5 kWh (lisävaruste)"
+    ],
+    [
+     "Kantavuus",
+     "750 kg"
+    ],
+    [
+     "Tavaratila",
+     "3,47 m³"
+    ],
+    [
+     "Mitat (P×L×K)",
+     "3 820 × 1 480 × 1 680 / 1 925 mm"
+    ],
+    [
+     "Huippunopeus",
+     "71 km/h"
+    ],
+    [
+     "Lataus",
+     "CCS2 DC · 230 V"
+    ],
+    [
+     "Ajokortti",
+     "B"
+    ]
+   ],
+   "specNote": "Toimintamatka riippuu kuormasta, lämpötilasta ja ajotavasta. Tekniset tiedot voivat muuttua ilman ennakkoilmoitusta.",
+   "variants": {
+    "15,4 kWh": {
+     "price": "18 600 €",
+     "range": "150 km (WLTP)",
+     "dc": "CCS2"
+    },
+    "23,5 kWh": {
+     "price": "22 200 €",
+     "range": "n. 220 km",
+     "dc": "CCS2"
+    }
+   },
+   "labels": {
+    "price": "Hinta",
+    "range": "Toimintamatka",
+    "payload": "Kantavuus",
+    "curb": "Omamassa",
+    "dc": "DC-lataus"
+   },
+   "seo": null,
+   "galleryEyebrow": "Kuvat",
+   "galleryTitle": "eVOXX — Galleria",
+   "otherEyebrow": "Muut mallit",
+   "otherTitle": "Tarvitsetko jotain muuta?"
+  },
+  "ebear": {
+   "head": {
+    "title": "eBEAR — Kompakti 6 m³ sähköpakettiauto ahtaisiin kaupunkikatuihin ja lyhyisiin reitteihin | Elbilnorden",
+    "description": "Kompakti 6 m³ sähköpakettiauto ahtaisiin kaupunkikatuihin ja lyhyisiin reitteihin. Kantavuus jopa 1 375 kg. alk. 30 600 € alv 0 %.",
+    "ogImage": "https://elbilnorden.no/images/ebear-side.webp",
+    "ogLocale": "fi_FI",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eBEAR",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Kompakti 6 m³ sähköpakettiauto ahtaisiin kaupunkikatuihin ja lyhyisiin reitteihin. Kantavuus jopa 1 375 kg.",
+       "image": "https://elbilnorden.no/images/ebear-side.webp",
+       "url": "https://elbilnorden.no/fi-ebear.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": 30600,
+        "highPrice": 30600,
+        "offerCount": 1,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/fi-ebear.html",
+       "url": "https://elbilnorden.no/fi-ebear.html",
+       "name": "eBEAR — Kompakti 6 m³ sähköpakettiauto ahtaisiin kaupunkikatuihin ja lyhyisiin reitteihin | Elbilnorden",
+       "description": "Kompakti 6 m³ sähköpakettiauto ahtaisiin kaupunkikatuihin ja lyhyisiin reitteihin. Kantavuus jopa 1 375 kg. alk. 30 600 € alv 0 %.",
+       "inLanguage": "fi",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N1",
+   "title": "eBEAR",
+   "sub": "Hudson · sähköpakettiauto 6 m³",
+   "lead": "Kompakti 6 m³ sähköpakettiauto ahtaisiin kaupunkikatuihin ja lyhyisiin reitteihin. Kantavuus jopa 1 375 kg.",
+   "btns": [
+    "Varaa koeajo",
+    "Tekniset tiedot"
+   ],
+   "kpis": [
+    [
+     "228 km",
+     "toimintamatka WLTP"
+    ],
+    [
+     "1 375 kg",
+     "kantavuus"
+    ],
+    [
+     "6 m³",
+     "tavaratila"
+    ]
+   ],
+   "img": "images/ebear-side.webp",
+   "alt": "Hudson eBEAR – sähköpakettiauto 6 m³",
+   "variantsEyebrow": "Hinta ja versiot",
+   "variantsTitle": "Valitse versio",
+   "priceLabel": "Ohjehinta, alv 0 %",
+   "callout": "<strong>Ajokortti:</strong> B. Rakentajat, huoltoautot, kotiinkuljetus, yritykset, joilla on lyhyet vakioreitit.",
+   "specEyebrow": "Tekniset tiedot",
+   "specTitle": "eBEAR numeroina",
+   "spec": [
+    [
+     "Ajoneuvoluokka",
+     "N1"
+    ],
+    [
+     "Akku",
+     "41,86 kWh LFP"
+    ],
+    [
+     "Toimintamatka",
+     "228 km (WLTP)"
+    ],
+    [
+     "Kantavuus",
+     "1 375 kg"
+    ],
+    [
+     "Kokonaismassa",
+     "3 000 kg"
+    ],
+    [
+     "Tavaratila",
+     "6 m³"
+    ],
+    [
+     "Mitat (P×L×K)",
+     "4 860 × 1 750 × 1 990 mm"
+    ],
+    [
+     "Akseliväli",
+     "3 160 mm"
+    ],
+    [
+     "Voimansiirto",
+     "RWD"
+    ],
+    [
+     "Huippunopeus",
+     "100 km/h"
+    ],
+    [
+     "Istuimet",
+     "2–5"
+    ],
+    [
+     "Ajokortti",
+     "B"
+    ]
+   ],
+   "specNote": "Toimintamatka riippuu kuormasta, lämpötilasta ja ajotavasta. Tekniset tiedot voivat muuttua ilman ennakkoilmoitusta.",
+   "variants": {
+    "41,86 kWh": {
+     "price": "30 600 €",
+     "range": "228 km (WLTP)",
+     "dc": "CCS2"
+    }
+   },
+   "labels": {
+    "price": "Hinta",
+    "range": "Toimintamatka",
+    "payload": "Kantavuus",
+    "curb": "Omamassa",
+    "dc": "DC-lataus"
+   },
+   "seo": null,
+   "galleryEyebrow": "Kuvat",
+   "galleryTitle": "eBEAR — Galleria",
+   "otherEyebrow": "Muut mallit",
+   "otherTitle": "Tarvitsetko jotain muuta?"
+  },
+  "ebold": {
+   "head": {
+    "title": "eBOLD — Suuri 12 m³ sähköpakettiauto CATL LFP -akulla | Elbilnorden",
+    "description": "Suuri 12 m³ sähköpakettiauto CATL LFP -akulla. Suora vaihtoehto E-Transitille ja eSprinterille. alk. 42 700 € alv 0 %.",
+    "ogImage": "https://elbilnorden.no/images/ebold-side.webp",
+    "ogLocale": "fi_FI",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eBOLD",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Suuri 12 m³ sähköpakettiauto CATL LFP -akulla. Suora vaihtoehto E-Transitille ja eSprinterille.",
+       "image": "https://elbilnorden.no/images/ebold-side.webp",
+       "url": "https://elbilnorden.no/fi-ebold.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": 42700,
+        "highPrice": 48200,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/fi-ebold.html",
+       "url": "https://elbilnorden.no/fi-ebold.html",
+       "name": "eBOLD — Suuri 12 m³ sähköpakettiauto CATL LFP -akulla | Elbilnorden",
+       "description": "Suuri 12 m³ sähköpakettiauto CATL LFP -akulla. Suora vaihtoehto E-Transitille ja eSprinterille. alk. 42 700 € alv 0 %.",
+       "inLanguage": "fi",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N1",
+   "title": "eBOLD",
+   "sub": "Hudson · suuri sähköpakettiauto 12 m³",
+   "lead": "Suuri 12 m³ sähköpakettiauto CATL LFP -akulla. Suora vaihtoehto E-Transitille ja eSprinterille.",
+   "btns": [
+    "Varaa koeajo",
+    "Tekniset tiedot"
+   ],
+   "kpis": [
+    [
+     "309–415 km",
+     "toimintamatka WLTP"
+    ],
+    [
+     "895 kg",
+     "kantavuus"
+    ],
+    [
+     "12 m³",
+     "tavaratila"
+    ]
+   ],
+   "img": "images/ebold-side.webp",
+   "alt": "Hudson eBOLD – suuri sähköpakettiauto 12 m³",
+   "variantsEyebrow": "Hinta ja versiot",
+   "variantsTitle": "Valitse versio",
+   "priceLabel": "Ohjehinta, alv 0 %",
+   "callout": "<strong>Ajokortti:</strong> B. Jakelu- ja huoltoyritykset pitkillä reiteillä, kalustot, rakentajat, joilla on paljon varusteita — ja kaikki, jotka haluavat Nordic Camperin viikonlopuksi.",
+   "specEyebrow": "Tekniset tiedot",
+   "specTitle": "eBOLD numeroina",
+   "spec": [
+    [
+     "Ajoneuvoluokka",
+     "N1"
+    ],
+    [
+     "Akku",
+     "77,28 / 100,96 kWh · CATL LFP"
+    ],
+    [
+     "Kokonaismassa",
+     "3 500 kg"
+    ],
+    [
+     "Tavaratila",
+     "12 m³"
+    ],
+    [
+     "Tavaratila (P×L×K)",
+     "3 560 × 1 815 × 1 860 mm"
+    ],
+    [
+     "Takaovet",
+     "270°"
+    ],
+    [
+     "Mitat (P×L×K)",
+     "5 995 × 2 036 × 2 590 mm"
+    ],
+    [
+     "Akseliväli",
+     "3 610 mm"
+    ],
+    [
+     "Voimansiirto",
+     "RWD"
+    ],
+    [
+     "Huippunopeus",
+     "> 100 km/h"
+    ],
+    [
+     "Istuimet",
+     "3"
+    ],
+    [
+     "DC-pikalataus",
+     "CCS2 · 20→80 % ≤ 45 / 65 min"
+    ],
+    [
+     "Akkutakuu",
+     "8 v / 400 000 km (CATL)"
+    ],
+    [
+     "Turvallisuus",
+     "ESC · airbag · TPMS · camera + radar · cruise"
+    ],
+    [
+     "Infotainment",
+     "12,3\" + 10,3\" · Android Link"
+    ],
+    [
+     "Ajokortti",
+     "B"
+    ]
+   ],
+   "specNote": "Toimintamatka riippuu kuormasta, lämpötilasta ja ajotavasta. Tekniset tiedot voivat muuttua ilman ennakkoilmoitusta.",
+   "variants": {
+    "77,28 kWh": {
+     "price": "42 700 €",
+     "range": "309 km (WLTP)",
+     "payload": "895 kg",
+     "curb": "2 605 kg",
+     "dc": "CCS2 · 20→80 % ≤ 45 min"
+    },
+    "100,96 kWh": {
+     "price": "48 200 €",
+     "range": "415 km (WLTP)",
+     "payload": "800 kg",
+     "curb": "–",
+     "dc": "CCS2 · 20→80 % ≤ 65 min"
+    }
+   },
+   "labels": {
+    "price": "Hinta",
+    "range": "Toimintamatka",
+    "payload": "Kantavuus",
+    "curb": "Omamassa",
+    "dc": "DC-lataus"
+   },
+   "seo": null,
+   "galleryEyebrow": "Kuvat",
+   "galleryTitle": "eBOLD — Galleria",
+   "otherEyebrow": "Muut mallit",
+   "otherTitle": "Tarvitsetko jotain muuta?"
+  },
+  "ehaustus": {
+   "head": {
+    "title": "eHAUSTUS — 7,8 tonnin sähkökuorma-auto 141 kWh CATL-akulla | Elbilnorden",
+    "description": "7,8 tonnin sähkökuorma-auto 141 kWh CATL-akulla. Toimitetaan lavalla tai umpikorilla, kaksi akseliväliä. alk. 78 800 € alv 0 %.",
+    "ogImage": "https://elbilnorden.no/images/ehaustus-side.webp",
+    "ogLocale": "fi_FI",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eHAUSTUS",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "7,8 tonnin sähkökuorma-auto 141 kWh CATL-akulla. Toimitetaan lavalla tai umpikorilla, kaksi akseliväliä.",
+       "image": "https://elbilnorden.no/images/ehaustus-side.webp",
+       "url": "https://elbilnorden.no/fi-ehaustus.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": 78800,
+        "highPrice": 83400,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/fi-ehaustus.html",
+       "url": "https://elbilnorden.no/fi-ehaustus.html",
+       "name": "eHAUSTUS — 7,8 tonnin sähkökuorma-auto 141 kWh CATL-akulla | Elbilnorden",
+       "description": "7,8 tonnin sähkökuorma-auto 141 kWh CATL-akulla. Toimitetaan lavalla tai umpikorilla, kaksi akseliväliä. alk. 78 800 € alv 0 %.",
+       "inLanguage": "fi",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N2",
+   "title": "eHAUSTUS",
+   "sub": "Hudson · sähkökuorma-auto 7,8 t",
+   "lead": "7,8 tonnin sähkökuorma-auto 141 kWh CATL-akulla. Toimitetaan lavalla tai umpikorilla, kaksi akseliväliä.",
+   "btns": [
+    "Varaa koeajo",
+    "Tekniset tiedot"
+   ],
+   "kpis": [
+    [
+     "320 km",
+     "toimintamatka WLTP"
+    ],
+    [
+     "7 800 kg",
+     "kokonaismassa"
+    ],
+    [
+     "141 kWh",
+     "akku"
+    ]
+   ],
+   "img": "images/ehaustus-side.webp",
+   "alt": "Hudson eHAUSTUS – sähkökuorma-auto 7,8 t",
+   "variantsEyebrow": "Hinta ja versiot",
+   "variantsTitle": "Valitse versio",
+   "priceLabel": "Ohjehinta, alv 0 %",
+   "callout": "<strong>Ajokortti:</strong> C1 tai C (kokonaismassa yli 3 500 kg). Kalustot, kunnat, urakoitsijat, kylmäkuljetukset ja päällirakentajat. Vaatii C1- tai C-ajokortin — 4 250 kg:n sähköautopoikkeus ei koske tätä.",
+   "specEyebrow": "Tekniset tiedot",
+   "specTitle": "eHAUSTUS numeroina",
+   "spec": [
+    [
+     "Ajoneuvoluokka",
+     "N2"
+    ],
+    [
+     "Kori",
+     "Lava tai umpikori"
+    ],
+    [
+     "Akku",
+     "141 kWh · CATL LFP"
+    ],
+    [
+     "Toimintamatka",
+     "320 km (WLTP)"
+    ],
+    [
+     "Kokonaismassa",
+     "7 800 kg"
+    ],
+    [
+     "Teho / vääntö",
+     "150 kW / 1 700 Nm"
+    ],
+    [
+     "Mitat (P×L×K)",
+     "7 340 × 2 154 × 2 330 mm"
+    ],
+    [
+     "Akseliväli",
+     "4 350 / 5 100 mm"
+    ],
+    [
+     "DC-pikalataus",
+     "CCS2 · ~60 min"
+    ],
+    [
+     "Akkutakuu",
+     "8 v / 400 000 km (CATL)"
+    ],
+    [
+     "Ajokortti",
+     "C1 tai C (kokonaismassa yli 3 500 kg)"
+    ]
+   ],
+   "specNote": "Toimintamatka riippuu kuormasta, lämpötilasta ja ajotavasta. Tekniset tiedot voivat muuttua ilman ennakkoilmoitusta.",
+   "variants": {
+    "Akseliväli 4 350 mm": {
+     "price": "78 800 €",
+     "range": "320 km (WLTP)",
+     "dc": "CCS2 · ~60 min"
+    },
+    "Akseliväli 5 100 mm": {
+     "price": "83 400 €",
+     "range": "320 km (WLTP)",
+     "dc": "CCS2 · ~60 min"
+    }
+   },
+   "labels": {
+    "price": "Hinta",
+    "range": "Toimintamatka",
+    "payload": "Kantavuus",
+    "curb": "Omamassa",
+    "dc": "DC-lataus"
+   },
+   "seo": null,
+   "galleryEyebrow": "Kuvat",
+   "galleryTitle": "eHAUSTUS — Galleria",
+   "otherEyebrow": "Muut mallit",
+   "otherTitle": "Tarvitsetko jotain muuta?"
+  }
+ },
+ "head": {
+  "camper": {
+   "title": "Nordic Camper — sisäänliukuva matkailusisustus pakettiautoon",
+   "description": "Moduulisarja muuttaa pakettiauton matkailuautoksi minuuteissa: keittiö, vuode, sähkö ja vesi. Sopii useimpiin L2H2-kokoluokan tai suurempiin pakettiautoihin.",
+   "ogImage": "https://elbilnorden.no/images/og-camper.jpg",
+   "ogLocale": "fi_FI",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/fi-camper.html",
+      "url": "https://elbilnorden.no/fi-camper.html",
+      "name": "Nordic Camper — sisäänliukuva matkailusisustus pakettiautoon",
+      "description": "Moduulisarja muuttaa pakettiauton matkailuautoksi minuuteissa: keittiö, vuode, sähkö ja vesi. Sopii useimpiin L2H2-kokoluokan tai suurempiin pakettiautoihin.",
+      "inLanguage": "fi",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      },
+      "about": {
+       "@type": "Thing",
+       "name": "Nordic Camper",
+       "description": "Sisäänliukuva matkailusisustus pakettiautoon: keittiö, vuode, sähkö ja vesi moduulisarjana. Sopii useimpiin L2H2-kokoisiin tai suurempiin pakettiautoihin.",
+       "image": "https://elbilnorden.no/images/camper-teaser.webp"
+      }
+     }
+    ]
+   }
+  },
+  "dealer": {
+   "title": "Ryhdy Hudsonin sähköpakettiautojen ja Nordic Camperin jälleenmyyjäksi",
+   "description": "Jälleenmyyjähinnat, esittelyauton ehdot, markkinointimateriaali ja koulutus. Kerro alueesi, niin vastaamme ehdoilla ja vapailla alueilla.",
+   "ogImage": "https://elbilnorden.no/images/og-forhandler.jpg",
+   "ogLocale": "fi_FI",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/fi-dealer.html",
+      "url": "https://elbilnorden.no/fi-dealer.html",
+      "name": "Ryhdy Hudsonin sähköpakettiautojen ja Nordic Camperin jälleenmyyjäksi",
+      "description": "Jälleenmyyjähinnat, esittelyauton ehdot, markkinointimateriaali ja koulutus. Kerro alueesi, niin vastaamme ehdoilla ja vapailla alueilla.",
+      "inLanguage": "fi",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "privacy": {
+   "title": "Tietosuojakäytäntö",
+   "description": "Miten EV Pickup AS käsittelee lomakkeilla lähettämiäsi tietoja: mitä keräämme, miksi, kuinka kauan ja mitkä ovat oikeutesi.",
+   "ogImage": "https://elbilnorden.no/images/og-home.jpg",
+   "ogLocale": "fi_FI",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/fi-privacy.html",
+      "url": "https://elbilnorden.no/fi-privacy.html",
+      "name": "Tietosuojakäytäntö",
+      "description": "Miten EV Pickup AS käsittelee lomakkeilla lähettämiäsi tietoja: mitä keräämme, miksi, kuinka kauan ja mitkä ovat oikeutesi.",
+      "inLanguage": "fi",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "camper": {
+  "footerLegal": "Oikeudellista",
+  "privacyLink": "Tietosuojakäytäntö",
+  "privTitle": "Tietosuojakäytäntö",
+  "privIntro": "Tällä sivulla kerrotaan, mitä teemme tiedoilla, jotka lähetät meille sivuston lomakkeilla.",
+  "p1t": "Rekisterinpitäjä",
+  "p1x": "EV Pickup AS, y-tunnus 936 223 478, Bjorøyvegen 332, 5177 Bjorøyhamn, Norja. Sähköposti: post@elbilnorden.no.",
+  "p2t": "Mitä keräämme",
+  "p2x": "Vain sen, mitä kirjoitat lomakkeeseen: nimi, yritys, sähköposti, puhelin, ilmoittamasi automalli tai alue, viestisi sekä käyttämäsi kieliversio.",
+  "p3t": "Miksi",
+  "p3x": "Vastaamme tiedusteluusi, sovimme koeajon ja lähetämme tarjouksen tai jälleenmyyjäehdot. Emme käytä tietoja muuhun emmekä myy niitä.",
+  "p4t": "Oikeusperuste",
+  "p4x": "Pyynnöstäsi tehdyt toimet ennen sopimusta (GDPR 6 art. 1 b) ja oikeutettu etumme vastata liiketiedusteluihin (6 art. 1 f).",
+  "p5t": "Säilytysaika",
+  "p5x": "Tiedustelut, jotka eivät johda sopimukseen, poistetaan kuuden kuukauden kuluttua. Jos sopimus syntyy, säilytysajan määrää kirjanpitolainsäädäntö.",
+  "p6t": "Kuka muu näkee",
+  "p6x": "Verkkopalvelimen tarjoaja käsittelee viestin puolestamme henkilötietojen käsittelijänä. CIE AS rakentaa ja ylläpitää sivustoa ja toimii myös lomaketietojen käsittelijänä. Kukaan muu ei saa tietoja.",
+  "p7t": "Evästeet",
+  "p7x": "Käytämme Google Analyticsia anonyymiin kävijätilastointiin, mutta vain jos hyväksyt sen evästeilmoituksessa. Voit kieltäytyä, ja voit muuttaa valintaasi poistamalla sivuston tiedot selaimestasi. Google Analyticsin tarjoaa Google Ireland Ltd; IP-osoitteet anonymisoidaan. Kielivalintasi tallentuu paikallisesti selaimeesi eikä sitä lähetetä meille.",
+  "p8t": "Oikeutesi",
+  "p8x": "Voit pyytää tietosi, niiden korjaamista tai poistamista sekä vastustaa käsittelyä. Kirjoita osoitteeseen post@elbilnorden.no. Voit myös tehdä valituksen Norjan tietosuojaviranomaiselle (Datatilsynet).",
+  "privUpdated": "Päivitetty: syyskuu 2026",
+  "dealerEyebrow": "Kumppanit",
+  "dealerTitle": "Myy Hudsonin sähköpakettiautoja ja Nordic Camperia omalla alueellasi",
+  "dealerSub": "Rakennamme jälleenmyyjäverkostoa Pohjoismaihin ja Keski-Eurooppaan. Sinä hoidat myynnin ja ensilinjan huollon; me hoidamme maahantuonnin, hyväksynnät, varaosat ja sisustukset.",
+  "dl1t": "Mitä saat",
+  "dl1x": "Jälleenmyyjähinnat, esittelyauton ehdot, markkinointimateriaalin sekä koulutuksen myyjille ja korjaamolle.",
+  "dl2t": "Mitä pyydämme",
+  "dl2x": "Oman korjaamon tai huoltokumppanin, esittelyauton ja yhteydenottoihin vastauksen vuorokaudessa.",
+  "dl3t": "Näin se alkaa",
+  "dl3x": "Lähetä lomake. Vastaamme ehdoilla, katteilla ja vapailla alueilla, sitten sovitaan koeajo.",
+  "dealerFormTitle": "Jälleenmyyjätiedustelu",
+  "formRegion": "Alue / markkina",
+  "formCompanyReq": "Yritys",
+  "dealerSubmit": "Lähetä tiedustelu",
+  "camperVideoTitle": "Katso miten se toimii",
+  "camperFitText": "Se sopii useimpiin L2H2-kokoluokan tai suurempiin pakettiautoihin. Lähetä mallisi, niin vahvistamme sopivuuden ennen tilausta.",
+  "contactCamperSub": "Kerro, mikä pakettiauto sinulla on ja miten matkustat, niin kokoamme sinulle sopivan sarjan.",
+  "eqBasicPrice": "Hinta pyynnöstä",
+  "eqProPrice": "Hinta pyynnöstä",
+  "eqProIntro": "Kaikki Basicin varusteet sekä:",
+  "eqX1": "Teräsrunko (Q345B), lasiset liukuovet takana ja sivulla alumiinikehyksin ja hyttysverkoin, vinyylilattia ja kevyet kaapit.",
+  "eqL2": "Oleskelu ja nukkuminen",
+  "eqX2": "Verhoiltu sohva, joka muuttuu sängyksi (175/190 × 125 cm), 10 cm patja, taittopöytä ja korkea kaappi.",
+  "eqX3": "Ruostumaton teräsallas omalla hanalla, 40 l kannettava jääkaappi, maustelaatikko, korkea kaappi ja alakaappi. 48 l puhdasvesisäiliö ja 48 l harmaavesisäiliö.",
+  "eqX4": "Sisäsuihkumoduuli, josta on kulku ohjaamoon, sekä kaksi kannettavaa 18 l vesisäiliötä.",
+  "eqX5": "LED-tunnelmavalot ja valmiit 12 V -liitännät kannettavalle virta-asemalle (ei sisälly).",
+  "eqX6": "Korkeussäädettävä alusta pyörillä, L-profiilit ja kiinnityshihnat.",
+  "eqP1": "Jääkaappi",
+  "eqPX1": "Pystymallinen 50 l 12 V jääkaappi kannettavan jääkaapin tilalla.",
+  "eqP2": "Allas",
+  "eqPX2": "Kannellinen allas, taittuva hana ja 12 V vesipumppu.",
+  "eqP3": "Lasten kerrossänky",
+  "eqPX3": "Taittuva kerrossänky 120 × 80 cm.",
+  "eqP4": "Aurinkopaneeli",
+  "eqPX4": "Kannettava 400 W aurinkopaneeli.",
+  "cf2t": "Keittiö",
+  "cf3t": "Vuode",
+  "cf5t": "Suihku",
+  "formName": "Nimi",
+  "formCompany": "Yritys (valinnainen)",
+  "formEmail": "Sähköposti",
+  "formPhone": "Puhelin",
+  "formVanLabel": "Mihin pakettiautoon se tulee?",
+  "formVanOther": "Muu malli",
+  "formMessage": "Viesti",
+  "formSubmit": "Lähetä pyyntö",
+  "formSending": "Lähetetään…",
+  "formSent": "Kiitos — otamme yhteyttä.",
+  "formError": "Lähetys ei onnistunut. Lähetä sähköpostia osoitteeseen post@elbilnorden.no.",
+  "formPrivacy": "Käytämme tietojasi vain tähän kyselyyn vastaamiseen.",
+  "k4": "tyhjäpaino",
+  "proBadge": "Eniten varusteita",
+  "g1": "Rakenne ja oleskelu",
+  "g2": "Keittiö ja kylpyhuone",
+  "g3": "Sähkö ja kiinnitys",
+  "fridgeP": "50 l pystymalli, 12 V",
+  "levelLegend": "Varustetaso",
+  "levelUnsure": "En ole varma",
+  "close": "Sulje",
+  "h1": "Pakettiauto arkena. Matkailuauto viikonloppuna.",
+  "sub": "Valmiiksi varusteltu moduuli, jonka työnnät sisään muutamassa minuutissa – sänky, keittiö ja suihku. Ei muutostöitä, ei uutta hyväksyntää.",
+  "ctaPrices": "Katso hinnat",
+  "pr1t": "Sisään minuuteissa",
+  "pr1x": "Moduuli seisoo korkeussäädettävällä, pyörillä varustetulla alustalla ja kiinnitetään L-profiileilla ja hihnoilla.",
+  "pr2t": "Ei muutostöitä",
+  "pr2x": "Ei korityötä – auton hyväksyntä, vakuutus ja katsastus pysyvät ennallaan.",
+  "pr3t": "Ulos taas maanantaina",
+  "pr3x": "Kun viikonloppu on ohi, moduuli rullataan ulos ja auto on taas työkäytössä.",
+  "kitchenH": "Tee illallinen siellä, minne pysäköit",
+  "kitchenX": "Ruostumaton teräsallas, jääkaappi, maustelaatikko ja runsaasti kaappitilaa. Säiliöihin mahtuu 48 litraa puhdasta ja 48 litraa harmaata vettä.",
+  "chipFresh": "48 l puhdasvesi",
+  "chipGrey": "48 l harmaavesi",
+  "chipFridge": "40–50 l jääkaappi",
+  "sleepH": "Sohva illalla, sänky yöllä",
+  "sleepX": "Verhoiltu sohva muuttuu 175/190 × 125 cm sängyksi 10 cm patjalla. Taittopöytä ja korkea kaappi antavat tilaa aamiaiselle ja matkatavaroille.",
+  "chipMattress": "10 cm patja",
+  "chipBunk": "Lasten kerrossänky Prossa",
+  "bathH": "Suihku sisällä – sateellakin",
+  "bathX": "Sisäsuihkumoduuli, josta on kulku ohjaamoon, sekä kaksi kannettavaa 18 litran vesisäiliötä.",
+  "chipShower": "Sisäsuihku",
+  "chipTanks": "2 × 18 l säiliöt",
+  "videoSub": "Pakettiautosta matkailuautoksi muutamassa minuutissa.",
+  "priceH": "Valitse varustetaso",
+  "priceSub": "Molemmat toimitetaan valmiiksi varusteltuina. Pro lisää sen, mitä tarvitset pidemmille matkoille ilman verkkovirtaa.",
+  "b1": "Sohva, joka muuttuu sängyksi, 10 cm patja",
+  "b2": "Keittiö, allas ja 40 l kannettava jääkaappi",
+  "b3": "Sisäsuihku, 48 + 48 l vesisäiliöt",
+  "b4": "LED-valot ja 12 V -liitännät virta-asemalle",
+  "b5": "Lasiset liukuovet ja hyttysverkot",
+  "chooseBasic": "Valitse Basic",
+  "choosePro": "Valitse Pro",
+  "fullList": "Katso koko varustelista",
+  "fitH": "Sopii useimpiin pakettiautoihin alkaen L2H2",
+  "dL": "pituus",
+  "dW": "leveys",
+  "dH": "korkeus",
+  "fullH": "Koko varustelista",
+  "quoteH": "Valmiina viikonloppuun?",
+  "conj": "ja",
+  "play": "Toista video"
+ },
+ "otherAlts": {
+  "ebear": "Hudson eBEAR – sähköpakettiauto 6 m³",
+  "ebold": "Hudson eBOLD – suuri sähköpakettiauto 12 m³",
+  "ehaustus": "Hudson eHAUSTUS – sähkökuorma-auto 7,8 t",
+  "evoxx": "Hudson eVOXX – kompakti sähkötyöajoneuvo (L7e)"
+ }
+}

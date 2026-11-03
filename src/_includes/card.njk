@@ -1,0 +1,5 @@
+{#- Karta modelu (homepage + „Andre modeller“). Proměnné: c (texty karty), m (slug), mname -#}
+<a class="card" href="{{ m | url(lang) }}"><div class="img"><img src="{{ c.img }}" alt="{{ alt or c.alt }}" loading="lazy"></div><div class="body">
+<div><span class="tag{% if c.tagN2 %} n2{% endif %}">{{ c.tag }}</span></div><h3>{{ mname }}</h3><p class="sub">{{ c.sub }}</p>
+<div class="nums">{% for n in c.nums %}<div><b>{{ n[0] }}</b><span>{{ n[1] }}</span></div>{% endfor %}</div><div class="lic">{{ c.lic | safe }}</div><div class="price">{{ c.price }} <small>{{ c.priceNote }}</small></div>
+<span class="btn btn-ghost">{{ c.btn }}</span></div></a>

@@ -1,0 +1,27 @@
+---js
+{
+  pagination: { data: "site.langs", size: 1, alias: "lang" },
+  permalink: (d) => (d.lang === "no" ? "forhandler.html" : `${d.lang}-dealer.html`),
+  layout: "base.njk",
+  slug: "dealer",
+  eleventyComputed: {
+    t: (d) => d.i18n[d.lang],
+    head: (d) => d.i18n[d.lang].head.dealer,
+  },
+}
+---
+{%- set C = t.camper -%}
+<main>
+<section class="wrap dl-hero" id="dealer"><div class="two"><div><div class="eyebrow">{{ C.dealerEyebrow }}</div><h1>{{ C.dealerTitle | nb }}</h1><p class="lead">{{ C.dealerSub | nb }}</p>
+<div class="dl-points">{% for i in [1, 2, 3] %}<div><b>{{ C["dl" + i + "t"] | nb }}</b><span>{{ C["dl" + i + "x"] | nb }}</span></div>{% endfor %}</div></div>
+<form id="f" data-form="ebold-dealer"><h2>{{ C.dealerFormTitle }}</h2>
+<label>{{ C.formName }}<input name="name" required autocomplete="name"></label><label>{{ C.formCompanyReq }}<input name="company" required autocomplete="organization"></label>
+<label>{{ C.formEmail }}<input name="email" type="email" required autocomplete="email"></label><label>{{ C.formPhone }}<input name="phone" autocomplete="tel"></label>
+<label class="full">{{ C.formRegion }}<input name="region"></label>
+<label class="full">{{ C.formMessage }}<textarea name="message" rows="4"></textarea></label><div class="full"><button class="btn btn-primary" type="submit">{{ C.dealerSubmit }}</button></div>
+<div class="msg" id="fmsg">{{ C.formPrivacy }} <a href="{{ 'privacy' | url(lang) }}">{{ C.privacyLink }}</a></div></form></div></section>
+</main>
+<script>(function(){var M={{ {"sending": C.formSending, "sent": C.formSent, "error": C.formError} | json | safe }};var f=document.getElementById('f'),m=document.getElementById('fmsg');
+f.addEventListener('submit',function(e){e.preventDefault();var d=new URLSearchParams(new FormData(f));d.append('form',f.dataset.form);d.append('language','{{ lang }}');
+m.textContent=M.sending;fetch('send.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:d.toString()})
+.then(function(r){if(!r.ok)throw 0;f.reset();m.textContent=M.sent}).catch(function(){m.textContent=M.error})})})();</script>

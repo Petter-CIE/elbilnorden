@@ -1,5 +1,6 @@
 # Automatické nasazení na one.com přes SFTP.
-# Spouští se po každém merge/pushi do main a nahraje jen změněné soubory.
+# Spouští se po každém merge/pushi do main: sestaví web (Eleventy → _site/) a nahraje jen změněné soubory.
+# Co je změněné, se pozná podle otisků souborů v .deploy-manifest na serveru (uloží se po každém nasazení).
 # Ručně (Actions → "Nasazení na one.com" → Run workflow) lze nahrát celý web.
 # Na serveru se NIC nemaže – smazání souboru z repozitáře se na one.com neprojeví.
 #
@@ -37,8 +38,6 @@ jobs:
       WEBROOT: ${{ vars.ONECOM_WEBROOT }}
     steps:
       - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
 
       - name: Kontrola nastavení
         run: |
@@ -46,24 +45,17 @@ jobs:
             if [ -z "${!v}" ]; then echo "::error::Chybí secret pro $v – viz komentář v deploy.yml"; exit 1; fi
           done
 
-      - name: Seznam souborů k nahrání
-        id: files
-        env:
-          BEFORE: ${{ github.event.before }}
-          FULL: ${{ inputs.full }}
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Sestavení webu (Eleventy)
         run: |
-          set -euo pipefail
-          if [ "${FULL:-false}" = "true" ] || [ -z "${BEFORE:-}" ] \
-             || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
-             || ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
-            git ls-files > all.txt
-          else
-            git diff --name-only --diff-filter=ACMRT "$BEFORE" "$GITHUB_SHA" > all.txt
-          fi
-          # Soubory repozitáře, které na web nepatří
-          grep -vE '^(\.github/|README\.md$|\.gitignore$)' all.txt > upload.txt || true
-          echo "count=$(wc -l < upload.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
-          echo "Soubory k nahrání:"; cat upload.txt
+          npm ci --no-audit --no-fund
+          npx eleventy
+          (cd _site && find . -type f ! -name '.deploy-manifest' -print0 | sort -z | xargs -0 sha256sum | sed 's#  \./#  #') > manifest.local
+          echo "Sestaveno souborů: $(wc -l < manifest.local)"
 
       - name: Instalace lftp a ověření klíče serveru
         run: |
@@ -116,23 +108,33 @@ jobs:
           echo "dir=$found" >> "$GITHUB_OUTPUT"; echo "Kořen webu: $found"
 
       - name: Nahrání na one.com
-        if: steps.files.outputs.count != '0'
         env:
           ROOT: ${{ steps.root.outputs.dir }}
+          FULL: ${{ inputs.full }}
         run: |
           set -euo pipefail
+          LOGIN="set sftp:auto-confirm no; set net:max-retries 3; open -u \"$SFTP_USER\" --env-password -p $PORT sftp://$HOST"
+          if [ "${FULL:-false}" = "true" ]; then : > manifest.remote
+          else lftp -c "$LOGIN; cat \"$ROOT/.deploy-manifest\"" > manifest.remote 2>/dev/null || : > manifest.remote; fi
+          # soubory, jejichž otisk se liší od posledního nasazení (nebo jsou nové)
+          comm -23 <(sort manifest.local) <(sort manifest.remote) | sed -E 's/^[0-9a-f]+  //' > upload.txt
+          COUNT=$(wc -l < upload.txt | tr -d ' ')
+          echo "Soubory k nahrání ($COUNT):"; cat upload.txt
+          cp manifest.local _site/.deploy-manifest
           {
             echo "set sftp:auto-confirm no"
             echo "set net:max-retries 3"
             echo "set cmd:fail-exit yes"
             echo "open -u \"$SFTP_USER\" --env-password -p $PORT sftp://$HOST"
             echo "cd \"$ROOT\""
+            echo "lcd _site"
             while IFS= read -r f; do
               d=$(dirname "$f")
               [ "$d" != "." ] && echo "mkdir -p -f \"$d\""
               echo "put \"$f\" -o \"$f\""
             done < upload.txt
+            echo "put .deploy-manifest -o .deploy-manifest"
           } > deploy.lftp
           lftp -f deploy.lftp
-          echo "Nahráno souborů: ${{ steps.files.outputs.count }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Nahráno souborů: $COUNT" >> "$GITHUB_STEP_SUMMARY"
           sed 's/^/- /' upload.txt >> "$GITHUB_STEP_SUMMARY"

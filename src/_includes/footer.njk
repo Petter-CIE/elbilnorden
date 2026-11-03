@@ -1,0 +1,6 @@
+{%- set f = t.footer -%}
+<footer><div class="cols"><div><h4>{{ f.contact }}</h4><a href="tel:+4745611610">+47 456 11 610</a><a href="mailto:post@elbilnorden.no">post@elbilnorden.no</a></div>
+<div><h4>{{ f.company }}</h4><a>EV Pickup AS</a><a>{{ f.address }}</a><a>Org.nr 936 223 478</a></div>
+<div><h4>{{ f.models }}</h4>{% for m in site.models %}<a href="{{ m.slug | url(lang) }}">{{ m.name }}</a>{% endfor %}</div>
+<div><h4>{{ f.more }}</h4><a href="{{ 'camper' | url(lang) }}">{{ f.camper }}</a><a href="{{ 'dealer' | url(lang) }}">{{ f.dealer }}</a><a href="{{ 'privacy' | url(lang) }}">{{ f.privacy }}</a></div></div>
+<div class="bottom"><span>{{ f.left }}</span><span>{{ f.right }}</span></div></footer>
