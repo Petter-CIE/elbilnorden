@@ -218,3 +218,9 @@ footer .bottom{border-top-color:rgba(242,240,235,.12);color:rgba(242,240,235,.55
 .pv-list p{margin:0;color:var(--ink2);max-width:70ch}
 .pv-head h1{font-size:clamp(36px,4.6vw,64px);letter-spacing:-.035em;line-height:1;margin:0 0 18px}
 .pv-head .upd{font-size:14px;color:var(--muted);margin-top:14px}
+.cp-video{background:var(--green);color:#F2F0EB;display:grid;gap:28px 56px;align-items:center}
+.cp-video .eyebrow{color:var(--sage)}
+.cp-video .cp-h2{margin:0 0 16px}
+.cp-video p{margin:0;font-size:17px;line-height:1.6;color:rgba(242,240,235,.82);max-width:42ch}
+.cp-video .vid{max-width:none;width:100%}
+@media(min-width:900px){.cp-video{grid-template-columns:minmax(0,1fr) minmax(0,1.9fr)}}
