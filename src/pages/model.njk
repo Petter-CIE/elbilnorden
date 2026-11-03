@@ -1,0 +1,42 @@
+---js
+{
+  pagination: {
+    data: "site.langs",
+    size: 1,
+    alias: "pair",
+    before: (langs, d) => langs.flatMap((l) => d.site.models.map((m) => ({ lang: l, model: m.slug, name: m.name }))),
+  },
+  permalink: (d) => (d.pair.lang === "no" ? `${d.pair.model}.html` : `${d.pair.lang}-${d.pair.model}.html`),
+  layout: "base.njk",
+  bodyClass: "model",
+  hasContact: true,
+  eleventyComputed: {
+    lang: (d) => d.pair.lang,
+    slug: (d) => d.pair.model,
+    t: (d) => d.i18n[d.pair.lang],
+    head: (d) => d.i18n[d.pair.lang].models[d.pair.model].head,
+  },
+}
+---
+{%- set M = t.models[pair.model] -%}
+<section class="hero"><div><div class="eyebrow">{{ M.eyebrow }}</div><h1>{{ M.title }} <span class="h1-sub">{{ M.sub }}</span></h1><p class="lead">{{ M.lead }}</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px"><a class="btn btn-primary" href="#contact">{{ M.btns[0] }}</a><a class="btn btn-ghost" href="#spec">{{ M.btns[1] }}</a></div>
+<div class="kpis" style="grid-template-columns:repeat(3,auto)">{% for k in M.kpis %}<div><b>{{ k[0] }}</b><span>{{ k[1] }}</span></div>{% endfor %}</div></div><div class="media"><img src="{{ M.img }}" alt="{{ M.alt }}"></div></section>
+<section class="wrap" id="spec"><div class="two" style="align-items:start"><div><div class="eyebrow">{{ M.variantsEyebrow }}</div><h2 style="font-size:clamp(30px,3.4vw,46px)">{{ M.variantsTitle }}</h2><div class="variants" id="vars">{% for k, v in M.variants %}<button type="button" data-v="{{ k }}"{% if loop.first %} class=on{% endif %}>{{ k }}</button>{% endfor %}</div>
+<div class="result" style="margin-top:20px"><div style="font-size:13px;opacity:.7">{{ M.priceLabel }}</div><div class="big" id="vprice">{% for k, v in M.variants %}{% if loop.first %}{{ v.price }}{% endif %}{% endfor %}</div><dl id="vdl"></dl></div>
+<div class="callout">{{ M.callout | safe }}</div></div>
+<div><div class="eyebrow">{{ M.specEyebrow }}</div><h2 style="font-size:clamp(30px,3.4vw,46px)">{{ M.specTitle }}</h2><table class="spec">{% for r in M.spec %}<tr><th>{{ r[0] }}</th><td>{{ r[1] }}</td></tr>{% endfor %}</table><p style="font-size:13px;color:var(--ink2);margin-top:12px">{{ M.specNote }}</p></div></div></section>
+<script>(function(){var V={{ M.variants | json | safe }};var L={{ M.labels | json | safe }};function s(k){document.getElementById('vprice').textContent=V[k].price;document.getElementById('vdl').innerHTML=Object.keys(V[k]).filter(function(x){return x!='price'}).map(function(x){return '<dt>'+L[x]+'</dt><dd>'+V[k][x]+'</dd>'}).join('');document.querySelectorAll('#vars button').forEach(function(b){b.classList.toggle('on',b.dataset.v==k)})}document.querySelectorAll('#vars button').forEach(function(b){b.onclick=function(){s(b.dataset.v)}});s(Object.keys(V)[0])})();</script>
+{% if M.seo %}<section class="wrap seo-copy" id="om"><div class="two" style="align-items:start"><div><div class="eyebrow">{{ M.seo.eyebrow }}</div><h2 style="font-size:clamp(28px,3vw,40px);line-height:1.12">{{ M.seo.title }}</h2>{% for p in M.seo.paras %}<p>{{ p }}</p>{% endfor %}</div><div><div class="eyebrow">{{ M.seo.faqEyebrow }}</div><h2 style="font-size:clamp(28px,3vw,40px);line-height:1.12">{{ M.seo.faqTitle }}</h2><div class="faq">{% for q in M.seo.faq %}<details><summary>{{ q[0] }}</summary><p>{{ q[1] }}</p></details>{% endfor %}</div></div></div></section>
+{% endif %}<section class="wrap gal" id="gallery" hidden><div class="eyebrow">{{ M.galleryEyebrow }}</div><h2 style="font-size:clamp(30px,3.4vw,46px)">{{ M.galleryTitle }}</h2><div class="gallery" id="gal"></div></section>
+<div class="lb" id="lb" hidden><button type="button" class="lb-x" aria-label="Close">×</button><button type="button" class="lb-p" aria-label="Previous">‹</button><img alt=""><button type="button" class="lb-n" aria-label="Next">›</button></div>
+<script>(function(){var M='{{ pair.model }}',B='images/gallery/',EXT=['webp','jpg','jpeg','png'],list=[],miss=0,n=1,sec=document.getElementById('gallery'),g=document.getElementById('gal');
+function probe(i,e){if(e>=EXT.length){if(++miss>=2)return done();return probe(i+1,0)}var u=B+M+'-'+i+'.'+EXT[e],im=new Image();im.onload=function(){list.push(u);miss=0;probe(i+1,0)};im.onerror=function(){probe(i,e+1)};im.src=u}
+function done(){if(!list.length)return;sec.hidden=false;g.innerHTML=list.map(function(u,i){return '<a href="'+u+'" data-i="'+i+'"><img src="'+u+'" alt="'+M+' '+(i+1)+'" loading="lazy"></a>'}).join('');
+var lb=document.getElementById('lb'),img=lb.querySelector('img'),cur=0;function show(i){cur=(i+list.length)%list.length;img.src=list[cur];lb.hidden=false}
+g.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;e.preventDefault();show(+a.dataset.i)});
+lb.querySelector('.lb-x').onclick=function(){lb.hidden=true};lb.querySelector('.lb-p').onclick=function(){show(cur-1)};lb.querySelector('.lb-n').onclick=function(){show(cur+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)lb.hidden=true});document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)})}
+probe(1,0)})();</script>
+<section class="wrap" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="eyebrow">{{ M.otherEyebrow }}</div><h2 style="font-size:clamp(30px,3.4vw,46px)">{{ M.otherTitle }}</h2><div class="models">{% for mm in site.models %}{% if mm.slug != pair.model %}{% set m = mm.slug %}{% set mname = mm.name %}{% set c = t.home.cards[m] %}{% set alt = t.otherAlts[m] %}{% include "card.njk" %}{% endif %}{% endfor %}</div></section>
+{% set selected = pair.name %}{% include "contact.njk" %}

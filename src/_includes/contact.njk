@@ -1,0 +1,9 @@
+{#- Poptávka (homepage + modely). Proměnná selected = předvybraný model (název) nebo nic. -#}
+{%- set c = t.contact -%}
+<section class="wrap contact" id="contact"><div class="two" style="align-items:start"><div><div class="eyebrow">{{ c.eyebrow }}</div><h2 style="font-size:clamp(30px,3.4vw,46px)">{{ c.title }}</h2>
+<p class="lead">{{ c.lead }}</p><p style="margin-top:20px"><strong>{{ c.phoneLabel }}</strong> <a href="tel:+4745611610">+47 456 11 610</a><br><strong>{{ c.mailLabel }}</strong> <a href="mailto:post@elbilnorden.no">post@elbilnorden.no</a></p></div>
+<form id="f" data-form="ebold-vans"><label>{{ c.name }}<input name="name" required></label><label>{{ c.company }}<input name="company"></label><label>{{ c.email }}<input name="email" type="email" required></label><label>{{ c.phone }}<input name="phone"></label>
+<label class="full">{{ c.model }}<select name="van"><option value="">{{ c.notDecided }}</option>{% for m in site.models %}<option{% if m.name == selected %} selected{% endif %}>{{ m.name }}</option>{% endfor %}<option>Nordic Camper</option></select></label>
+<label class="full">{{ c.message }}<textarea name="message" rows="4"></textarea></label><div class="full"><button class="btn btn-dark" type="submit">{{ c.submit }}</button></div>
+<div class="msg" id="fmsg">{{ c.privacy }} <a href="{{ 'privacy' | url(lang) }}">{{ c.privacyLink }}</a></div></form></div></section>
+<script>document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var f=this,m=document.getElementById('fmsg');var d=new URLSearchParams(new FormData(f));d.append('form',f.dataset.form);d.append('language','{{ lang }}');m.textContent={{ c.sending | json | safe }};fetch('send.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:d.toString()}).then(function(r){if(!r.ok)throw 0;f.reset();m.textContent={{ c.sent | json | safe }}}).catch(function(){m.textContent={{ c.error | json | safe }}})});</script>

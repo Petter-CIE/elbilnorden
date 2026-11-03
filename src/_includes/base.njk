@@ -1,0 +1,17 @@
+{#- Společná kostra každé stránky: <head>, hlavička, obsah, patička.
+    Proměnné ze stránky: t (texty jazyka), lang, slug (typ stránky), head (title/description/ogImage/ld), bodyClass. -#}
+{%- set L = site.langs -%}
+<!DOCTYPE html><html lang="{{ t.htmlLang }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ head.title }}</title><meta name="description" content="{{ head.description }}">
+<link rel="canonical" href="{{ slug | abs(lang) }}"><meta property="og:title" content="{{ head.title }}"><meta property="og:description" content="{{ head.description }}"><meta property="og:url" content="{{ slug | abs(lang) }}">{% if head.ogImage %}<meta property="og:image" content="{{ head.ogImage }}">{% endif %}{% if head.ogImageW %}<meta property="og:image:width" content="{{ head.ogImageW }}"><meta property="og:image:height" content="{{ head.ogImageH }}">{% endif %}<meta property="og:type" content="website"><meta property="og:locale" content="{{ head.ogLocale or site.ogLocale[lang] }}"><meta property="og:site_name" content="Elbilnorden"><meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#14161A">
+{% for l in L %}<link rel="alternate" hreflang="{{ l }}" href="{{ slug | abs(l) }}">{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ slug | abs('en') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=3"><link rel="stylesheet" href="v3.css?v=3"><script src="analytics.js" defer></script>{% if head.ld %}<script type="application/ld+json">{{ head.ld | json | safe }}</script>{% endif %}
+</head>
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>{% include "header.njk" %}
+{{ content | safe }}
+{% include "footer.njk" %}
+</body></html>

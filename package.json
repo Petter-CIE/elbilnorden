@@ -1,0 +1,13 @@
+{
+  "name": "elbilnorden",
+  "private": true,
+  "type": "module",
+  "description": "elbilnorden.no \u2013 statick\u00fd web generovan\u00fd Eleventy",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

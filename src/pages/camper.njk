@@ -1,0 +1,59 @@
+---js
+{
+  pagination: { data: "site.langs", size: 1, alias: "lang" },
+  permalink: (d) => (d.lang === "no" ? "camper.html" : `${d.lang}-camper.html`),
+  layout: "base.njk",
+  slug: "camper",
+  bodyClass: "camper",
+  eleventyComputed: {
+    t: (d) => d.i18n[d.lang],
+    head: (d) => d.i18n[d.lang].head.camper,
+  },
+}
+---
+{%- set C = t.camper -%}
+{%- set icons = [
+  '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>',
+  '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 17h2l2-6h10l2 6h2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>'
+] -%}
+{%- macro zone(img, alt, eyebrow, h, x, chips, rev, pos) -%}
+<div class="c3 c3-zone{% if rev %} rev{% endif %}"><div class="ph"><img src="images/camper/{{ img }}" alt="Nordic Camper – {{ alt }}" loading="lazy"{% if pos %} style="object-position:{{ pos }}"{% endif %}></div><div><div class="eyebrow">{{ eyebrow | nb }}</div><h2>{{ h | nb }}</h2><p>{{ x | nb }}</p><div class="c3-chips">{% for c in chips %}<span>{{ c | nb }}</span>{% endfor %}</div></div></div>
+{%- endmacro -%}
+{%- set priced = (lang == "no") -%}
+<main>
+<section class="c3 c3-hero" id="top"><span class="c3-pill">Nordic Camper · Basic {{ C.conj }} Pro</span><h1>{{ C.h1 | nb }}</h1><p>{{ C.sub | nb }}</p>
+<div class="c3-ctas"><a class="c3-btn or" href="#priser">{{ C.ctaPrices }}</a><a class="c3-btn lt" href="#video"><span class="pl" aria-hidden="true">▶</span>{{ C.camperVideoTitle }}</a></div>
+<div class="c3-heroimg"><img src="images/camper/sofa.webp" alt="Nordic Camper – {{ C.eqL2 }}" fetchpriority="high"></div></section>
+<section class="c3 c3-promises">{% for i in [1, 2, 3] %}<div><div class="c3-ico">{{ icons[i - 1] | safe }}</div><h3>{{ C["pr" + i + "t"] | nb }}</h3><p>{{ C["pr" + i + "x"] | nb }}</p></div>{% endfor %}</section>
+{{ zone("kitchen2.webp", C.cf2t, C.cf2t, C.kitchenH, C.kitchenX, [C.chipFresh, C.chipGrey, C.chipFridge]) }}{{ zone("bed.webp", C.cf3t, C.cf3t, C.sleepH, C.sleepX, ["175/190 × 125 cm", C.chipMattress, C.chipBunk], true) }}{{ zone("shower.webp", C.cf5t, C.cf5t, C.bathH, C.bathX, [C.chipShower, C.chipTanks], false, "center 62%") }}
+<section class="c3-white c3-sec" id="video"><div class="c3 c3-center"><h2>{{ C.camperVideoTitle }}</h2><p>{{ C.videoSub | nb }}</p>
+<div class="c3-video" id="vid"><img src="images/camper/kitchen.webp" alt="" loading="lazy"><button type="button" aria-label="{{ C.play }}">▶</button></div></div></section>
+<section class="c3 c3-sec c3-center" id="priser"><h2>{{ C.priceH | nb }}</h2><p>{{ C.priceSub | nb }}</p>
+<div class="c3-prices">
+<div class="c3-price"><div><div class="nm">Basic</div><div class="pr">{% if priced %}{{ site.camperPrices.basic | nb }}{% else %}{{ C.eqBasicPrice }}{% endif %}</div>{% if priced %}<div class="vat">inkl. mva</div>{% endif %}</div><ul>{% for i in [1, 2, 3, 4, 5] %}<li>{{ C["b" + i] | nb }}</li>{% endfor %}</ul><a class="c3-btn lt" style="padding-left:30px" href="#contact" data-level="Basic">{{ C.chooseBasic }}</a></div>
+<div class="c3-price pro"><div><div class="nm">Pro<span class="bd">{{ C.proBadge }}</span></div><div class="pr">{% if priced %}{{ site.camperPrices.pro | nb }}{% else %}{{ C.eqProPrice }}{% endif %}</div>{% if priced %}<div class="vat">inkl. mva</div>{% endif %}</div><div class="intro">{{ C.eqProIntro | nb }}</div><ul>{% for k in ["eqPX4", "fridgeP", "eqPX2", "eqPX3"] %}<li>{{ C[k] | nb }}</li>{% endfor %}</ul><a class="c3-btn or" href="#contact" data-level="Pro">{{ C.choosePro }}</a></div>
+</div><p class="c3-more"><a href="#utstyr">{{ C.fullList }}</a></p></section>
+<section class="c3-fit c3-sec"><div class="c3"><div><h2>{{ C.fitH | nb }}</h2><p>{{ C.camperFitText | nb }}</p><div class="c3-chips">{% for v in site.vans %}<span>{{ v }}</span>{% endfor %}<span class="hl">Hudson eBOLD</span></div></div>
+<div class="c3-dims"><div><b>274&nbsp;cm</b><span>{{ C.dL }}</span></div><div><b>127&nbsp;cm</b><span>{{ C.dW }}</span></div><div><b>171&nbsp;cm</b><span>{{ C.dH }}</span></div><div><b>560&nbsp;kg</b><span>{{ C.k4 }}</span></div></div></div></section>
+{%- macro li(C, keys) -%}{% for k in keys %}<li>{% if k.startsWith("PRO:") %}<span class="pro-tag">PRO</span>{{ C[k.slice(4)] | nb }}{% else %}{{ C[k] | nb }}{% endif %}</li>{% endfor %}{%- endmacro %}
+<section class="c3 c3-sec c3-list" id="utstyr"><h2>{{ C.fullH }}</h2><details open><summary>{{ C.g1 }}</summary><ul>{{ li(C, ["eqX1", "eqX2", "PRO:eqPX3"]) }}</ul></details><details><summary>{{ C.g2 }}</summary><ul>{{ li(C, ["eqX3", "eqX4", "PRO:eqPX1", "PRO:eqPX2"]) }}</ul></details><details><summary>{{ C.g3 }}</summary><ul>{{ li(C, ["eqX5", "eqX6", "PRO:eqPX4"]) }}</ul></details></section>
+<section class="wrap contact" id="contact"><div class="two" style="align-items:start"><div><h2>{{ C.quoteH }}</h2>
+<p class="lead">{{ C.contactCamperSub | nb }}</p><p style="margin-top:20px"><a href="tel:+4745611610">+47 456 11 610</a><br><a href="mailto:post@elbilnorden.no">post@elbilnorden.no</a></p></div>
+<form id="f" data-form="ebold-camper"><fieldset class="cp-level"><legend>{{ C.levelLegend }}</legend>
+<label><input type="radio" name="level" value="Basic"> Basic</label><label><input type="radio" name="level" value="Pro" checked> Pro</label><label><input type="radio" name="level" value="{{ C.levelUnsure }}"> {{ C.levelUnsure }}</label></fieldset>
+<label>{{ C.formName }}<input name="name" required autocomplete="name"></label><label>{{ C.formCompany }}<input name="company" autocomplete="organization"></label>
+<label>{{ C.formEmail }}<input name="email" type="email" required autocomplete="email"></label><label>{{ C.formPhone }}<input name="phone" autocomplete="tel"></label>
+<label class="full">{{ C.formVanLabel }}<select name="van">{% for v in site.vans %}<option>{{ v }}</option>{% endfor %}<option>Hudson eBOLD</option><option>{{ C.formVanOther }}</option></select></label>
+<label class="full">{{ C.formMessage }}<textarea name="message" rows="4"></textarea></label><div class="full"><button class="btn btn-dark" type="submit">{{ C.formSubmit }}</button></div>
+<div class="msg" id="fmsg">{{ C.formPrivacy }} <a href="{{ 'privacy' | url(lang) }}">{{ C.privacyLink }}</a></div></form></div></section>
+</main>
+<script>(function(){var M={{ {"sending": C.formSending, "sent": C.formSent, "error": C.formError, "level": C.levelLegend} | json | safe }};var f=document.getElementById('f'),m=document.getElementById('fmsg');
+f.addEventListener('submit',function(e){e.preventDefault();var fd=new FormData(f),d=new URLSearchParams(),lv=fd.get('level')||'';
+['name','company','email','phone','van'].forEach(function(k){var v=fd.get(k);if(v)d.append(k,v)});
+d.append('message',(lv?M.level+': '+lv+'\n':'')+(fd.get('message')||''));d.append('form',f.dataset.form);d.append('language','{{ lang }}');
+m.textContent=M.sending;fetch('send.php',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:d.toString()})
+.then(function(r){if(!r.ok)throw 0;f.reset();m.textContent=M.sent}).catch(function(){m.textContent=M.error})});
+document.querySelectorAll('[data-level]').forEach(function(a){a.addEventListener('click',function(){var r=f.querySelector('input[name=level][value="'+a.dataset.level+'"]');if(r)r.checked=true})});
+var v=document.getElementById('vid');v.querySelector('button').addEventListener('click',function(){v.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/{{ site.video.camper }}?rel=0&autoplay=1&playsinline=1" title="Nordic Camper" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'});
+})();</script>

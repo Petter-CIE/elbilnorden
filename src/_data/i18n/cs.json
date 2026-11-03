@@ -1,0 +1,1563 @@
+{
+ "lang": "cs",
+ "htmlLang": "cs",
+ "nav": {
+  "models": "Modely",
+  "menu": [
+   {
+    "slug": "evoxx",
+    "sub": "L7e · 150–220 km · 750 kg"
+   },
+   {
+    "slug": "ebear",
+    "sub": "N1 · 228 km · 1 375 kg"
+   },
+   {
+    "slug": "ebold",
+    "sub": "N1 · 309–415 km · 895 kg"
+   },
+   {
+    "slug": "ehaustus",
+    "sub": "N2 · 320 km · 7 800 kg"
+   }
+  ],
+  "all": "Modely →",
+  "camper": "Nordic Camper",
+  "costs": "Provozní náklady",
+  "service": "Servis",
+  "about": "O nás",
+  "dealer": "Staňte se dealerem",
+  "cta": "Testovací jízda"
+ },
+ "footer": {
+  "contact": "Kontakt",
+  "company": "Společnost",
+  "address": "Bjorøyvegen 332, 5177 Bjorøyhamn, Norge",
+  "models": "Modely",
+  "more": "Více",
+  "camper": "Nordic Camper",
+  "dealer": "Staňte se dealerem",
+  "privacy": "Ochrana osobních údajů",
+  "left": "Elektrické užitkové vozy Hudson · vestavby Nordic Camper",
+  "right": "© 2026 EV Pickup AS · Specifikace se mohou změnit bez předchozího upozornění. · Web: CIE AS"
+ },
+ "contact": {
+  "eyebrow": "Kontakt",
+  "title": "Domluvit testovací jízdu",
+  "lead": "Popište nám trasu a náklad a ozveme se se správným modelem a konfigurací.",
+  "phoneLabel": "Telefon:",
+  "mailLabel": "E-mail:",
+  "name": "Jméno",
+  "company": "Firma (nepovinné)",
+  "email": "E-mail",
+  "phone": "Telefon",
+  "model": "Model",
+  "notDecided": "Ještě nevím",
+  "message": "Zpráva",
+  "submit": "Odeslat poptávku",
+  "privacy": "Údaje použijeme jen k odpovědi na tuto poptávku.",
+  "privacyLink": "Ochrana údajů",
+  "sending": "Odesílám…",
+  "sent": "Děkujeme! Odpovíme do jednoho pracovního dne.",
+  "error": "Něco se pokazilo. Zavolejte +47 456 11 610 nebo napište na post@elbilnorden.no."
+ },
+ "home": {
+  "head": {
+   "title": "Elektrické užitkové vozy od 750 kg do 7,8 tuny — eVOXX, eBEAR, eBOLD, eHAUSTUS",
+   "description": "Elektrické dodávky a nákladní vozy Hudson: eVOXX (L7e), eBEAR (6 m³), eBOLD (12 m³) a eHAUSTUS (7,8 t). Baterie CATL, ceny bez DPH, testovací jízdy.",
+   "ogImage": "https://elbilnorden.no/images/og-home.jpg",
+   "ogLocale": "cs_CZ",
+   "ogImageW": null,
+   "ogImageH": null,
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "url": "https://elbilnorden.no/",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI",
+       "CZ"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eVOXX",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Kompaktní elektrický pracovní vůz pro města, obce a areály firem. Nejužší ve své třídě, pod 2 m výšky.",
+      "image": "https://elbilnorden.no/images/evoxx-side.webp",
+      "url": "https://elbilnorden.no/cs-evoxx.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "CZK",
+       "lowPrice": 399000,
+       "highPrice": 449000,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eBEAR",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Kompaktní elektrická dodávka 6 m³ pro úzké městské ulice a krátké trasy. Až 1 375 kg užitečného zatížení.",
+      "image": "https://elbilnorden.no/images/ebear-side.webp",
+      "url": "https://elbilnorden.no/cs-ebear.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "CZK",
+       "lowPrice": 699000,
+       "highPrice": 699000,
+       "offerCount": 1,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eBOLD",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Velká elektrická dodávka 12 m³ s baterií CATL LFP. Přímá alternativa k E-Transitu a eSprinteru.",
+      "image": "https://elbilnorden.no/images/ebold-side.webp",
+      "url": "https://elbilnorden.no/cs-ebold.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "CZK",
+       "lowPrice": 999000,
+       "highPrice": 1150000,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eHAUSTUS",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Elektrický nákladní vůz 7,8 t se 141 kWh CATL. Dodává se jako valník nebo skříň, dva rozvory.",
+      "image": "https://elbilnorden.no/images/ehaustus-side.webp",
+      "url": "https://elbilnorden.no/cs-ehaustus.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "CZK",
+       "lowPrice": 1799000,
+       "highPrice": 1899000,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/cs.html",
+      "url": "https://elbilnorden.no/cs.html",
+      "name": "Elektrické užitkové vozy od 750 kg do 7,8 tuny — eVOXX, eBEAR, eBOLD, eHAUSTUS",
+      "description": "Elektrické dodávky a nákladní vozy Hudson: eVOXX (L7e), eBEAR (6 m³), eBOLD (12 m³) a eHAUSTUS (7,8 t). Baterie CATL, ceny bez DPH, testovací jízdy.",
+      "inLanguage": "cs",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "hero": {
+   "eyebrow": "Hudson · dovozce pro Skandinávii a Česko",
+   "title": "Elektrické užitkové vozy od 750 kg do 7,8 tuny",
+   "lead": "Čtyři modely, jedna elektrická platforma: od kompaktního pracovního vozu do centra po nákladní vůz na 7,8 tuny. Baterie CATL a pevné ceny bez DPH.",
+   "btns": [
+    "Zobrazit modely",
+    "Domluvit testovací jízdu"
+   ],
+   "kpis": [
+    [
+     "4",
+     "modely"
+    ],
+    [
+     "L7e–N2",
+     "celé spektrum"
+    ],
+    [
+     "CATL",
+     "8 let / 400 000 km"
+    ],
+    [
+     "od 399 000",
+     "Kč bez DPH"
+    ]
+   ],
+   "video": "Přehrát video"
+  },
+  "models": {
+   "eyebrow": "Modely",
+   "title": "Na každou práci jeden model",
+   "lead": "Seřazeno podle velikosti. Všechny ceny jsou orientační a bez DPH."
+  },
+  "cards": {
+   "evoxx": {
+    "img": "images/evoxx-side.webp",
+    "alt": "eVOXX",
+    "tag": "L7e",
+    "tagN2": false,
+    "sub": "Kompaktní elektrický pracovní vůz pro města, obce a areály firem. Nejužší ve své třídě, pod 2 m výšky.",
+    "nums": [
+     [
+      "150–220 km",
+      "dojezd"
+     ],
+     [
+      "750 kg",
+      "užitečné zatížení"
+     ],
+     [
+      "3,47 m³",
+      "nákladový prostor (skříň)"
+     ]
+    ],
+    "lic": "Řidičský průkaz <strong>B</strong> · max. 71 km/h",
+    "price": "od 399 000 Kč",
+    "priceNote": "bez DPH",
+    "btn": "Zobrazit eVOXX →"
+   },
+   "ebear": {
+    "img": "images/ebear-side.webp",
+    "alt": "eBEAR",
+    "tag": "N1",
+    "tagN2": false,
+    "sub": "Kompaktní elektrická dodávka 6 m³ pro úzké městské ulice a krátké trasy. Až 1 375 kg užitečného zatížení.",
+    "nums": [
+     [
+      "228 km",
+      "dojezd WLTP"
+     ],
+     [
+      "1 375 kg",
+      "užitečné zatížení"
+     ],
+     [
+      "6 m³",
+      "objem"
+     ]
+    ],
+    "lic": "Řidičský průkaz <strong>B</strong>",
+    "price": "od 699 000 Kč",
+    "priceNote": "bez DPH",
+    "btn": "Zobrazit eBEAR →"
+   },
+   "ebold": {
+    "img": "images/ebold-side.webp",
+    "alt": "eBOLD",
+    "tag": "N1",
+    "tagN2": false,
+    "sub": "Velká elektrická dodávka 12 m³ s baterií CATL LFP. Přímá alternativa k E-Transitu a eSprinteru.",
+    "nums": [
+     [
+      "309–415 km",
+      "dojezd WLTP"
+     ],
+     [
+      "895 kg",
+      "užitečné zatížení"
+     ],
+     [
+      "12 m³",
+      "objem"
+     ]
+    ],
+    "lic": "Řidičský průkaz <strong>B</strong>",
+    "price": "od 999 000 Kč",
+    "priceNote": "bez DPH",
+    "btn": "Zobrazit eBOLD →"
+   },
+   "ehaustus": {
+    "img": "images/ehaustus-side.webp",
+    "alt": "eHAUSTUS",
+    "tag": "N2",
+    "tagN2": true,
+    "sub": "Elektrický nákladní vůz 7,8 t se 141 kWh CATL. Dodává se jako valník nebo skříň, dva rozvory.",
+    "nums": [
+     [
+      "320 km",
+      "dojezd WLTP"
+     ],
+     [
+      "7 800 kg",
+      "celková hmotnost"
+     ],
+     [
+      "141 kWh",
+      "baterie"
+     ]
+    ],
+    "lic": "Řidičský průkaz <strong>C1 nebo C</strong>",
+    "price": "od 1 799 000 Kč",
+    "priceNote": "bez DPH",
+    "btn": "Zobrazit eHAUSTUS →"
+   }
+  },
+  "uses": {
+   "eyebrow": "Který je pro vás?",
+   "title": "Vybírejte podle práce, ne podle kategorie vozidla",
+   "items": [
+    {
+     "title": "Kurýr a last mile",
+     "text": "Úzké ulice, hodně zastávek, málo parkování.",
+     "links": [
+      [
+       "evoxx",
+       "eVOXX →"
+      ],
+      [
+       "ebear",
+       "eBEAR →"
+      ]
+     ]
+    },
+    {
+     "title": "Řemeslník a servis",
+     "text": "Nářadí, materiál a regály, celý den na cestě.",
+     "links": [
+      [
+       "ebear",
+       "eBEAR →"
+      ],
+      [
+       "ebold",
+       "eBOLD →"
+      ]
+     ]
+    },
+    {
+     "title": "Distribuce a flotila",
+     "text": "Dlouhé trasy, palety, stálí řidiči a požadavky na TCO.",
+     "links": [
+      [
+       "ebold",
+       "eBOLD →"
+      ],
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Obce a technické služby",
+     "text": "Parky, zahradnictví, hřbitovy, odpady — tiše a bez emisí.",
+     "links": [
+      [
+       "evoxx",
+       "eVOXX →"
+      ],
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Nástavby a chlazení",
+     "text": "Valník, skříň, chladírna, sklápěč — dva rozvory pro karosáře.",
+     "links": [
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Obytný vůz na víkend",
+     "text": "Dodávka ve všední dny, modul Nordic Camper v pátek.",
+     "links": [
+      [
+       "ebold",
+       "eBOLD →"
+      ],
+      [
+       "camper",
+       "Nordic Camper →"
+      ]
+     ]
+    }
+   ]
+  },
+  "camper": {
+   "eyebrow": "Nordic Camper",
+   "title": "Stejná dodávka, o víkendu obytný vůz",
+   "lead": "Nordic Camper je sada modulů, kterou zasunete do nákladového prostoru za pár minut — a stejně rychle vyndáte, když má auto zase pracovat. Žádná úprava karoserie, žádné nové schválení.",
+   "alts": [
+    "Nordic Camper – Obývací a spací část",
+    "Nordic Camper – Kuchyň",
+    "Nordic Camper – Spaní"
+   ],
+   "btn": "Zobrazit Nordic Camper"
+  },
+  "costs": {
+   "eyebrow": "Provozní náklady",
+   "title": "Kolik stojí provoz",
+   "lead": "Vyberte model, zadejte nájezd a ceny energií a porovnejte s dieselem stejné třídy.",
+   "model": "Model",
+   "options": {
+    "evoxx": "eVOXX (12 kWh/100 km · diesel 6 l/100 km)",
+    "ebear": "eBEAR (22 kWh/100 km · diesel 8 l/100 km)",
+    "ebold": "eBOLD (32 kWh/100 km · diesel 9,5 l/100 km)",
+    "ehaustus": "eHAUSTUS (55 kWh/100 km · diesel 18 l/100 km)"
+   },
+   "km": [
+    "Kilometrů za den: ",
+    " km"
+   ],
+   "days": [
+    "Pracovních dní za rok: ",
+    ""
+   ],
+   "el": "Elektřina (za kWh)",
+   "fuel": "Nafta (za litr)",
+   "note": "Pouze energie — bez servisu, mýta a daní. Spotřeba je orientační a závisí na nákladu, teplotě a stylu jízdy.",
+   "saving": "Odhadovaná úspora",
+   "perYear": "za rok, pouze energie",
+   "rows": [
+    "Roční nájezd",
+    "Náklady na energii, elektro",
+    "Náklady na naftu",
+    "Náklady na kilometr (elektro)"
+   ],
+   "loc": "cs-CZ",
+   "cur": "Kč",
+   "elPrice": "6.5",
+   "elStep": "0.1",
+   "fuelPrice": "35.0",
+   "fuelStep": "0.5"
+  },
+  "service": {
+   "eyebrow": "Servis a záruka",
+   "title": "Podpora pro vozy, které pracují každý den",
+   "lead": "Prostoj stojí víc než oprava. Díly, diagnostika a záruční podmínky se sjednávají písemně před dodáním.",
+   "items": [
+    [
+     "Záruka",
+     "Záruka na vůz a baterii vyplývá z kupní smlouvy. Baterie CATL v eBOLD a eHAUSTUS mají 8 let / 400 000 km."
+    ],
+    [
+     "Díly",
+     "Spotřební díly skladem; ostatní díly na objednávku s uvedenou dodací lhůtou."
+    ],
+    [
+     "Provozuschopnost",
+     "Diagnostika přes síť servisů, náhradní vůz u flotilových smluv."
+    ]
+   ]
+  },
+  "about": {
+   "eyebrow": "O nás",
+   "title": "Vůz i vestavba z jednoho místa",
+   "lead": "Dovážíme elektrické užitkové vozy Hudson i moduly Nordic Camper na skandinávský a český trh. Jeden kontakt pro vůz, vestavbu i papíry.",
+   "text": "Prodáváme distribučním a servisním firmám, řemeslníkům, obcím, flotilám — a soukromým zájemcům, kteří chtějí obytný vůz, aniž by se vzdali použitelné dodávky. EV Pickup AS, Bjorøy u Bergenu, Norsko.",
+   "alt": "eVOXX, eBEAR, eBOLD, eHAUSTUS"
+  }
+ },
+ "models": {
+  "evoxx": {
+   "head": {
+    "title": "eVOXX — Kompaktní elektrický pracovní vůz pro města, obce a areály firem | Elbilnorden",
+    "description": "Kompaktní elektrický pracovní vůz pro města, obce a areály firem. Nejužší ve své třídě, pod 2 m výšky. od 399 000 Kč bez DPH.",
+    "ogImage": "https://elbilnorden.no/images/evoxx-side.webp",
+    "ogLocale": "cs_CZ",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eVOXX",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Kompaktní elektrický pracovní vůz pro města, obce a areály firem. Nejužší ve své třídě, pod 2 m výšky.",
+       "image": "https://elbilnorden.no/images/evoxx-side.webp",
+       "url": "https://elbilnorden.no/cs-evoxx.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "CZK",
+        "lowPrice": 399000,
+        "highPrice": 449000,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/cs-evoxx.html",
+       "url": "https://elbilnorden.no/cs-evoxx.html",
+       "name": "eVOXX — Kompaktní elektrický pracovní vůz pro města, obce a areály firem | Elbilnorden",
+       "description": "Kompaktní elektrický pracovní vůz pro města, obce a areály firem. Nejužší ve své třídě, pod 2 m výšky. od 399 000 Kč bez DPH.",
+       "inLanguage": "cs",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · L7e",
+   "title": "eVOXX",
+   "sub": "Hudson · kompaktní elektrický užitkový vůz (L7e)",
+   "lead": "Kompaktní elektrický pracovní vůz pro města, obce a areály firem. Nejužší ve své třídě, pod 2 m výšky.",
+   "btns": [
+    "Domluvit testovací jízdu",
+    "Specifikace"
+   ],
+   "kpis": [
+    [
+     "150–220 km",
+     "dojezd"
+    ],
+    [
+     "750 kg",
+     "užitečné zatížení"
+    ],
+    [
+     "3,47 m³",
+     "nákladový prostor (skříň)"
+    ]
+   ],
+   "img": "images/evoxx-side.webp",
+   "alt": "Hudson eVOXX – kompaktní elektrický užitkový vůz (L7e)",
+   "variantsEyebrow": "Cena a varianty",
+   "variantsTitle": "Vyberte variantu",
+   "priceLabel": "Orientační cena bez DPH",
+   "callout": "<strong>Řidičský průkaz:</strong> B. Obce, zahradnictví, přístavy, kampusy a průmyslové areály, kurýři v centru. Není určen na dálnici — maximální rychlost je 71 km/h.",
+   "specEyebrow": "Technické údaje",
+   "specTitle": "eVOXX v číslech",
+   "spec": [
+    [
+     "Kategorie",
+     "L7e (těžká čtyřkolka)"
+    ],
+    [
+     "Karoserie",
+     "Valník nebo skříň"
+    ],
+    [
+     "Baterie",
+     "15,4 kWh LFP · 23,5 kWh (volitelně)"
+    ],
+    [
+     "Užitečné zatížení",
+     "750 kg"
+    ],
+    [
+     "Nákladový prostor",
+     "3,47 m³"
+    ],
+    [
+     "Rozměry (D×Š×V)",
+     "3 820 × 1 480 × 1 680 / 1 925 mm"
+    ],
+    [
+     "Max. rychlost",
+     "71 km/h"
+    ],
+    [
+     "Nabíjení",
+     "CCS2 DC · 230 V"
+    ],
+    [
+     "Řidičský průkaz",
+     "B"
+    ]
+   ],
+   "specNote": "Dojezd závisí na nákladu, teplotě a stylu jízdy. Specifikace se mohou změnit bez předchozího upozornění.",
+   "variants": {
+    "15,4 kWh": {
+     "price": "399 000 Kč",
+     "range": "150 km (WLTP)",
+     "dc": "CCS2"
+    },
+    "23,5 kWh": {
+     "price": "449 000 Kč",
+     "range": "cca 220 km",
+     "dc": "CCS2"
+    }
+   },
+   "labels": {
+    "price": "Cena",
+    "range": "Dojezd",
+    "payload": "Užitečné zatížení",
+    "curb": "Pohotovostní hmotnost",
+    "dc": "DC nabíjení"
+   },
+   "seo": null,
+   "galleryEyebrow": "Fotografie",
+   "galleryTitle": "eVOXX — Galerie",
+   "otherEyebrow": "Další modely",
+   "otherTitle": "Potřebujete něco jiného?"
+  },
+  "ebear": {
+   "head": {
+    "title": "eBEAR — Kompaktní elektrická dodávka 6 m³ pro úzké městské ulice a krátké trasy | Elbilnorden",
+    "description": "Kompaktní elektrická dodávka 6 m³ pro úzké městské ulice a krátké trasy. Až 1 375 kg užitečného zatížení. od 699 000 Kč bez DPH.",
+    "ogImage": "https://elbilnorden.no/images/ebear-side.webp",
+    "ogLocale": "cs_CZ",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eBEAR",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Kompaktní elektrická dodávka 6 m³ pro úzké městské ulice a krátké trasy. Až 1 375 kg užitečného zatížení.",
+       "image": "https://elbilnorden.no/images/ebear-side.webp",
+       "url": "https://elbilnorden.no/cs-ebear.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "CZK",
+        "lowPrice": 699000,
+        "highPrice": 699000,
+        "offerCount": 1,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/cs-ebear.html",
+       "url": "https://elbilnorden.no/cs-ebear.html",
+       "name": "eBEAR — Kompaktní elektrická dodávka 6 m³ pro úzké městské ulice a krátké trasy | Elbilnorden",
+       "description": "Kompaktní elektrická dodávka 6 m³ pro úzké městské ulice a krátké trasy. Až 1 375 kg užitečného zatížení. od 699 000 Kč bez DPH.",
+       "inLanguage": "cs",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N1",
+   "title": "eBEAR",
+   "sub": "Hudson · elektrická dodávka 6 m³",
+   "lead": "Kompaktní elektrická dodávka 6 m³ pro úzké městské ulice a krátké trasy. Až 1 375 kg užitečného zatížení.",
+   "btns": [
+    "Domluvit testovací jízdu",
+    "Specifikace"
+   ],
+   "kpis": [
+    [
+     "228 km",
+     "dojezd WLTP"
+    ],
+    [
+     "1 375 kg",
+     "užitečné zatížení"
+    ],
+    [
+     "6 m³",
+     "objem"
+    ]
+   ],
+   "img": "images/ebear-side.webp",
+   "alt": "Hudson eBEAR – elektrická dodávka 6 m³",
+   "variantsEyebrow": "Cena a varianty",
+   "variantsTitle": "Vyberte variantu",
+   "priceLabel": "Orientační cena bez DPH",
+   "callout": "<strong>Řidičský průkaz:</strong> B. Řemeslníci, servisní vozy, rozvoz domů, firmy s krátkými pevnými trasami.",
+   "specEyebrow": "Technické údaje",
+   "specTitle": "eBEAR v číslech",
+   "spec": [
+    [
+     "Kategorie",
+     "N1"
+    ],
+    [
+     "Baterie",
+     "41,86 kWh LFP"
+    ],
+    [
+     "Dojezd",
+     "228 km (WLTP)"
+    ],
+    [
+     "Užitečné zatížení",
+     "1 375 kg"
+    ],
+    [
+     "Celková hmotnost",
+     "3 000 kg"
+    ],
+    [
+     "Nákladový prostor",
+     "6 m³"
+    ],
+    [
+     "Rozměry (D×Š×V)",
+     "4 860 × 1 750 × 1 990 mm"
+    ],
+    [
+     "Rozvor",
+     "3 160 mm"
+    ],
+    [
+     "Pohon",
+     "RWD"
+    ],
+    [
+     "Max. rychlost",
+     "100 km/h"
+    ],
+    [
+     "Sedadla",
+     "2–5"
+    ],
+    [
+     "Řidičský průkaz",
+     "B"
+    ]
+   ],
+   "specNote": "Dojezd závisí na nákladu, teplotě a stylu jízdy. Specifikace se mohou změnit bez předchozího upozornění.",
+   "variants": {
+    "41,86 kWh": {
+     "price": "699 000 Kč",
+     "range": "228 km (WLTP)",
+     "dc": "CCS2"
+    }
+   },
+   "labels": {
+    "price": "Cena",
+    "range": "Dojezd",
+    "payload": "Užitečné zatížení",
+    "curb": "Pohotovostní hmotnost",
+    "dc": "DC nabíjení"
+   },
+   "seo": null,
+   "galleryEyebrow": "Fotografie",
+   "galleryTitle": "eBEAR — Galerie",
+   "otherEyebrow": "Další modely",
+   "otherTitle": "Potřebujete něco jiného?"
+  },
+  "ebold": {
+   "head": {
+    "title": "eBOLD — Velká elektrická dodávka 12 m³ s baterií CATL LFP | Elbilnorden",
+    "description": "Velká elektrická dodávka 12 m³ s baterií CATL LFP. Přímá alternativa k E-Transitu a eSprinteru. od 999 000 Kč bez DPH.",
+    "ogImage": "https://elbilnorden.no/images/ebold-side.webp",
+    "ogLocale": "cs_CZ",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eBOLD",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Velká elektrická dodávka 12 m³ s baterií CATL LFP. Přímá alternativa k E-Transitu a eSprinteru.",
+       "image": "https://elbilnorden.no/images/ebold-side.webp",
+       "url": "https://elbilnorden.no/cs-ebold.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "CZK",
+        "lowPrice": 999000,
+        "highPrice": 1150000,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/cs-ebold.html",
+       "url": "https://elbilnorden.no/cs-ebold.html",
+       "name": "eBOLD — Velká elektrická dodávka 12 m³ s baterií CATL LFP | Elbilnorden",
+       "description": "Velká elektrická dodávka 12 m³ s baterií CATL LFP. Přímá alternativa k E-Transitu a eSprinteru. od 999 000 Kč bez DPH.",
+       "inLanguage": "cs",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N1",
+   "title": "eBOLD",
+   "sub": "Hudson · velká elektrická dodávka 12 m³",
+   "lead": "Velká elektrická dodávka 12 m³ s baterií CATL LFP. Přímá alternativa k E-Transitu a eSprinteru.",
+   "btns": [
+    "Domluvit testovací jízdu",
+    "Specifikace"
+   ],
+   "kpis": [
+    [
+     "309–415 km",
+     "dojezd WLTP"
+    ],
+    [
+     "895 kg",
+     "užitečné zatížení"
+    ],
+    [
+     "12 m³",
+     "objem"
+    ]
+   ],
+   "img": "images/ebold-side.webp",
+   "alt": "Hudson eBOLD – velká elektrická dodávka 12 m³",
+   "variantsEyebrow": "Cena a varianty",
+   "variantsTitle": "Vyberte variantu",
+   "priceLabel": "Orientační cena bez DPH",
+   "callout": "<strong>Řidičský průkaz:</strong> B. Distribuční a servisní firmy na dlouhých trasách, flotily, řemeslníci s hodně vybavením — a všichni, kdo chtějí na víkend Nordic Camper.",
+   "specEyebrow": "Technické údaje",
+   "specTitle": "eBOLD v číslech",
+   "spec": [
+    [
+     "Kategorie",
+     "N1"
+    ],
+    [
+     "Baterie",
+     "77,28 / 100,96 kWh · CATL LFP"
+    ],
+    [
+     "Celková hmotnost",
+     "3 500 kg"
+    ],
+    [
+     "Nákladový prostor",
+     "12 m³"
+    ],
+    [
+     "Nákladový prostor (D×Š×V)",
+     "3 560 × 1 815 × 1 860 mm"
+    ],
+    [
+     "Zadní dveře",
+     "270°"
+    ],
+    [
+     "Rozměry (D×Š×V)",
+     "5 995 × 2 036 × 2 590 mm"
+    ],
+    [
+     "Rozvor",
+     "3 610 mm"
+    ],
+    [
+     "Pohon",
+     "RWD"
+    ],
+    [
+     "Max. rychlost",
+     "> 100 km/h"
+    ],
+    [
+     "Sedadla",
+     "3"
+    ],
+    [
+     "DC rychlonabíjení",
+     "CCS2 · 20→80 % ≤ 45 / 65 min"
+    ],
+    [
+     "Záruka na baterii",
+     "8 let / 400 000 km (CATL)"
+    ],
+    [
+     "Bezpečnost",
+     "ESC · airbag · TPMS · camera + radar · cruise"
+    ],
+    [
+     "Infotainment",
+     "12,3\" + 10,3\" · Android Link"
+    ],
+    [
+     "Řidičský průkaz",
+     "B"
+    ]
+   ],
+   "specNote": "Dojezd závisí na nákladu, teplotě a stylu jízdy. Specifikace se mohou změnit bez předchozího upozornění.",
+   "variants": {
+    "77,28 kWh": {
+     "price": "999 000 Kč",
+     "range": "309 km (WLTP)",
+     "payload": "895 kg",
+     "curb": "2 605 kg",
+     "dc": "CCS2 · 20→80 % ≤ 45 min"
+    },
+    "100,96 kWh": {
+     "price": "1 150 000 Kč",
+     "range": "415 km (WLTP)",
+     "payload": "800 kg",
+     "curb": "–",
+     "dc": "CCS2 · 20→80 % ≤ 65 min"
+    }
+   },
+   "labels": {
+    "price": "Cena",
+    "range": "Dojezd",
+    "payload": "Užitečné zatížení",
+    "curb": "Pohotovostní hmotnost",
+    "dc": "DC nabíjení"
+   },
+   "seo": null,
+   "galleryEyebrow": "Fotografie",
+   "galleryTitle": "eBOLD — Galerie",
+   "otherEyebrow": "Další modely",
+   "otherTitle": "Potřebujete něco jiného?"
+  },
+  "ehaustus": {
+   "head": {
+    "title": "eHAUSTUS — Elektrický nákladní vůz 7,8 t se 141 kWh CATL | Elbilnorden",
+    "description": "Elektrický nákladní vůz 7,8 t se 141 kWh CATL. Dodává se jako valník nebo skříň, dva rozvory. od 1 799 000 Kč bez DPH.",
+    "ogImage": "https://elbilnorden.no/images/ehaustus-side.webp",
+    "ogLocale": "cs_CZ",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eHAUSTUS",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Elektrický nákladní vůz 7,8 t se 141 kWh CATL. Dodává se jako valník nebo skříň, dva rozvory.",
+       "image": "https://elbilnorden.no/images/ehaustus-side.webp",
+       "url": "https://elbilnorden.no/cs-ehaustus.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "CZK",
+        "lowPrice": 1799000,
+        "highPrice": 1899000,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/cs-ehaustus.html",
+       "url": "https://elbilnorden.no/cs-ehaustus.html",
+       "name": "eHAUSTUS — Elektrický nákladní vůz 7,8 t se 141 kWh CATL | Elbilnorden",
+       "description": "Elektrický nákladní vůz 7,8 t se 141 kWh CATL. Dodává se jako valník nebo skříň, dva rozvory. od 1 799 000 Kč bez DPH.",
+       "inLanguage": "cs",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N2",
+   "title": "eHAUSTUS",
+   "sub": "Hudson · elektrický nákladní vůz 7,8 t",
+   "lead": "Elektrický nákladní vůz 7,8 t se 141 kWh CATL. Dodává se jako valník nebo skříň, dva rozvory.",
+   "btns": [
+    "Domluvit testovací jízdu",
+    "Specifikace"
+   ],
+   "kpis": [
+    [
+     "320 km",
+     "dojezd WLTP"
+    ],
+    [
+     "7 800 kg",
+     "celková hmotnost"
+    ],
+    [
+     "141 kWh",
+     "baterie"
+    ]
+   ],
+   "img": "images/ehaustus-side.webp",
+   "alt": "Hudson eHAUSTUS – elektrický nákladní vůz 7,8 t",
+   "variantsEyebrow": "Cena a varianty",
+   "variantsTitle": "Vyberte variantu",
+   "priceLabel": "Orientační cena bez DPH",
+   "callout": "<strong>Řidičský průkaz:</strong> C1 nebo C (celková hmotnost nad 3 500 kg). Flotily, obce, stavební firmy, chladírenská přeprava a karosáři. Vyžaduje řidičský průkaz C1 nebo C.",
+   "specEyebrow": "Technické údaje",
+   "specTitle": "eHAUSTUS v číslech",
+   "spec": [
+    [
+     "Kategorie",
+     "N2"
+    ],
+    [
+     "Karoserie",
+     "Valník nebo skříň"
+    ],
+    [
+     "Baterie",
+     "141 kWh · CATL LFP"
+    ],
+    [
+     "Dojezd",
+     "320 km (WLTP)"
+    ],
+    [
+     "Celková hmotnost",
+     "7 800 kg"
+    ],
+    [
+     "Výkon / točivý moment",
+     "150 kW / 1 700 Nm"
+    ],
+    [
+     "Rozměry (D×Š×V)",
+     "7 340 × 2 154 × 2 330 mm"
+    ],
+    [
+     "Rozvor",
+     "4 350 / 5 100 mm"
+    ],
+    [
+     "DC rychlonabíjení",
+     "CCS2 · ~60 min"
+    ],
+    [
+     "Záruka na baterii",
+     "8 let / 400 000 km (CATL)"
+    ],
+    [
+     "Řidičský průkaz",
+     "C1 nebo C (celková hmotnost nad 3 500 kg)"
+    ]
+   ],
+   "specNote": "Dojezd závisí na nákladu, teplotě a stylu jízdy. Specifikace se mohou změnit bez předchozího upozornění.",
+   "variants": {
+    "Rozvor 4 350 mm": {
+     "price": "1 799 000 Kč",
+     "range": "320 km (WLTP)",
+     "dc": "CCS2 · ~60 min"
+    },
+    "Rozvor 5 100 mm": {
+     "price": "1 899 000 Kč",
+     "range": "320 km (WLTP)",
+     "dc": "CCS2 · ~60 min"
+    }
+   },
+   "labels": {
+    "price": "Cena",
+    "range": "Dojezd",
+    "payload": "Užitečné zatížení",
+    "curb": "Pohotovostní hmotnost",
+    "dc": "DC nabíjení"
+   },
+   "seo": null,
+   "galleryEyebrow": "Fotografie",
+   "galleryTitle": "eHAUSTUS — Galerie",
+   "otherEyebrow": "Další modely",
+   "otherTitle": "Potřebujete něco jiného?"
+  }
+ },
+ "head": {
+  "camper": {
+   "title": "Nordic Camper — zásuvná vestavba do dodávky",
+   "description": "Sada modulů, která z dodávky udělá obytné auto za pár minut: kuchyň, spaní, elektřina a voda. Pasuje do většiny dodávek L2H2 a větších.",
+   "ogImage": "https://elbilnorden.no/images/og-camper.jpg",
+   "ogLocale": "cs_CZ",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/cs-camper.html",
+      "url": "https://elbilnorden.no/cs-camper.html",
+      "name": "Nordic Camper — zásuvná vestavba do dodávky",
+      "description": "Sada modulů, která z dodávky udělá obytné auto za pár minut: kuchyň, spaní, elektřina a voda. Pasuje do většiny dodávek L2H2 a větších.",
+      "inLanguage": "cs",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      },
+      "about": {
+       "@type": "Thing",
+       "name": "Nordic Camper",
+       "description": "Zásuvná vestavba do dodávky: kuchyň, spaní, elektřina a voda jako sada modulů. Pasuje do většiny dodávek L2H2 a větších.",
+       "image": "https://elbilnorden.no/images/camper-teaser.webp"
+      }
+     }
+    ]
+   }
+  },
+  "dealer": {
+   "title": "Staňte se dealerem elektrických dodávek Hudson a Nordic Camper",
+   "description": "Dealerské ceny, podmínky na předváděcí vůz, marketingové materiály a školení. Napište svůj region a ozveme se s podmínkami a volnými oblastmi.",
+   "ogImage": "https://elbilnorden.no/images/og-forhandler.jpg",
+   "ogLocale": "cs_CZ",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/cs-dealer.html",
+      "url": "https://elbilnorden.no/cs-dealer.html",
+      "name": "Staňte se dealerem elektrických dodávek Hudson a Nordic Camper",
+      "description": "Dealerské ceny, podmínky na předváděcí vůz, marketingové materiály a školení. Napište svůj region a ozveme se s podmínkami a volnými oblastmi.",
+      "inLanguage": "cs",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "privacy": {
+   "title": "Zásady ochrany osobních údajů",
+   "description": "Jak EV Pickup AS zachází s údaji z formulářů na webu: co sbíráme, proč, jak dlouho to uchováváme a jaká máte práva.",
+   "ogImage": "https://elbilnorden.no/images/og-home.jpg",
+   "ogLocale": "cs_CZ",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/cs-privacy.html",
+      "url": "https://elbilnorden.no/cs-privacy.html",
+      "name": "Zásady ochrany osobních údajů",
+      "description": "Jak EV Pickup AS zachází s údaji z formulářů na webu: co sbíráme, proč, jak dlouho to uchováváme a jaká máte práva.",
+      "inLanguage": "cs",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "camper": {
+  "footerLegal": "Právní informace",
+  "privacyLink": "Zásady ochrany osobních údajů",
+  "privTitle": "Zásady ochrany osobních údajů",
+  "privIntro": "Na této stránce je popsáno, co děláme s údaji, které nám pošlete přes formuláře na webu.",
+  "p1t": "Správce údajů",
+  "p1x": "EV Pickup AS, org.nr 936 223 478, Bjorøyvegen 332, 5177 Bjorøyhamn, Norsko. E-mail: post@elbilnorden.no.",
+  "p2t": "Co sbíráme",
+  "p2x": "Jen to, co napíšete do formuláře: jméno, firmu, e-mail, telefon, model dodávky nebo region, který uvedete, vaši zprávu a jazykovou verzi, kterou jste použili.",
+  "p3t": "Proč",
+  "p3x": "Abychom odpověděli na vaši poptávku, sjednali testovací jízdu a poslali nabídku nebo dealerské podmínky. K ničemu jinému údaje nepoužíváme a neprodáváme je.",
+  "p4t": "Právní základ",
+  "p4x": "Opatření přijatá na vaši žádost před uzavřením smlouvy (čl. 6 odst. 1 písm. b GDPR) a náš oprávněný zájem odpovídat na obchodní poptávky (čl. 6 odst. 1 písm. f).",
+  "p5t": "Jak dlouho údaje uchováváme",
+  "p5x": "Poptávky, které nevedou ke smlouvě, mažeme po šesti měsících. Pokud smlouva vznikne, dobu uchování určují účetní předpisy.",
+  "p6t": "Kdo další je vidí",
+  "p6x": "Poskytovatel hostingu zpracovává zprávu z našeho pověření jako zpracovatel. CIE AS stránky vytváří a spravuje a je zároveň zpracovatelem údajů z formulářů. Nikomu dalšímu se údaje nepředávají.",
+  "p7t": "Cookies",
+  "p7x": "Pro anonymní statistiku návštěvnosti používáme Google Analytics, ale jen pokud to přijmete v cookie liště. Můžete odmítnout a svou volbu můžete změnit smazáním dat webu v prohlížeči. Google Analytics provozuje Google Ireland Ltd; IP adresy jsou anonymizovány. Volba jazyka se ukládá lokálně ve vašem prohlížeči a nikdy se k nám neposílá.",
+  "p8t": "Vaše práva",
+  "p8x": "Můžete požádat o kopii svých údajů, jejich opravu nebo výmaz a vznést námitku proti zpracování. Napište na post@elbilnorden.no. Stížnost můžete podat u norského úřadu Datatilsynet, případně u ÚOOÚ.",
+  "privUpdated": "Aktualizováno: září 2026",
+  "dealerEyebrow": "Partneři",
+  "dealerTitle": "Prodávejte elektrické dodávky Hudson a Nordic Camper ve svém regionu",
+  "dealerSub": "Budujeme dealerskou síť ve Skandinávii a střední Evropě. Vy máte prodej a první servisní kontakt; my dovoz, homologaci, díly a vestavby.",
+  "dl1t": "Co dostanete",
+  "dl1x": "Dealerské ceny, podmínky na předváděcí vůz, marketingové materiály a školení pro prodej i servis.",
+  "dl2t": "Co čekáme",
+  "dl2x": "Vlastní servis nebo servisního partnera, předváděcí vůz a odpovědi na poptávky do jednoho dne.",
+  "dl3t": "Jak to začne",
+  "dl3x": "Pošlete formulář. Ozveme se s podmínkami, maržemi a volnými regiony a dohodneme testovací jízdu.",
+  "dealerFormTitle": "Poptávka dealerství",
+  "formRegion": "Region / trh",
+  "formCompanyReq": "Firma",
+  "dealerSubmit": "Odeslat poptávku",
+  "contactCamperSub": "Napište nám, jakou máte dodávku a jak cestujete, a sadu vám poskládáme.",
+  "eqBasicPrice": "Cena na vyžádání",
+  "eqProPrice": "Cena na vyžádání",
+  "eqProIntro": "Vše z verze Basic a navíc:",
+  "eqX1": "Ocelový rám (Q345B), prosklené posuvné dveře vzadu a na boku s hliníkovým rámem a sítí proti hmyzu, vinylová podlaha a lehké skříňky.",
+  "eqL2": "Obývací a spací část",
+  "eqX2": "Čalouněná pohovka, která se rozloží na postel (175/190 × 125 cm), 10cm matrace, sklopný stolek a vysoká skříň.",
+  "eqX3": "Nerezový dřez s vlastní baterií, 40l přenosná lednice, šuplík na koření, vysoká a spodní skříňka. 48l nádrž na čistou vodu a 48l nádrž na šedou vodu.",
+  "eqX4": "Vnitřní sprchový modul s průchodem do kabiny řidiče a dva přenosné 18l kanystry na vodu.",
+  "eqX5": "Dekorativní LED pásek a připravené 12V přípojky pro přenosnou power station (není součástí).",
+  "eqX6": "Výškově nastavitelný podvozek s kolečky, L-profily a upínací popruhy.",
+  "eqP1": "Lednice",
+  "eqPX1": "Stojací 50l lednice na 12 V místo přenosné lednice.",
+  "eqP2": "Dřez",
+  "eqPX2": "Dřez s krytem, sklopná baterie a 12V čerpadlo vody.",
+  "eqP3": "Dětská palanda",
+  "eqPX3": "Sklopná palanda 120 × 80 cm.",
+  "eqP4": "Solární panel",
+  "eqPX4": "Přenosný solární panel 400 W.",
+  "camperVideoTitle": "Jak to funguje",
+  "camperFitText": "Pasuje do většiny dodávek velikosti L2H2 a větších. Napište nám model a před objednávkou pasování potvrdíme.",
+  "cf2t": "Kuchyň",
+  "cf3t": "Spaní",
+  "cf5t": "Sprcha",
+  "formName": "Jméno",
+  "formCompany": "Firma (nepovinné)",
+  "formEmail": "E-mail",
+  "formPhone": "Telefon",
+  "formVanLabel": "Do jaké dodávky bude?",
+  "formVanOther": "Jiný model",
+  "formMessage": "Zpráva",
+  "formSubmit": "Odeslat poptávku",
+  "formSending": "Odesílám…",
+  "formSent": "Děkujeme — ozveme se.",
+  "formError": "Odeslání se nepovedlo. Napište nám na post@elbilnorden.no.",
+  "formPrivacy": "Údaje použijeme jen k odpovědi na tuto poptávku.",
+  "k4": "prázdná hmotnost",
+  "proBadge": "Nejvíc výbavy",
+  "g1": "Konstrukce a obývací část",
+  "g2": "Kuchyně a koupelna",
+  "g3": "Elektro a uchycení",
+  "fridgeP": "50l stojací, 12 V",
+  "levelLegend": "Úroveň výbavy",
+  "levelUnsure": "Ještě nevím",
+  "close": "Zavřít",
+  "h1": "V týdnu dodávka. O víkendu obytňák.",
+  "sub": "Kompletně vybavený modul, který zasunete za pár minut – s postelí, kuchyní a sprchou. Bez přestavby, bez nové homologace.",
+  "ctaPrices": "Zobrazit ceny",
+  "pr1t": "Dovnitř za pár minut",
+  "pr1x": "Modul stojí na výškově nastavitelném podvozku s kolečky a upevní se L-profily a popruhy.",
+  "pr2t": "Bez přestavby",
+  "pr2x": "Bez zásahu do karoserie – vůz si ponechá homologaci, pojištění i STK.",
+  "pr3t": "V pondělí zase ven",
+  "pr3x": "Po víkendu modul vyjede ven a z auta je znovu pracovní vůz.",
+  "kitchenH": "Večeře tam, kde zaparkujete",
+  "kitchenX": "Nerezový dřez, lednice, šuplík na koření a spousta úložného místa. Nádrže pojmou 48 litrů čisté a 48 litrů šedé vody.",
+  "chipFresh": "48 l čisté vody",
+  "chipGrey": "48 l šedé vody",
+  "chipFridge": "lednice 40–50 l",
+  "sleepH": "Večer pohovka, v noci postel",
+  "sleepX": "Čalouněná pohovka se rozloží na postel 175/190 × 125 cm s 10cm matrací. Sklopný stolek a vysoká skříň dají prostor snídani i zavazadlům.",
+  "chipMattress": "10cm matrace",
+  "chipBunk": "Dětská palanda v Pro",
+  "bathH": "Sprcha uvnitř – i když prší",
+  "bathX": "Vnitřní sprchový modul s průchodem do kabiny řidiče a dva přenosné 18l kanystry na vodu.",
+  "chipShower": "Vnitřní sprcha",
+  "chipTanks": "2 × 18 l kanystry",
+  "videoSub": "Z pracovní dodávky obytňák za pár minut.",
+  "priceH": "Vyberte si úroveň výbavy",
+  "priceSub": "Obě verze dodáváme kompletně vybavené. Pro přidává to, co potřebujete na delší cesty bez přípojky.",
+  "b1": "Pohovka rozkládací na postel, 10cm matrace",
+  "b2": "Kuchyň s dřezem a 40l přenosnou lednicí",
+  "b3": "Vnitřní sprcha, nádrže 48 + 48 l",
+  "b4": "LED osvětlení a 12V přípojky pro power station",
+  "b5": "Prosklené posuvné dveře se sítí proti hmyzu",
+  "chooseBasic": "Vybrat Basic",
+  "choosePro": "Vybrat Pro",
+  "fullList": "Zobrazit celou výbavu",
+  "fitH": "Pasuje do většiny dodávek od L2H2",
+  "dL": "délka",
+  "dW": "šířka",
+  "dH": "výška",
+  "fullH": "Kompletní výbava",
+  "quoteH": "Připraveni na víkend?",
+  "conj": "a",
+  "play": "Přehrát video"
+ },
+ "otherAlts": {
+  "ebear": "Hudson eBEAR – elektrická dodávka 6 m³",
+  "ebold": "Hudson eBOLD – velká elektrická dodávka 12 m³",
+  "ehaustus": "Hudson eHAUSTUS – elektrický nákladní vůz 7,8 t",
+  "evoxx": "Hudson eVOXX – kompaktní elektrický užitkový vůz (L7e)"
+ }
+}

@@ -1,0 +1,17 @@
+---js
+{
+  pagination: { data: "site.langs", size: 1, alias: "lang" },
+  permalink: (d) => (d.lang === "no" ? "personvern.html" : `${d.lang}-privacy.html`),
+  layout: "base.njk",
+  slug: "privacy",
+  eleventyComputed: {
+    t: (d) => d.i18n[d.lang],
+    head: (d) => d.i18n[d.lang].head.privacy,
+  },
+}
+---
+{%- set C = t.camper -%}
+<main>
+<section class="wrap pv-head"><div class="eyebrow">{{ C.footerLegal }}</div><h1>{{ C.privTitle }}</h1><p class="lead">{{ C.privIntro | nb }}</p><p class="upd">{{ C.privUpdated }}</p>
+<div class="pv-list">{% for i in range(1, 9) %}{% if C["p" + i + "t"] %}<div><h2>{{ C["p" + i + "t"] | nb }}</h2><p>{{ C["p" + i + "x"] | nb }}</p></div>{% endif %}{% endfor %}</div></section>
+</main>

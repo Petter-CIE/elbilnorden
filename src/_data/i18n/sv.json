@@ -1,0 +1,1563 @@
+{
+ "lang": "sv",
+ "htmlLang": "sv",
+ "nav": {
+  "models": "Modeller",
+  "menu": [
+   {
+    "slug": "evoxx",
+    "sub": "L7e · 150–220 km · 750 kg"
+   },
+   {
+    "slug": "ebear",
+    "sub": "N1 · 228 km · 1 375 kg"
+   },
+   {
+    "slug": "ebold",
+    "sub": "N1 · 309–415 km · 895 kg"
+   },
+   {
+    "slug": "ehaustus",
+    "sub": "N2 · 320 km · 7 800 kg"
+   }
+  ],
+  "all": "Modeller →",
+  "camper": "Nordic Camper",
+  "costs": "Driftkostnader",
+  "service": "Service",
+  "about": "Om oss",
+  "dealer": "Bli återförsäljare",
+  "cta": "Boka provkörning"
+ },
+ "footer": {
+  "contact": "Kontakt",
+  "company": "Företag",
+  "address": "Bjorøyvegen 332, 5177 Bjorøyhamn, Norge",
+  "models": "Modeller",
+  "more": "Mer",
+  "camper": "Nordic Camper",
+  "dealer": "Bli återförsäljare",
+  "privacy": "Integritetspolicy",
+  "left": "Elektriska nyttofordon från Hudson · Nordic Camper-inredningar",
+  "right": "© 2026 EV Pickup AS · Specifikationer kan ändras utan föregående meddelande. · Webbplats: CIE AS"
+ },
+ "contact": {
+  "eyebrow": "Kontakt",
+  "title": "Boka provkörning",
+  "lead": "Berätta om rutten och lasten, så återkommer vi med rätt modell och konfiguration.",
+  "phoneLabel": "Telefon:",
+  "mailLabel": "E-post:",
+  "name": "Namn",
+  "company": "Företag (valfritt)",
+  "email": "E-post",
+  "phone": "Telefon",
+  "model": "Modell",
+  "notDecided": "Inte bestämt ännu",
+  "message": "Meddelande",
+  "submit": "Skicka förfrågan",
+  "privacy": "Vi använder uppgifterna bara för att svara på denna förfrågan.",
+  "privacyLink": "Integritet",
+  "sending": "Skickar…",
+  "sent": "Tack! Vi svarar inom en arbetsdag.",
+  "error": "Något gick fel. Ring +47 456 11 610 eller mejla post@elbilnorden.no."
+ },
+ "home": {
+  "head": {
+   "title": "Elektriska nyttofordon från 750 kg till 7,8 ton — eVOXX, eBEAR, eBOLD, eHAUSTUS",
+   "description": "Hudson elskåpbilar och ellastbilar för Norden: eVOXX (L7e), eBEAR (6 m³), eBOLD (12 m³) och eHAUSTUS (7,8 t). CATL-batterier, priser exkl. moms.",
+   "ogImage": "https://elbilnorden.no/images/og-home.jpg",
+   "ogLocale": "sv_SE",
+   "ogImageW": null,
+   "ogImageH": null,
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "url": "https://elbilnorden.no/",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI",
+       "CZ"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eVOXX",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Kompakt elektriskt arbetsfordon för stad, kommun och företagsområden. Smalast i klassen, under 2 m hög.",
+      "image": "https://elbilnorden.no/images/evoxx-side.webp",
+      "url": "https://elbilnorden.no/sv-evoxx.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "SEK",
+       "lowPrice": 207990,
+       "highPrice": 248990,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eBEAR",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Kompakt elskåpbil på 6 m³ för trånga stadsgator och korta rutter. Upp till 1 375 kg nyttolast.",
+      "image": "https://elbilnorden.no/images/ebear-side.webp",
+      "url": "https://elbilnorden.no/sv-ebear.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "SEK",
+       "lowPrice": 343990,
+       "highPrice": 343990,
+       "offerCount": 1,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eBOLD",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Stor elskåpbil på 12 m³ med CATL LFP-batteri. Direkt alternativ till E-Transit och eSprinter.",
+      "image": "https://elbilnorden.no/images/ebold-side.webp",
+      "url": "https://elbilnorden.no/sv-ebold.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "SEK",
+       "lowPrice": 479990,
+       "highPrice": 541990,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "Product",
+      "name": "Hudson eHAUSTUS",
+      "brand": {
+       "@type": "Brand",
+       "name": "Hudson"
+      },
+      "description": "Ellastbil på 7,8 ton med 141 kWh CATL. Levereras som flak eller skåp, två hjulbaser.",
+      "image": "https://elbilnorden.no/images/ehaustus-side.webp",
+      "url": "https://elbilnorden.no/sv-ehaustus.html",
+      "offers": {
+       "@type": "AggregateOffer",
+       "priceCurrency": "SEK",
+       "lowPrice": 884990,
+       "highPrice": 936990,
+       "offerCount": 2,
+       "availability": "https://schema.org/PreOrder",
+       "seller": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/sv.html",
+      "url": "https://elbilnorden.no/sv.html",
+      "name": "Elektriska nyttofordon från 750 kg till 7,8 ton — eVOXX, eBEAR, eBOLD, eHAUSTUS",
+      "description": "Hudson elskåpbilar och ellastbilar för Norden: eVOXX (L7e), eBEAR (6 m³), eBOLD (12 m³) och eHAUSTUS (7,8 t). CATL-batterier, priser exkl. moms.",
+      "inLanguage": "sv",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "hero": {
+   "eyebrow": "Hudson · importör för Norden",
+   "title": "Elektriska nyttofordon från 750 kg till 7,8 ton",
+   "lead": "Fyra modeller, en elektrisk plattform: från kompakt arbetsfordon för city till lastbil på 7,8 ton. CATL-batterier och fasta priser exkl. moms.",
+   "btns": [
+    "Se modellerna",
+    "Boka provkörning"
+   ],
+   "kpis": [
+    [
+     "4",
+     "modeller"
+    ],
+    [
+     "L7e–N2",
+     "hela spektrumet"
+    ],
+    [
+     "CATL",
+     "8 år / 400 000 km"
+    ],
+    [
+     "från 207 990",
+     "kr exkl. moms"
+    ]
+   ],
+   "video": "Se video"
+  },
+  "models": {
+   "eyebrow": "Modeller",
+   "title": "En modell för varje jobb",
+   "lead": "Sorterade efter storlek. Alla priser är vägledande, exkl. moms och omräknade från NOK."
+  },
+  "cards": {
+   "evoxx": {
+    "img": "images/evoxx-side.webp",
+    "alt": "eVOXX",
+    "tag": "L7e",
+    "tagN2": false,
+    "sub": "Kompakt elektriskt arbetsfordon för stad, kommun och företagsområden. Smalast i klassen, under 2 m hög.",
+    "nums": [
+     [
+      "150–220 km",
+      "räckvidd"
+     ],
+     [
+      "750 kg",
+      "nyttolast"
+     ],
+     [
+      "3,47 m³",
+      "lastutrymme (skåp)"
+     ]
+    ],
+    "lic": "Körkort <strong>B</strong> · toppfart 71 km/h",
+    "price": "från 207 990 kr",
+    "priceNote": "exkl. moms",
+    "btn": "Se eVOXX →"
+   },
+   "ebear": {
+    "img": "images/ebear-side.webp",
+    "alt": "eBEAR",
+    "tag": "N1",
+    "tagN2": false,
+    "sub": "Kompakt elskåpbil på 6 m³ för trånga stadsgator och korta rutter. Upp till 1 375 kg nyttolast.",
+    "nums": [
+     [
+      "228 km",
+      "räckvidd WLTP"
+     ],
+     [
+      "1 375 kg",
+      "nyttolast"
+     ],
+     [
+      "6 m³",
+      "lastvolym"
+     ]
+    ],
+    "lic": "Körkort <strong>B</strong>",
+    "price": "från 343 990 kr",
+    "priceNote": "exkl. moms",
+    "btn": "Se eBEAR →"
+   },
+   "ebold": {
+    "img": "images/ebold-side.webp",
+    "alt": "eBOLD",
+    "tag": "N1",
+    "tagN2": false,
+    "sub": "Stor elskåpbil på 12 m³ med CATL LFP-batteri. Direkt alternativ till E-Transit och eSprinter.",
+    "nums": [
+     [
+      "309–415 km",
+      "räckvidd WLTP"
+     ],
+     [
+      "895 kg",
+      "nyttolast"
+     ],
+     [
+      "12 m³",
+      "lastvolym"
+     ]
+    ],
+    "lic": "Körkort <strong>B</strong>",
+    "price": "från 479 990 kr",
+    "priceNote": "exkl. moms",
+    "btn": "Se eBOLD →"
+   },
+   "ehaustus": {
+    "img": "images/ehaustus-side.webp",
+    "alt": "eHAUSTUS",
+    "tag": "N2",
+    "tagN2": true,
+    "sub": "Ellastbil på 7,8 ton med 141 kWh CATL. Levereras som flak eller skåp, två hjulbaser.",
+    "nums": [
+     [
+      "320 km",
+      "räckvidd WLTP"
+     ],
+     [
+      "7 800 kg",
+      "totalvikt"
+     ],
+     [
+      "141 kWh",
+      "batteri"
+     ]
+    ],
+    "lic": "Körkort <strong>C1 eller C</strong>",
+    "price": "från 884 990 kr",
+    "priceNote": "exkl. moms",
+    "btn": "Se eHAUSTUS →"
+   }
+  },
+  "uses": {
+   "eyebrow": "Vilken passar dig?",
+   "title": "Välj efter jobbet, inte efter fordonsklassen",
+   "items": [
+    {
+     "title": "Bud och last mile",
+     "text": "Smala gator, många stopp, lite parkering.",
+     "links": [
+      [
+       "evoxx",
+       "eVOXX →"
+      ],
+      [
+       "ebear",
+       "eBEAR →"
+      ]
+     ]
+    },
+    {
+     "title": "Hantverkare och service",
+     "text": "Verktyg, material och hyllsystem, hela dagen på vägen.",
+     "links": [
+      [
+       "ebear",
+       "eBEAR →"
+      ],
+      [
+       "ebold",
+       "eBOLD →"
+      ]
+     ]
+    },
+    {
+     "title": "Distribution och flotta",
+     "text": "Långa rutter, pallar, fasta förare och TCO-krav.",
+     "links": [
+      [
+       "ebold",
+       "eBOLD →"
+      ],
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Kommun och teknisk förvaltning",
+     "text": "Park, plantskola, kyrkogård, avfall — tyst och utsläppsfritt.",
+     "links": [
+      [
+       "evoxx",
+       "eVOXX →"
+      ],
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Påbyggnad och kyl",
+     "text": "Flak, skåp, kyl, tipp — två hjulbaser för påbyggare.",
+     "links": [
+      [
+       "ehaustus",
+       "eHAUSTUS →"
+      ]
+     ]
+    },
+    {
+     "title": "Camper på helgen",
+     "text": "Skåpbil på vardagar, Nordic Camper-modul på fredag.",
+     "links": [
+      [
+       "ebold",
+       "eBOLD →"
+      ],
+      [
+       "camper",
+       "Nordic Camper →"
+      ]
+     ]
+    }
+   ]
+  },
+  "camper": {
+   "eyebrow": "Nordic Camper",
+   "title": "Samma skåpbil, camper på helgen",
+   "lead": "Nordic Camper är ett modulset du skjuter in i lastutrymmet på några minuter — och tar ut lika snabbt när bilen ska jobba igen. Inget karossarbete, ingen ny besiktning.",
+   "alts": [
+    "Nordic Camper – Vardagsrum och sovplats",
+    "Nordic Camper – Kök",
+    "Nordic Camper – Sovplats"
+   ],
+   "btn": "Se Nordic Camper"
+  },
+  "costs": {
+   "eyebrow": "Driftkostnader",
+   "title": "Vad det kostar att köra",
+   "lead": "Välj modell, ange körsträcka och energipris och jämför med en dieselbil i samma klass.",
+   "model": "Modell",
+   "options": {
+    "evoxx": "eVOXX (12 kWh/100 km · diesel 6 l/100 km)",
+    "ebear": "eBEAR (22 kWh/100 km · diesel 8 l/100 km)",
+    "ebold": "eBOLD (32 kWh/100 km · diesel 9,5 l/100 km)",
+    "ehaustus": "eHAUSTUS (55 kWh/100 km · diesel 18 l/100 km)"
+   },
+   "km": [
+    "Kilometer per dag: ",
+    " km"
+   ],
+   "days": [
+    "Arbetsdagar per år: ",
+    ""
+   ],
+   "el": "El (per kWh)",
+   "fuel": "Diesel (per liter)",
+   "note": "Endast energi — utan service, vägtull och skatter. Förbrukningen är vägledande och beror på last, temperatur och körstil.",
+   "saving": "Beräknad besparing",
+   "perYear": "per år, endast energi",
+   "rows": [
+    "Årlig körsträcka",
+    "Energikostnad elbil",
+    "Bränslekostnad diesel",
+    "Kostnad per kilometer (elbil)"
+   ],
+   "loc": "sv-SE",
+   "cur": "kr",
+   "elPrice": "1.8",
+   "elStep": "0.1",
+   "fuelPrice": "20.5",
+   "fuelStep": "0.5"
+  },
+  "service": {
+   "eyebrow": "Service och garanti",
+   "title": "Stöd för bilar som jobbar varje dag",
+   "lead": "Stillestånd kostar mer än reparationen. Delar, diagnos och garantivillkor avtalas skriftligt före leverans.",
+   "items": [
+    [
+     "Garanti",
+     "Garanti på bil och batteri följer av köpekontraktet. CATL-batterierna i eBOLD och eHAUSTUS har 8 år / 400 000 km."
+    ],
+    [
+     "Delar",
+     "Slitdelar i lager i Norden; övriga delar beställs med angiven leveranstid."
+    ],
+    [
+     "Drifttid",
+     "Diagnos via verkstadsnätverket, med lånebil på flottavtal."
+    ]
+   ]
+  },
+  "about": {
+   "eyebrow": "Om oss",
+   "title": "Bil och inredning från ett ställe",
+   "lead": "Vi importerar Hudsons elektriska nyttofordon och Nordic Camper-modulerna till den nordiska marknaden. En kontaktpunkt för bilen, inredningen och pappren.",
+   "text": "Vi säljer till distributions- och serviceföretag, hantverkare, kommuner, flottor — och privatpersoner som vill ha camper utan att ge upp en användbar skåpbil. EV Pickup AS, Bjorøy utanför Bergen, Norge.",
+   "alt": "eVOXX, eBEAR, eBOLD, eHAUSTUS"
+  }
+ },
+ "models": {
+  "evoxx": {
+   "head": {
+    "title": "eVOXX — Kompakt elektriskt arbetsfordon för stad, kommun och företagsområden | Elbilnorden",
+    "description": "Kompakt elektriskt arbetsfordon för stad, kommun och företagsområden. Smalast i klassen, under 2 m hög. från 207 990 kr exkl. moms.",
+    "ogImage": "https://elbilnorden.no/images/evoxx-side.webp",
+    "ogLocale": "sv_SE",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eVOXX",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Kompakt elektriskt arbetsfordon för stad, kommun och företagsområden. Smalast i klassen, under 2 m hög.",
+       "image": "https://elbilnorden.no/images/evoxx-side.webp",
+       "url": "https://elbilnorden.no/sv-evoxx.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "SEK",
+        "lowPrice": 207990,
+        "highPrice": 248990,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/sv-evoxx.html",
+       "url": "https://elbilnorden.no/sv-evoxx.html",
+       "name": "eVOXX — Kompakt elektriskt arbetsfordon för stad, kommun och företagsområden | Elbilnorden",
+       "description": "Kompakt elektriskt arbetsfordon för stad, kommun och företagsområden. Smalast i klassen, under 2 m hög. från 207 990 kr exkl. moms.",
+       "inLanguage": "sv",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · L7e",
+   "title": "eVOXX",
+   "sub": "Hudson · kompakt elektrisk arbetsbil (L7e)",
+   "lead": "Kompakt elektriskt arbetsfordon för stad, kommun och företagsområden. Smalast i klassen, under 2 m hög.",
+   "btns": [
+    "Boka provkörning",
+    "Specifikationer"
+   ],
+   "kpis": [
+    [
+     "150–220 km",
+     "räckvidd"
+    ],
+    [
+     "750 kg",
+     "nyttolast"
+    ],
+    [
+     "3,47 m³",
+     "lastutrymme (skåp)"
+    ]
+   ],
+   "img": "images/evoxx-side.webp",
+   "alt": "Hudson eVOXX – kompakt elektrisk arbetsbil (L7e)",
+   "variantsEyebrow": "Pris och varianter",
+   "variantsTitle": "Välj variant",
+   "priceLabel": "Vägledande pris, exkl. moms",
+   "callout": "<strong>Körkort:</strong> B. Kommuner, plantskolor, hamnar, campus- och industriområden, bud i city. Inte avsedd för motorväg — toppfarten är 71 km/h.",
+   "specEyebrow": "Tekniska data",
+   "specTitle": "eVOXX i siffror",
+   "spec": [
+    [
+     "Fordonsklass",
+     "L7e (tung fyrhjulig motorcykel)"
+    ],
+    [
+     "Kaross",
+     "Flak eller skåp"
+    ],
+    [
+     "Batteri",
+     "15,4 kWh LFP · 23,5 kWh (tillval)"
+    ],
+    [
+     "Nyttolast",
+     "750 kg"
+    ],
+    [
+     "Lastutrymme",
+     "3,47 m³"
+    ],
+    [
+     "Mått (L×B×H)",
+     "3 820 × 1 480 × 1 680 / 1 925 mm"
+    ],
+    [
+     "Toppfart",
+     "71 km/h"
+    ],
+    [
+     "Laddning",
+     "CCS2 DC · 230 V"
+    ],
+    [
+     "Körkort",
+     "B"
+    ]
+   ],
+   "specNote": "Räckvidden beror på last, temperatur och körstil. Specifikationer kan ändras utan föregående meddelande.",
+   "variants": {
+    "15,4 kWh": {
+     "price": "207 990 kr",
+     "range": "150 km (WLTP)",
+     "dc": "CCS2"
+    },
+    "23,5 kWh": {
+     "price": "248 990 kr",
+     "range": "ca 220 km",
+     "dc": "CCS2"
+    }
+   },
+   "labels": {
+    "price": "Pris",
+    "range": "Räckvidd",
+    "payload": "Nyttolast",
+    "curb": "Tjänstevikt",
+    "dc": "DC-laddning"
+   },
+   "seo": null,
+   "galleryEyebrow": "Bilder",
+   "galleryTitle": "eVOXX — Galleri",
+   "otherEyebrow": "Andra modeller",
+   "otherTitle": "Behöver du något annat?"
+  },
+  "ebear": {
+   "head": {
+    "title": "eBEAR — Kompakt elskåpbil på 6 m³ för trånga stadsgator och korta rutter | Elbilnorden",
+    "description": "Kompakt elskåpbil på 6 m³ för trånga stadsgator och korta rutter. Upp till 1 375 kg nyttolast. från 343 990 kr exkl. moms.",
+    "ogImage": "https://elbilnorden.no/images/ebear-side.webp",
+    "ogLocale": "sv_SE",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eBEAR",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Kompakt elskåpbil på 6 m³ för trånga stadsgator och korta rutter. Upp till 1 375 kg nyttolast.",
+       "image": "https://elbilnorden.no/images/ebear-side.webp",
+       "url": "https://elbilnorden.no/sv-ebear.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "SEK",
+        "lowPrice": 343990,
+        "highPrice": 343990,
+        "offerCount": 1,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/sv-ebear.html",
+       "url": "https://elbilnorden.no/sv-ebear.html",
+       "name": "eBEAR — Kompakt elskåpbil på 6 m³ för trånga stadsgator och korta rutter | Elbilnorden",
+       "description": "Kompakt elskåpbil på 6 m³ för trånga stadsgator och korta rutter. Upp till 1 375 kg nyttolast. från 343 990 kr exkl. moms.",
+       "inLanguage": "sv",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N1",
+   "title": "eBEAR",
+   "sub": "Hudson · elektrisk skåpbil 6 m³",
+   "lead": "Kompakt elskåpbil på 6 m³ för trånga stadsgator och korta rutter. Upp till 1 375 kg nyttolast.",
+   "btns": [
+    "Boka provkörning",
+    "Specifikationer"
+   ],
+   "kpis": [
+    [
+     "228 km",
+     "räckvidd WLTP"
+    ],
+    [
+     "1 375 kg",
+     "nyttolast"
+    ],
+    [
+     "6 m³",
+     "lastvolym"
+    ]
+   ],
+   "img": "images/ebear-side.webp",
+   "alt": "Hudson eBEAR – elektrisk skåpbil 6 m³",
+   "variantsEyebrow": "Pris och varianter",
+   "variantsTitle": "Välj variant",
+   "priceLabel": "Vägledande pris, exkl. moms",
+   "callout": "<strong>Körkort:</strong> B. Hantverkare, servicebilar, hemleverans, företag med korta fasta rutter.",
+   "specEyebrow": "Tekniska data",
+   "specTitle": "eBEAR i siffror",
+   "spec": [
+    [
+     "Fordonsklass",
+     "N1"
+    ],
+    [
+     "Batteri",
+     "41,86 kWh LFP"
+    ],
+    [
+     "Räckvidd",
+     "228 km (WLTP)"
+    ],
+    [
+     "Nyttolast",
+     "1 375 kg"
+    ],
+    [
+     "Totalvikt",
+     "3 000 kg"
+    ],
+    [
+     "Lastutrymme",
+     "6 m³"
+    ],
+    [
+     "Mått (L×B×H)",
+     "4 860 × 1 750 × 1 990 mm"
+    ],
+    [
+     "Hjulbas",
+     "3 160 mm"
+    ],
+    [
+     "Drivlina",
+     "RWD"
+    ],
+    [
+     "Toppfart",
+     "100 km/h"
+    ],
+    [
+     "Säten",
+     "2–5"
+    ],
+    [
+     "Körkort",
+     "B"
+    ]
+   ],
+   "specNote": "Räckvidden beror på last, temperatur och körstil. Specifikationer kan ändras utan föregående meddelande.",
+   "variants": {
+    "41,86 kWh": {
+     "price": "343 990 kr",
+     "range": "228 km (WLTP)",
+     "dc": "CCS2"
+    }
+   },
+   "labels": {
+    "price": "Pris",
+    "range": "Räckvidd",
+    "payload": "Nyttolast",
+    "curb": "Tjänstevikt",
+    "dc": "DC-laddning"
+   },
+   "seo": null,
+   "galleryEyebrow": "Bilder",
+   "galleryTitle": "eBEAR — Galleri",
+   "otherEyebrow": "Andra modeller",
+   "otherTitle": "Behöver du något annat?"
+  },
+  "ebold": {
+   "head": {
+    "title": "eBOLD — Stor elskåpbil på 12 m³ med CATL LFP-batteri | Elbilnorden",
+    "description": "Stor elskåpbil på 12 m³ med CATL LFP-batteri. Direkt alternativ till E-Transit och eSprinter. från 479 990 kr exkl. moms.",
+    "ogImage": "https://elbilnorden.no/images/ebold-side.webp",
+    "ogLocale": "sv_SE",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eBOLD",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Stor elskåpbil på 12 m³ med CATL LFP-batteri. Direkt alternativ till E-Transit och eSprinter.",
+       "image": "https://elbilnorden.no/images/ebold-side.webp",
+       "url": "https://elbilnorden.no/sv-ebold.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "SEK",
+        "lowPrice": 479990,
+        "highPrice": 541990,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/sv-ebold.html",
+       "url": "https://elbilnorden.no/sv-ebold.html",
+       "name": "eBOLD — Stor elskåpbil på 12 m³ med CATL LFP-batteri | Elbilnorden",
+       "description": "Stor elskåpbil på 12 m³ med CATL LFP-batteri. Direkt alternativ till E-Transit och eSprinter. från 479 990 kr exkl. moms.",
+       "inLanguage": "sv",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N1",
+   "title": "eBOLD",
+   "sub": "Hudson · stor elektrisk skåpbil 12 m³",
+   "lead": "Stor elskåpbil på 12 m³ med CATL LFP-batteri. Direkt alternativ till E-Transit och eSprinter.",
+   "btns": [
+    "Boka provkörning",
+    "Specifikationer"
+   ],
+   "kpis": [
+    [
+     "309–415 km",
+     "räckvidd WLTP"
+    ],
+    [
+     "895 kg",
+     "nyttolast"
+    ],
+    [
+     "12 m³",
+     "lastvolym"
+    ]
+   ],
+   "img": "images/ebold-side.webp",
+   "alt": "Hudson eBOLD – stor elektrisk skåpbil 12 m³",
+   "variantsEyebrow": "Pris och varianter",
+   "variantsTitle": "Välj variant",
+   "priceLabel": "Vägledande pris, exkl. moms",
+   "callout": "<strong>Körkort:</strong> B. Distributions- och serviceföretag på långa rutter, flottor, hantverkare med mycket utrustning — och alla som vill ha Nordic Camper på helgen.",
+   "specEyebrow": "Tekniska data",
+   "specTitle": "eBOLD i siffror",
+   "spec": [
+    [
+     "Fordonsklass",
+     "N1"
+    ],
+    [
+     "Batteri",
+     "77,28 / 100,96 kWh · CATL LFP"
+    ],
+    [
+     "Totalvikt",
+     "3 500 kg"
+    ],
+    [
+     "Lastutrymme",
+     "12 m³"
+    ],
+    [
+     "Lastutrymme (L×B×H)",
+     "3 560 × 1 815 × 1 860 mm"
+    ],
+    [
+     "Bakdörrar",
+     "270°"
+    ],
+    [
+     "Mått (L×B×H)",
+     "5 995 × 2 036 × 2 590 mm"
+    ],
+    [
+     "Hjulbas",
+     "3 610 mm"
+    ],
+    [
+     "Drivlina",
+     "RWD"
+    ],
+    [
+     "Toppfart",
+     "> 100 km/h"
+    ],
+    [
+     "Säten",
+     "3"
+    ],
+    [
+     "DC-snabbladdning",
+     "CCS2 · 20→80 % ≤ 45 / 65 min"
+    ],
+    [
+     "Batterigaranti",
+     "8 år / 400 000 km (CATL)"
+    ],
+    [
+     "Säkerhet",
+     "ESC · airbag · TPMS · camera + radar · cruise"
+    ],
+    [
+     "Infotainment",
+     "12,3\" + 10,3\" · Android Link"
+    ],
+    [
+     "Körkort",
+     "B"
+    ]
+   ],
+   "specNote": "Räckvidden beror på last, temperatur och körstil. Specifikationer kan ändras utan föregående meddelande.",
+   "variants": {
+    "77,28 kWh": {
+     "price": "479 990 kr",
+     "range": "309 km (WLTP)",
+     "payload": "895 kg",
+     "curb": "2 605 kg",
+     "dc": "CCS2 · 20→80 % ≤ 45 min"
+    },
+    "100,96 kWh": {
+     "price": "541 990 kr",
+     "range": "415 km (WLTP)",
+     "payload": "800 kg",
+     "curb": "–",
+     "dc": "CCS2 · 20→80 % ≤ 65 min"
+    }
+   },
+   "labels": {
+    "price": "Pris",
+    "range": "Räckvidd",
+    "payload": "Nyttolast",
+    "curb": "Tjänstevikt",
+    "dc": "DC-laddning"
+   },
+   "seo": null,
+   "galleryEyebrow": "Bilder",
+   "galleryTitle": "eBOLD — Galleri",
+   "otherEyebrow": "Andra modeller",
+   "otherTitle": "Behöver du något annat?"
+  },
+  "ehaustus": {
+   "head": {
+    "title": "eHAUSTUS — Ellastbil på 7,8 ton med 141 kWh CATL | Elbilnorden",
+    "description": "Ellastbil på 7,8 ton med 141 kWh CATL. Levereras som flak eller skåp, två hjulbaser. från 884 990 kr exkl. moms.",
+    "ogImage": "https://elbilnorden.no/images/ehaustus-side.webp",
+    "ogLocale": "sv_SE",
+    "ogImageW": null,
+    "ogImageH": null,
+    "ld": {
+     "@context": "https://schema.org",
+     "@graph": [
+      {
+       "@type": [
+        "Organization",
+        "AutoDealer"
+       ],
+       "@id": "https://elbilnorden.no/#org",
+       "name": "Elbilnorden (EV Pickup AS)",
+       "legalName": "EV Pickup AS",
+       "url": "https://elbilnorden.no/",
+       "logo": "https://elbilnorden.no/images/logo.svg",
+       "email": "post@elbilnorden.no",
+       "telephone": "+4745611610",
+       "vatID": "NO936223478MVA",
+       "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bjorøyvegen 332",
+        "postalCode": "5177",
+        "addressLocality": "Bjorøyhamn",
+        "addressCountry": "NO"
+       },
+       "areaServed": [
+        "NO",
+        "SE",
+        "DK",
+        "FI",
+        "CZ"
+       ],
+       "image": "https://elbilnorden.no/images/og-home.jpg"
+      },
+      {
+       "@type": "Product",
+       "name": "Hudson eHAUSTUS",
+       "brand": {
+        "@type": "Brand",
+        "name": "Hudson"
+       },
+       "description": "Ellastbil på 7,8 ton med 141 kWh CATL. Levereras som flak eller skåp, två hjulbaser.",
+       "image": "https://elbilnorden.no/images/ehaustus-side.webp",
+       "url": "https://elbilnorden.no/sv-ehaustus.html",
+       "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "SEK",
+        "lowPrice": 884990,
+        "highPrice": 936990,
+        "offerCount": 2,
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      },
+      {
+       "@type": "WebPage",
+       "@id": "https://elbilnorden.no/sv-ehaustus.html",
+       "url": "https://elbilnorden.no/sv-ehaustus.html",
+       "name": "eHAUSTUS — Ellastbil på 7,8 ton med 141 kWh CATL | Elbilnorden",
+       "description": "Ellastbil på 7,8 ton med 141 kWh CATL. Levereras som flak eller skåp, två hjulbaser. från 884 990 kr exkl. moms.",
+       "inLanguage": "sv",
+       "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://elbilnorden.no/",
+        "name": "Elbilnorden",
+        "publisher": {
+         "@id": "https://elbilnorden.no/#org"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "eyebrow": "Hudson · N2",
+   "title": "eHAUSTUS",
+   "sub": "Hudson · elektrisk lastbil 7,8 ton",
+   "lead": "Ellastbil på 7,8 ton med 141 kWh CATL. Levereras som flak eller skåp, två hjulbaser.",
+   "btns": [
+    "Boka provkörning",
+    "Specifikationer"
+   ],
+   "kpis": [
+    [
+     "320 km",
+     "räckvidd WLTP"
+    ],
+    [
+     "7 800 kg",
+     "totalvikt"
+    ],
+    [
+     "141 kWh",
+     "batteri"
+    ]
+   ],
+   "img": "images/ehaustus-side.webp",
+   "alt": "Hudson eHAUSTUS – elektrisk lastbil 7,8 ton",
+   "variantsEyebrow": "Pris och varianter",
+   "variantsTitle": "Välj variant",
+   "priceLabel": "Vägledande pris, exkl. moms",
+   "callout": "<strong>Körkort:</strong> C1 eller C (totalvikt över 3 500 kg). Flottor, kommuner, entreprenörer, kylbilar och påbyggare. Kräver C1- eller C-körkort — elbilsundantaget till 4 250 kg gäller inte.",
+   "specEyebrow": "Tekniska data",
+   "specTitle": "eHAUSTUS i siffror",
+   "spec": [
+    [
+     "Fordonsklass",
+     "N2"
+    ],
+    [
+     "Kaross",
+     "Flak eller skåp"
+    ],
+    [
+     "Batteri",
+     "141 kWh · CATL LFP"
+    ],
+    [
+     "Räckvidd",
+     "320 km (WLTP)"
+    ],
+    [
+     "Totalvikt",
+     "7 800 kg"
+    ],
+    [
+     "Effekt / vridmoment",
+     "150 kW / 1 700 Nm"
+    ],
+    [
+     "Mått (L×B×H)",
+     "7 340 × 2 154 × 2 330 mm"
+    ],
+    [
+     "Hjulbas",
+     "4 350 / 5 100 mm"
+    ],
+    [
+     "DC-snabbladdning",
+     "CCS2 · ~60 min"
+    ],
+    [
+     "Batterigaranti",
+     "8 år / 400 000 km (CATL)"
+    ],
+    [
+     "Körkort",
+     "C1 eller C (totalvikt över 3 500 kg)"
+    ]
+   ],
+   "specNote": "Räckvidden beror på last, temperatur och körstil. Specifikationer kan ändras utan föregående meddelande.",
+   "variants": {
+    "Hjulbas 4 350 mm": {
+     "price": "884 990 kr",
+     "range": "320 km (WLTP)",
+     "dc": "CCS2 · ~60 min"
+    },
+    "Hjulbas 5 100 mm": {
+     "price": "936 990 kr",
+     "range": "320 km (WLTP)",
+     "dc": "CCS2 · ~60 min"
+    }
+   },
+   "labels": {
+    "price": "Pris",
+    "range": "Räckvidd",
+    "payload": "Nyttolast",
+    "curb": "Tjänstevikt",
+    "dc": "DC-laddning"
+   },
+   "seo": null,
+   "galleryEyebrow": "Bilder",
+   "galleryTitle": "eHAUSTUS — Galleri",
+   "otherEyebrow": "Andra modeller",
+   "otherTitle": "Behöver du något annat?"
+  }
+ },
+ "head": {
+  "camper": {
+   "title": "Nordic Camper — inskjutbar camperinredning för skåpbil",
+   "description": "Ett modulset som gör skåpbilen till camper på några minuter: kök, säng, ström och vatten. Passar i de flesta skåpbilar i L2H2 eller större.",
+   "ogImage": "https://elbilnorden.no/images/og-camper.jpg",
+   "ogLocale": "sv_SE",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/sv-camper.html",
+      "url": "https://elbilnorden.no/sv-camper.html",
+      "name": "Nordic Camper — inskjutbar camperinredning för skåpbil",
+      "description": "Ett modulset som gör skåpbilen till camper på några minuter: kök, säng, ström och vatten. Passar i de flesta skåpbilar i L2H2 eller större.",
+      "inLanguage": "sv",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      },
+      "about": {
+       "@type": "Thing",
+       "name": "Nordic Camper",
+       "description": "Inskjutbar camperinredning för skåpbil: kök, säng, el och vatten som modulset. Passar de flesta skåpbilar i L2H2 eller större.",
+       "image": "https://elbilnorden.no/images/camper-teaser.webp"
+      }
+     }
+    ]
+   }
+  },
+  "dealer": {
+   "title": "Bli återförsäljare av Hudsons elskåpbilar och Nordic Camper",
+   "description": "Återförsäljarpriser, villkor för demobil, marknadsmaterial och utbildning. Berätta ditt område, så återkommer vi med villkor och lediga distrikt.",
+   "ogImage": "https://elbilnorden.no/images/og-forhandler.jpg",
+   "ogLocale": "sv_SE",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/sv-dealer.html",
+      "url": "https://elbilnorden.no/sv-dealer.html",
+      "name": "Bli återförsäljare av Hudsons elskåpbilar och Nordic Camper",
+      "description": "Återförsäljarpriser, villkor för demobil, marknadsmaterial och utbildning. Berätta ditt område, så återkommer vi med villkor och lediga distrikt.",
+      "inLanguage": "sv",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "privacy": {
+   "title": "Integritetspolicy",
+   "description": "Hur EV Pickup AS hanterar uppgifterna du skickar via formulären: vad vi samlar in, varför, hur länge och dina rättigheter.",
+   "ogImage": "https://elbilnorden.no/images/og-home.jpg",
+   "ogLocale": "sv_SE",
+   "ogImageW": "1200",
+   "ogImageH": "630",
+   "ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": [
+       "Organization",
+       "AutoDealer"
+      ],
+      "@id": "https://elbilnorden.no/#org",
+      "name": "Elbilnorden (EV Pickup AS)",
+      "legalName": "EV Pickup AS",
+      "logo": "https://elbilnorden.no/images/logo.svg",
+      "url": "https://elbilnorden.no/",
+      "email": "post@elbilnorden.no",
+      "telephone": "+4745611610",
+      "vatID": "NO936223478MVA",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Bjorøyvegen 332",
+       "postalCode": "5177",
+       "addressLocality": "Bjorøyhamn",
+       "addressCountry": "NO"
+      },
+      "areaServed": [
+       "NO",
+       "SE",
+       "DK",
+       "FI"
+      ],
+      "image": "https://elbilnorden.no/images/og-home.jpg"
+     },
+     {
+      "@type": "WebPage",
+      "@id": "https://elbilnorden.no/sv-privacy.html",
+      "url": "https://elbilnorden.no/sv-privacy.html",
+      "name": "Integritetspolicy",
+      "description": "Hur EV Pickup AS hanterar uppgifterna du skickar via formulären: vad vi samlar in, varför, hur länge och dina rättigheter.",
+      "inLanguage": "sv",
+      "isPartOf": {
+       "@type": "WebSite",
+       "url": "https://elbilnorden.no/",
+       "name": "Elbilnorden",
+       "publisher": {
+        "@id": "https://elbilnorden.no/#org"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "camper": {
+  "footerLegal": "Juridiskt",
+  "privacyLink": "Integritetspolicy",
+  "privTitle": "Integritetspolicy",
+  "privIntro": "Här står vad vi gör med de uppgifter du skickar oss via formulären på webbplatsen.",
+  "p1t": "Personuppgiftsansvarig",
+  "p1x": "EV Pickup AS, org.nr 936 223 478, Bjorøyvegen 332, 5177 Bjorøyhamn, Norge. E-post: post@elbilnorden.no.",
+  "p2t": "Vad vi samlar in",
+  "p2x": "Bara det du skriver i formuläret: namn, företag, e-post, telefon, skåpbilsmodell eller område du anger, ditt meddelande och vilken språkversion du använde.",
+  "p3t": "Varför",
+  "p3x": "För att svara på din förfrågan, boka provkörning och skicka offert eller återförsäljarvillkor. Vi använder inte uppgifterna till något annat och säljer dem inte.",
+  "p4t": "Rättslig grund",
+  "p4x": "Åtgärder på din begäran före avtal (GDPR art. 6.1 b) och vårt berättigade intresse av att svara på affärsförfrågningar (art. 6.1 f).",
+  "p5t": "Hur länge vi sparar",
+  "p5x": "Förfrågningar som inte leder till avtal raderas efter sex månader. Blir det avtal styr bokföringsreglerna lagringstiden.",
+  "p6t": "Vem mer ser det",
+  "p6x": "Vår webbvärd behandlar meddelandet för vår räkning som personuppgiftsbiträde. CIE AS bygger och driver webbplatsen och är även biträde för formulärdatan. Ingen annan får uppgifterna.",
+  "p7t": "Cookies",
+  "p7x": "Vi använder Google Analytics för anonym besöksstatistik, men bara om du godkänner det i cookiebannern. Du kan avböja, och du kan ändra ditt val genom att radera webbplatsens data i webbläsaren. Google Analytics tillhandahålls av Google Ireland Ltd; IP-adresser anonymiseras. Ditt språkval sparas lokalt i webbläsaren och skickas aldrig till oss.",
+  "p8t": "Dina rättigheter",
+  "p8x": "Du kan begära utdrag, rättelse eller radering och invända mot behandlingen. Skriv till post@elbilnorden.no. Du kan också klaga till Datatilsynet i Norge.",
+  "privUpdated": "Senast uppdaterad: september 2026",
+  "dealerEyebrow": "Partner",
+  "dealerTitle": "Sälj Hudsons elskåpbilar och Nordic Camper i ditt område",
+  "dealerSub": "Vi bygger ett återförsäljarnät i Norden och Centraleuropa. Du sköter försäljning och första linjens service; vi sköter import, godkännande, delar och inredningarna.",
+  "dl1t": "Det här får du",
+  "dl1x": "Återförsäljarpriser, villkor för demobil, marknadsmaterial och utbildning för säljare och verkstad.",
+  "dl2t": "Det här ber vi om",
+  "dl2x": "Egen verkstad eller en servicepartner, en demobil, och förfrågningar besvarade inom en dag.",
+  "dl3t": "Så börjar det",
+  "dl3x": "Skicka formuläret. Du får villkor, marginaler och lediga områden tillbaka, sedan bokar vi en provkörning.",
+  "dealerFormTitle": "Förfrågan om återförsäljning",
+  "formRegion": "Område / marknad",
+  "formCompanyReq": "Företag",
+  "dealerSubmit": "Skicka förfrågan",
+  "camperVideoTitle": "Se hur det fungerar",
+  "camperFitText": "Det passar i de flesta skåpbilar i storlek L2H2 eller större. Skicka din modell, så bekräftar vi passformen innan du beställer.",
+  "contactCamperSub": "Berätta vilken skåpbil du har och hur du reser, så sätter vi ihop ett set åt dig.",
+  "eqBasicPrice": "Pris på förfrågan",
+  "eqProPrice": "Pris på förfrågan",
+  "eqProIntro": "Allt i Basic, plus:",
+  "eqX1": "Stålram (Q345B), skjutdörrar i glas bak och på sidan med aluminiumram och myggnät, vinylgolv och lätta skåp.",
+  "eqL2": "Vardagsrum och sovplats",
+  "eqX2": "Klädd soffa som kan bäddas om till säng (175/190 × 125 cm), 10 cm madrass, fällbart bord och högskåp.",
+  "eqX3": "Diskho i rostfritt stål med egen kran, 40 l portabelt kylskåp, kryddlåda, högskåp och underskåp. 48 l färskvattentank och 48 l gråvattentank.",
+  "eqX4": "Invändig duschmodul med passage till förarhytten och två portabla vattentankar på 18 l.",
+  "eqX5": "LED-stämningsbelysning och förberedda 12 V-uttag för en portabel powerstation (ingår ej).",
+  "eqX6": "Höjdjusterbart underrede med hjul, L-profiler och spännband.",
+  "eqP1": "Kylskåp",
+  "eqPX1": "Stående 50 l kylskåp på 12 V i stället för det portabla kylskåpet.",
+  "eqP2": "Diskho",
+  "eqPX2": "Diskho med lock, fällbar kran och 12 V vattenpump.",
+  "eqP3": "Barnsäng",
+  "eqPX3": "Fällbar våningssäng 120 × 80 cm.",
+  "eqP4": "Solpanel",
+  "eqPX4": "Portabel solpanel på 400 W.",
+  "cf2t": "Kök",
+  "cf3t": "Sovplats",
+  "cf5t": "Dusch",
+  "formName": "Namn",
+  "formCompany": "Företag (frivilligt)",
+  "formEmail": "E-post",
+  "formPhone": "Telefon",
+  "formVanLabel": "Vilken skåpbil ska det in i?",
+  "formVanOther": "En annan modell",
+  "formMessage": "Meddelande",
+  "formSubmit": "Skicka förfrågan",
+  "formSending": "Skickar…",
+  "formSent": "Tack — vi hör av oss.",
+  "formError": "Det gick inte att skicka. Mejla oss på post@elbilnorden.no.",
+  "formPrivacy": "Vi använder uppgifterna endast för att svara på den här förfrågan.",
+  "k4": "tomvikt",
+  "proBadge": "Mest utrustning",
+  "g1": "Konstruktion och vardagsrum",
+  "g2": "Kök och badrum",
+  "g3": "El och montering",
+  "fridgeP": "50 l stående, 12 V",
+  "levelLegend": "Utrustningsnivå",
+  "levelUnsure": "Osäker",
+  "close": "Stäng",
+  "h1": "Skåpbil i veckan. Husbil på helgen.",
+  "sub": "En färdigutrustad modul du skjuter in på några minuter – med säng, kök och dusch. Ingen ombyggnad, ingen ny registrering.",
+  "ctaPrices": "Se priser",
+  "pr1t": "In på några minuter",
+  "pr1x": "Modulen står på ett höjdjusterbart underrede med hjul och spänns fast med L-profiler och spännband.",
+  "pr2t": "Ingen ombyggnad",
+  "pr2x": "Inget karosseriarbete – bilen behåller registrering, försäkring och besiktning som förut.",
+  "pr3t": "Ut igen på måndag",
+  "pr3x": "När helgen är slut rullar modulen ut och bilen är en arbetsbil igen.",
+  "kitchenH": "Laga middag där du parkerar",
+  "kitchenX": "Diskho i rostfritt stål, kylskåp, kryddlåda och gott om skåpsplats. Tankarna rymmer 48 liter färsk- och 48 liter gråvatten.",
+  "chipFresh": "48 l färskvatten",
+  "chipGrey": "48 l gråvatten",
+  "chipFridge": "40–50 l kylskåp",
+  "sleepH": "Soffa på kvällen, säng på natten",
+  "sleepX": "Den klädda soffan blir en säng på 175/190 × 125 cm med 10 cm madrass. Fällbart bord och högskåp ger plats för både frukost och bagage.",
+  "chipMattress": "10 cm madrass",
+  "chipBunk": "Barnsäng i Pro",
+  "bathH": "Dusch inomhus – även när det regnar",
+  "bathX": "Invändig duschmodul med passage till förarhytten och två portabla vattentankar på 18 liter.",
+  "chipShower": "Invändig dusch",
+  "chipTanks": "2 × 18 l tankar",
+  "videoSub": "Från arbetsbil till husbil på några minuter.",
+  "priceH": "Välj utrustningsnivå",
+  "priceSub": "Båda levereras färdigutrustade. Pro lägger till det du behöver för längre resor utan landström.",
+  "b1": "Soffa som blir säng, 10 cm madrass",
+  "b2": "Kök med diskho och 40 l portabelt kylskåp",
+  "b3": "Invändig dusch, 48 + 48 l vattentankar",
+  "b4": "LED-belysning och 12 V-uttag för powerstation",
+  "b5": "Skjutdörrar i glas med myggnät",
+  "chooseBasic": "Välj Basic",
+  "choosePro": "Välj Pro",
+  "fullList": "Se hela utrustningslistan",
+  "fitH": "Passar i de flesta skåpbilar från L2H2",
+  "dL": "längd",
+  "dW": "bredd",
+  "dH": "höjd",
+  "fullH": "Hela utrustningslistan",
+  "quoteH": "Redo för helgen?",
+  "conj": "och",
+  "play": "Spela upp video"
+ },
+ "otherAlts": {
+  "ebear": "Hudson eBEAR – elektrisk skåpbil 6 m³",
+  "ebold": "Hudson eBOLD – stor elektrisk skåpbil 12 m³",
+  "ehaustus": "Hudson eHAUSTUS – elektrisk lastbil 7,8 ton",
+  "evoxx": "Hudson eVOXX – kompakt elektrisk arbetsbil (L7e)"
+ }
+}
