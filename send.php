@@ -17,7 +17,7 @@ $from = 'no-reply@elbilnorden.no';
  */
 $allseats = [
     'customers' => 'c31ec494d646d34fde7b0abf953b6b97e07b', // test drives (homepage + model pages) and Nordic Camper
-    'dealers'   => '', // "Bli forhandler"
+    'dealers'   => '9c7d84e4bd0c157908b9fcd5c7c9d310efa3', // "Bli forhandler"
 ];
 
 header('Content-Type: application/json; charset=utf-8');
