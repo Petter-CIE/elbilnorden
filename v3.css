@@ -261,14 +261,8 @@ footer .bottom{border-top-color:var(--line)}
 }
 @media(min-width:1920px){
   :root{--maxw:1600px}
-  body{font-size:17px}
-  .hero h1,.c3-hero h1{font-size:clamp(96px,5.4vw,128px)}
-  .wrap h2,.contact h2{font-size:clamp(56px,3vw,68px)!important}
-  .hero .lead,.c3-hero p{font-size:22px}
-  .models{gap:28px}
-  .card .body{padding:28px 30px 30px}
+  .models{gap:24px}
   .c3-list{max-width:1000px}
 }
-@media(min-width:2300px){html{zoom:1.15}}
-@media(min-width:2900px){html{zoom:1.35}}
+@media(min-width:2300px){:root{--maxw:1760px}}
 @media(min-width:1600px){.hero h1{max-width:20ch}.hero>div:first-child{max-width:1200px}.c3-hero h1{max-width:18ch}}
