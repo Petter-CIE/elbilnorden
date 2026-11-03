@@ -9,7 +9,7 @@
 {% for l in L %}<link rel="alternate" hreflang="{{ l }}" href="{{ slug | abs(l) }}">{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ slug | abs('en') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css?v=3"><link rel="stylesheet" href="v3.css?v=3"><script src="analytics.js" defer></script>{% if head.ld %}<script type="application/ld+json">{{ head.ld | json | safe }}</script>{% endif %}
+<link rel="stylesheet" href="site.css?v=3"><link rel="stylesheet" href="v3.css?v=4"><script src="analytics.js" defer></script><script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("motion")}catch(e){}</script><script src="motion.js?v=1" defer></script>{% if head.ld %}<script type="application/ld+json">{{ head.ld | json | safe }}</script>{% endif %}
 </head>
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>{% include "header.njk" %}
 {{ content | safe }}
