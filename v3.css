@@ -1,6 +1,6 @@
 /* Elbilnorden v3 – light, airy look (Nov 2026). Loaded after site.css, replaces v2.css. */
 :root{--bg:#FAF9F6;--bg2:#EFEDE7;--card:#FFFFFF;--mint:#E6EEEA;--green:#2E4A45;--ink:#14161A;--ink2:#4a4d55;--muted:#4a4d55;--line:rgba(20,22,26,.1);--acc:#D8552A;--peach:#F2B59C;--dark:#14161A;--field:#24272D;--r:24px;
-  --gut:max(clamp(16px,4vw,40px),calc((100% - 1240px)/2))}
+  --maxw:1240px;--gut:max(clamp(16px,4vw,40px),calc((100% - var(--maxw))/2))}
 body{background:var(--bg)}
 h1,h2,h3{font-weight:700}
 h2{letter-spacing:-.035em;line-height:1.04}
@@ -150,7 +150,7 @@ footer a{color:var(--ink)}footer a[href]:hover{color:var(--acc)}
 footer .bottom{border-top-color:var(--line)}
 
 /* ---------- Nordic Camper ---------- */
-.c3{max-width:1240px;margin:0 auto;padding-left:clamp(16px,4vw,40px);padding-right:clamp(16px,4vw,40px)}
+.c3{max-width:calc(var(--maxw) + 2*clamp(16px,4vw,40px));margin:0 auto;padding-left:clamp(16px,4vw,40px);padding-right:clamp(16px,4vw,40px)}
 .c3-hero{text-align:center;padding-top:clamp(56px,9vw,120px)}
 .c3-pill{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:var(--mint);color:var(--green);font:600 13px var(--font)}
 .c3-pill::before{content:"";width:8px;height:8px;border-radius:999px;background:var(--green)}
@@ -245,3 +245,30 @@ footer .bottom{border-top-color:var(--line)}
 .pv-list div{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:6px 40px;padding:24px 0;border-bottom:1px solid var(--line)}
 .pv-list h2{font-size:19px!important;letter-spacing:-.01em;margin:0}
 .pv-list p{margin:0;color:var(--ink2);max-width:70ch}
+
+/* ---------- wide screens ---------- */
+@media(min-width:1600px){
+  :root{--maxw:1440px}
+  .hero .media,.c3-heroimg{aspect-ratio:21/9}
+  .model .hero .media{aspect-ratio:2/1}
+  .c3-prices{max-width:1160px}
+  .c3-video{max-width:1320px}
+  .contact>.two{max-width:1280px}
+  .c3-zone{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+  .c3-zone.rev{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}
+  .c3-promises{gap:72px}
+  .home .uses-sec{column-gap:120px}
+}
+@media(min-width:1920px){
+  :root{--maxw:1600px}
+  body{font-size:17px}
+  .hero h1,.c3-hero h1{font-size:clamp(96px,5.4vw,128px)}
+  .wrap h2,.contact h2{font-size:clamp(56px,3vw,68px)!important}
+  .hero .lead,.c3-hero p{font-size:22px}
+  .models{gap:28px}
+  .card .body{padding:28px 30px 30px}
+  .c3-list{max-width:1000px}
+}
+@media(min-width:2300px){html{zoom:1.15}}
+@media(min-width:2900px){html{zoom:1.35}}
+@media(min-width:1600px){.hero h1{max-width:20ch}.hero>div:first-child{max-width:1200px}.c3-hero h1{max-width:18ch}}
