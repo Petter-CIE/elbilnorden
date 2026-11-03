@@ -10,6 +10,16 @@
 $to   = 'post@elbilnorden.no';
 $from = 'no-reply@elbilnorden.no';
 
+/**
+ * AllSeats CRM (company EV PICKUP AS): every enquiry is also filed there as a lead.
+ * The keys are the web forms' public keys (AllSeats → Settings → Web forms → the form → allseats.no/skjema/<key>).
+ * An empty key switches the CRM copy off for that form; the e-mail is sent either way.
+ */
+$allseats = [
+    'customers' => '', // test drives (homepage + model pages) and Nordic Camper
+    'dealers'   => '', // "Bli forhandler"
+];
+
 header('Content-Type: application/json; charset=utf-8');
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
@@ -86,7 +96,7 @@ if ($email !== '') {
     $headers[] = 'Reply-To: ' . $email;
 }
 
-$sent = @mail(
+$mailed = @mail(
     $to,
     '=?UTF-8?B?' . base64_encode($subject) . '?=',
     implode("\n", $lines),
@@ -94,7 +104,42 @@ $sent = @mail(
     '-f' . $from
 );
 
-if (!$sent) {
+// Copy to AllSeats: a short tag says where the enquiry came from, e.g. "[Prøvekjøring · eBOLD · NO]".
+$kind = [
+    'ebold-vans'   => 'Prøvekjøring',
+    'ebold-camper' => 'Nordic Camper',
+    'ebold-dealer' => 'Forhandler',
+][$form] ?? 'Henvendelse';
+$key = $form === 'ebold-dealer' ? $allseats['dealers'] : $allseats['customers'];
+$filed = false;
+if ($key !== '' && function_exists('curl_init')) {
+    $tag = '[' . implode(' · ', array_filter([$kind, $van, $region, strtoupper($language)])) . ']';
+    $ch = curl_init('https://allseats.no/api/lead/' . rawurlencode($key));
+    curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_HTTPHEADER     => ['Content-Type: application/json', 'Accept: application/json'],
+        CURLOPT_POSTFIELDS     => json_encode([
+            'name'    => $name,
+            'email'   => $email,
+            'phone'   => $phone,
+            'company' => $company,
+            'message' => $tag . ($message !== '' ? "\n\n" . $message : ''),
+        ]),
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_CONNECTTIMEOUT => 5,
+        CURLOPT_TIMEOUT        => 8,
+    ]);
+    $body = curl_exec($ch);
+    $status = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    $filed = $status === 200 && is_string($body) && strpos($body, '"ok":true') !== false;
+    if (!$filed) {
+        error_log('elbilnorden: AllSeats lead not filed (HTTP ' . $status . '): ' . substr((string) $body, 0, 200));
+    }
+}
+
+// The visitor gets "thank you" as long as the enquiry reached us one way or the other.
+if (!$mailed && !$filed) {
     http_response_code(500);
     echo json_encode(['ok' => false, 'error' => 'mail']);
     exit;
