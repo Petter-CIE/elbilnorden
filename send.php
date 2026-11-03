@@ -16,7 +16,7 @@ $from = 'no-reply@elbilnorden.no';
  * An empty key switches the CRM copy off for that form; the e-mail is sent either way.
  */
 $allseats = [
-    'customers' => '', // test drives (homepage + model pages) and Nordic Camper
+    'customers' => 'c31ec494d646d34fde7b0abf953b6b97e07b', // test drives (homepage + model pages) and Nordic Camper
     'dealers'   => '', // "Bli forhandler"
 ];
 
